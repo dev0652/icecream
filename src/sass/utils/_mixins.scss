@@ -17,21 +17,21 @@
 
 // Font-size in rem + line height
 
-// @mixin fz-lh($fz, $lh: false) {
-// 	font-size: $fz + px;
+@mixin fz-lh($fz, $lh: false) {
+  font-size: $fz + px;
 
-// 	@if ($lh) {
-// 		line-height: calc($lh / $fz);
-// 	}
-// }
+  @if ($lh) {
+    line-height: calc($lh / $fz);
+  }
+}
 
-// @mixin fz-lh-rem($fz, $lh: false) {
-// 	font-size: rem($fz);
+@mixin fz-lh-rem($fz, $lh: false) {
+  font-size: rem($fz);
 
-// 	@if ($lh) {
-// 		line-height: calc($lh / $fz);
-// 	}
-// }
+  @if ($lh) {
+    line-height: calc($lh / $fz);
+  }
+}
 
 // Transition effect for one property with customizable site-global defaults
 
