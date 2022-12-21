@@ -1,0 +1,63 @@
+// Media queries
+
+@mixin media($device, $min-max: min) {
+	// Borrowed from https://engageinteractive.co.uk/blog/top-10-scss-mixins
+
+	@if map_has_key($breakpoints, $device) {
+		$device: map_get($breakpoints, $device);
+
+		@if $min-max == max {
+			$device: $device - 1px;
+		}
+		@media screen and (#{$min-max}-width: $device) {
+			@content;
+		}
+	}
+}
+
+// Font-size in rem + line height
+
+@mixin fz-lh($fz, $lh: false) {
+	font-size: $fz + px;
+
+	@if ($lh) {
+		line-height: calc($lh / $fz);
+	}
+}
+
+@mixin fz-lh-rem($fz, $lh: false) {
+	font-size: rem($fz);
+
+	@if ($lh) {
+		line-height: calc($lh / $fz);
+	}
+}
+
+// Transition effect for one property with customizable site-global defaults
+
+@mixin transition(
+	$property: all,
+	$duration: $transition-duration,
+	$function: $transition-timing-function,
+	$delay: 0s
+) {
+	transition-property: $property;
+	transition-duration: $duration;
+	transition-timing-function: $function;
+	transition-delay: $delay;
+}
+
+// Transition effect for multiple properties with non-customizable site-global values
+
+@mixin transition-multiple($property...) {
+	transition-property: $property;
+	transition-duration: $transition-duration;
+	transition-timing-function: $transition-timing-function;
+}
+
+// Flex element's flex-basis calculation
+
+@mixin flex-basis($items-per-row, $spacing: 32px) {
+	// Number of gaps = items per row - 1;
+	flex-basis: calc((100% - $spacing * ($items-per-row - 1)) / $items-per-row);
+}
