@@ -1,14 +1,7 @@
 // Breakpoints
-
-// $mobile: 480px;
-// $tablet: 768px;
-// $desktop: 1200px;
-
-// $breakpoints: (
-//   'mobile': 320px,
-//   'tablet': 768px,
-//   'desktop': 1200px,
-// );
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
 
 // Fonts
 $primary-font: 'Montserrat', sans-serif;
@@ -37,19 +30,17 @@ $border-radius-card: 24px;
 // Spacings
 $section-padding: 60px;
 
-// :root {
-//   --container-padding: 20px;
+:root {
+  --container-padding: 20px;
 
-//   @media screen and (min-width: $tablet) {
-//     --container-padding: 32px;
-//   }
-//   @media screen and (min-width: $desktop) {
-//     --container-padding: 16px;
-//   }
-// }
-// $container-padding: var(--container-padding);
-
-$container-padding: 20px;
+  @media screen and (min-width: $tablet) {
+    --container-padding: 32px;
+  }
+  @media screen and (min-width: $desktop) {
+    --container-padding: 16px;
+  }
+}
+$container-padding: var(--container-padding);
 
 // Positioning
 $z-header: 1;
