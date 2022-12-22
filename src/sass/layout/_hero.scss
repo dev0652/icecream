@@ -1,21 +1,62 @@
 .hero {
     background-color: $bg-primary;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: bottom;
+    // background-position-x: center;
+    padding-top: 50px;
+    position: relative;
+    height: 520px; 
+
+    // mobile screen
+    background-image: url(../images/hero/png/mobile/dots_mob.png);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../images/hero/png/mobile/dots_mob@2x.png);
+    }
+
+    // tablet screen
+    @media screen and (min-width: 481px) {
+    background-image: url(../images/hero/png/tablet/dots_tab.png);
+    background-size: 768px;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/hero/png/tablet/dots_tab@2x.png);
+        }
+    }
+
+    // desktop screen
+        @media screen and (min-width: 769px) {
+        background-image: url(../images/hero/png/desktop/dots_desk.png);
+        background-size: 1200px;
+        
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/hero/png/desktop/dots_desk@2x.png);
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            padding-top: 14px;
+        }
 }
 
 .hero__title {
     font-family: 'Seymour One';
     font-weight: 400;
-    font-size: 34px;
-    line-height: calc(33 / 34);
+    font-size: 26px;
+    line-height: calc(33 / 26);
     text-transform: uppercase;
     color: $text-light;
     width: 247px;
-
-    @media screen and (min-width: 768px) {
-        font-size: 26px;
-        line-height: calc(33 / 26);
-        letter-spacing: 0.04em;
-    }
+    margin-bottom: 32px;
+    letter-spacing: 0.04em;
 
     @media screen and (min-width: 1200px) {
         font-size: 38px;
@@ -23,21 +64,119 @@
     }
 }
 
-.hero__img {
+.hero__main-img {
+    width: 177px;
+    height: 217px;
+    position: absolute;
+    bottom: 0;
+
     @media screen and (max-width: 767px) {
-        display: none;
+        left: 50%;
+        transform: translateX(-45%);
     }
+
+
+    @media screen and (min-width: 768px) {
+        width: 268px;
+        height: 329px;
+        right: 92px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 456px;
+        height: 560px;
+        left: 55%;
+    }
+}
+
+.button-list {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.button-list__first-button,
+.button-list__second-button {
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    display: flex;
+    align-items: center;
+}
+
+.button-list__first-button {
+    border: 2px solid #F8D24E;
+    border-radius: 8px;
+    color: #000000;
+    padding: 11px 26px;
+
+    &:hover {
+        border-color: $accent-secondary;
+    }
+}
+
+.button-list__second-button {
+    display: flex;
+    border: none;
+    align-items: center;
+    text-decoration-line: underline;
+    color: #F8D24E;
 }
 
 .info {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
     @media screen and (max-width: 767px) {
         display: none;
     }
 }
 
+.info__img {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (max-width: 1199px) {
+        width: 152px;
+    }
+}
+
+.info__text {
+    width: 139px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(17 / 14);
+    color: $text-light;
+}
+
 .numbers {
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    position: absolute;
+    right: 32px;
+    top: 28px;
+
     @media screen and (max-width: 767px) {
             display: none;
+    }
+}
+
+.numbers__item {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: calc(10 / 8);
+    color: $text-light;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: calc(17 / 14);
     }
 }
 

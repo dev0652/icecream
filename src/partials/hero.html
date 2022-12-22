@@ -1,46 +1,49 @@
 <section class="hero">
   <div class="container">
     <h1 class="hero__title">ice cream made with passion</h1>
-    <ul>
+    <ul class="button-list">
       <li>
-        <button class="hero__first-button" type="button">Products</button>
+        <button class="button-list__first-button" type="button">
+          Products
+        </button>
       </li>
       <li>
-        <button class="hero__second-button" type="button">
+        <button class="button-list__second-button" type="button">
           How it’s made?
         </button>
       </li>
     </ul>
-    <picture>
-      <!-- desktop screen -->
-      <source
-        media="(min-width: 1200px)"
-        srcset="
-          ./images/hero/png/desktop/img-1_desk.png    1x,
-          ./images/hero/png/desktop/img-1_desk@2x.png 2x
-        "
-      />
-      <!-- tablet screen -->
-      <source
-        media="(min-width: 768px)"
-        srcset="
-          ./images/hero/png/tablet/img-1_tab.png    1x,
-          ./images/hero/png/tablet/img-1_tab@2x.png 2x
-        "
-      />
-      <img
-        class="hero__img"
-        src="./images/hero/png/desktop/img-1_desk.png"
-        alt="Many ice creams"
-        width="225"
-        height="225"
-        loading="lazy"
-      />
-    </picture>
     <div class="info">
+      <picture>
+        <!-- desktop screen -->
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero/png/desktop/img-1_desk.png    1x,
+            ./images/hero/png/desktop/img-1_desk@2x.png 2x
+          "
+        />
+        <!-- tablet screen -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero/png/tablet/img-1_tab.png    1x,
+            ./images/hero/png/tablet/img-1_tab@2x.png 2x
+          "
+        />
+        <img
+          class="info__img"
+          src="./images/hero/png/desktop/img-1_desk.png"
+          alt="Many ice creams"
+          width="225"
+          height="225"
+          loading="lazy"
+        />
+      </picture>
       <p class="info__text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et
+        <!-- тут має бути svg -->
       </p>
     </div>
     <div class="numbers">
@@ -55,5 +58,39 @@
         </li>
       </ul>
     </div>
+    <picture>
+      <!-- desktop screen -->
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/hero/png/desktop/img-2_desk.png    1x,
+          ./images/hero/png/desktop/img-2_desk@2x.png 2x
+        "
+      />
+      <!-- tablet screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/hero/png/tablet/img-2_tab.png    1x,
+          ./images/hero/png/tablet/img-2_tab@2x.png 2x
+        "
+      />
+      <!-- mobile screen -->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/hero/png/mobile/img-2_mob.png    1x,
+          ./images/hero/png/mobile/img-2_mob@2x.png 2x
+        "
+      />
+      <img
+        class="hero__main-img"
+        src="./images/hero/png/desktop/img-2_desk.png"
+        alt="Ice cream"
+        width="456"
+        height="560"
+        loading="lazy"
+      />
+    </picture>
   </div>
 </section>
