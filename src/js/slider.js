@@ -47,13 +47,13 @@ window.onload = function() {
         }, testimSpeed)
     }
 
-    testimLeftArrow.addEventListener("click", function() {
-        playSlide(currentSlide -= 1);
-    })
+    // testimLeftArrow.addEventListener("click", function() {
+    //     playSlide(currentSlide -= 1);
+    // })
 
-    testimRightArrow.addEventListener("click", function() {
-        playSlide(currentSlide += 1);
-    })    
+    // testimRightArrow.addEventListener("click", function() {
+    //     playSlide(currentSlide += 1);
+    // })    
 
     for (var l = 0; l < testimDots.length; l++) {
         testimDots[l].addEventListener("click", function() {
