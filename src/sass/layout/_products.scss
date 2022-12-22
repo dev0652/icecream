@@ -2,14 +2,13 @@
 
 section.products {
   text-align: center;
-  background-color: beige; //temp
 
   .sup-heading {
     margin-bottom: 12px;
   }
 
   .section-heading {
-    margin-bottom: 40px;
+    margin-bottom: 148px;
 
     @media screen and (min-width: $tablet) {
       // margin-bottom: 80px;
@@ -25,6 +24,12 @@ section.products {
 
 .product-cards {
   display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: calc($tablet - 1px)) {
+    row-gap: 168px;
+    justify-content: center;
+  }
 
   @media screen and (min-width: $tablet) {
     gap: 16px;
@@ -37,13 +42,18 @@ section.products {
 
 .product-card {
   position: relative;
-  border-radius: $border-radius-card;
 
+  border-radius: $border-radius-card;
+  color: $text-dark;
+
+  // As a container
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  color: $text-dark;
+  // As a flex element
+  flex-basis: 280px;
+  max-width: 280px;
 
   padding: 123px 40px 16px;
 
@@ -120,8 +130,6 @@ section.products {
   }
 
   @media screen and (min-width: $desktop) {
-    // width: 302px;
-    // height: 302px;
   }
 }
 
@@ -146,14 +154,20 @@ section.products {
 .product-card__heading {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 37px;
 
-  @media screen and (min-width: $mobile) {
-    margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 22px;
+    line-height: 27px;
   }
 
   @media screen and (min-width: $desktop) {
+    font-size: 30px;
+    line-height: 37px;
+
     margin-bottom: 66px;
   }
 }
@@ -161,7 +175,6 @@ section.products {
 .product-card__text {
   line-height: 176%; // 28px
   text-align: center;
-  letter-spacing: 0.04em;
 
   margin-bottom: 101px;
 
