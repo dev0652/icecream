@@ -6,6 +6,9 @@
 }
 
 body {
+  letter-spacing: 0.04em;
+  color: $text-dark;
+
   &.scroll-locked {
     overflow: hidden;
   }
@@ -124,12 +127,11 @@ body {
 /* Headings */
 
 .section-heading {
-  font-family: &secondary-font;
+  font-family: $secondary-font;
   text-transform: uppercase;
 
   font-size: 30px;
   line-height: 38px;
-  letter-spacing: 0.04em;
 
   @media screen and (min-width: $tablet) {
     font-size: 34px;
@@ -158,6 +160,5 @@ body {
   @media screen and (min-width: $desktop) {
     font-size: 30px;
     line-height: 37px;
-    letter-spacing: 0.04em;
   }
 }
