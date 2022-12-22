@@ -1,0 +1,29 @@
+// Product cards
+
+.product-card {
+  //
+  &:nth-child(1) {
+    background-color: $bg-primary;
+  }
+  &:nth-child(2) {
+    background-color: $bg-secondary;
+  }
+  &:nth-child(3) {
+    background-color: $bg-tertiary;
+  }
+
+  @media screen and (min-width: $mobile) {
+    // arguments: items-per-row, spacing
+    // @include flex-basis(1, 60);
+  }
+
+  @media screen and (min-width: $tablet) {
+    // arguments: items-per-row, spacing
+    // @include flex-basis(3, 16);
+  }
+
+  @media screen and (min-width: $desktop) {
+    // arguments: items-per-row, spacing
+    // @include flex-basis(3, 29);
+  }
+}
