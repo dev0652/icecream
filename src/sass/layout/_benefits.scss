@@ -1,38 +1,8 @@
 .benefits {
   background-color: $bg-primary;
-
-  padding-left: 45px;
-  padding-right: 45px;
-
-  @media screen and (min-width: $tablet) {
-    padding-left: 76px;
-    padding-right: 76px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
 }
 
-.benefints_container {
-  margin-left: auto;
-  margin-right: auto;
-
-  @media screen and (min-width: $mobile) {
-    width: 390px;
-  }
-
-  @media screen and (min-width: $tablet) {
-    width: 616px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    width: 1168px;
-  }
-}
-
-.benefits_list {
+.benefits__list {
   display: flex;
 
   @media screen and (max-width: 767px) {
@@ -42,16 +12,24 @@
 
   @media screen and (min-width: $tablet) {
     gap: 80px;
-    flex-basis: calc((100% - 80px * 2) / 3);
   }
 
   @media screen and (min-width: $desktop) {
     gap: 32px;
+  }
+}
+
+.benefits__item {
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - 80px * 2) / 3);
+  }
+
+  @media screen and (min-width: $desktop) {
     flex-basis: calc((100% - 32px * 2) / 3);
   }
 }
 
-.icon-wrapper {
+.benefits__icon-wrapper {
   background-color: $accent;
   width: 50px;
   height: 50px;
@@ -69,7 +47,7 @@
   }
 }
 
-.benefits_info {
+.benefits__info {
   font-family: 'Montserrat';
   font-weight: 700;
   font-size: 36px;
@@ -94,7 +72,7 @@
   }
 }
 
-.benefits_text {
+.benefits__text {
   font-family: 'Montserrat';
   font-size: 12px;
   line-height: 170%;
