@@ -1,5 +1,30 @@
 // Product cards
 
+section.products {
+  text-align: center;
+  background-color: beige; //temp
+
+  .sup-heading {
+    margin-bottom: 12px;
+  }
+
+  .section-heading {
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 80px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 120px;
+    }
+  }
+}
+
+.product-cards {
+  display: flex;
+}
+
 .product-card {
   //
   &:nth-child(1) {
@@ -15,15 +40,65 @@
   @media screen and (min-width: $mobile) {
     // arguments: items-per-row, spacing
     // @include flex-basis(1, 60);
+
+    flex-direction: row;
   }
 
   @media screen and (min-width: $tablet) {
     // arguments: items-per-row, spacing
     // @include flex-basis(3, 16);
+    flex-basis: 370px;
   }
 
   @media screen and (min-width: $desktop) {
     // arguments: items-per-row, spacing
     // @include flex-basis(3, 29);
+    flex-basis: 370px;
+  }
+}
+
+.product-card__image {
+  font-size: 16px;
+  line-height: 176%; // 28px
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 30px;
+  }
+}
+
+.product-card__heading {
+  text-transform: uppercase;
+
+  @media screen and (min-width: $mobile) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 66px;
+  }
+}
+
+.product-card__text {
+  font-size: 16px;
+  line-height: 176%; // 28px
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  margin-bottom: 101px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 75px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
   }
 }
