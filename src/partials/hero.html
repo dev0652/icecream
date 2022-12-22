@@ -1,5 +1,59 @@
 <section class="hero">
-	<div class="container">
-
-	</div>
+  <div class="container">
+    <h1 class="hero__title">ice cream made with passion</h1>
+    <ul>
+      <li>
+        <button class="hero__first-button" type="button">Products</button>
+      </li>
+      <li>
+        <button class="hero__second-button" type="button">
+          How it’s made?
+        </button>
+      </li>
+    </ul>
+    <picture>
+      <!-- desktop screen -->
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/hero/png/desktop/img-1_desk.png    1x,
+          ./images/hero/png/desktop/img-1_desk@2x.png 2x
+        "
+      />
+      <!-- tablet screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/hero/png/tablet/img-1_tab.png    1x,
+          ./images/hero/png/tablet/img-1_tab@2x.png 2x
+        "
+      />
+      <img
+        class="hero__img"
+        src="./images/hero/png/desktop/img-1_desk.png"
+        alt="Many ice creams"
+        width="225"
+        height="225"
+        loading="lazy"
+      />
+    </picture>
+    <div class="info">
+      <p class="info__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+    </div>
+    <div class="numbers">
+      <ul class="numbers__list">
+        <li class="numbers__item">
+          <span class="numbers__amount">16</span>
+          cafes
+        </li>
+        <li class="numbers__item">
+          <span class="numbers__amount">23</span>
+          food trucks
+        </li>
+      </ul>
+    </div>
+  </div>
 </section>

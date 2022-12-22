@@ -1,0 +1,56 @@
+.hero {
+    background-color: $bg-primary;
+}
+
+.hero__title {
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 34px;
+    line-height: calc(33 / 34);
+    text-transform: uppercase;
+    color: $text-light;
+    width: 247px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+        line-height: calc(33 / 26);
+        letter-spacing: 0.04em;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 38px;
+        width: 367px;
+    }
+}
+
+.hero__img {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.info {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.numbers {
+    @media screen and (max-width: 767px) {
+            display: none;
+    }
+}
+
+.numbers__amount {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: calc(34 / 28);
+    // text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $text-dark;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 46px;
+    }
+}
