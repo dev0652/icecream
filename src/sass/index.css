@@ -1,0 +1,311 @@
+/* My CSS Normalize */
+:root {
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* My defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: pointer;
+  font-family: inherit;
+  text-align: center;
+}
+
+address {
+  font-style: normal;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:root {
+  --container-padding: 20px;
+}
+@media screen and (min-width: 768px) {
+  :root {
+    --container-padding: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  :root {
+    --container-padding: 16px;
+  }
+}
+
+/* Utility classes */
+.visually-hidden {
+  position: absolute;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  border: none;
+  overflow: hidden;
+}
+
+/* ---------- Animations ---------- */
+@-webkit-keyframes top-to-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  50% {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes top-to-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  50% {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes bottom-to-top {
+  from {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  50% {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes bottom-to-top {
+  from {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  50% {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes left-to-right {
+  from {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+  50% {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes left-to-right {
+  from {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+  50% {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* ---------- Common ---------- */
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+body.scroll-locked {
+  overflow: hidden;
+}
+
+.container {
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.section {
+  padding: 60px 0;
+}
+.section.dark-text {
+  color: #131313;
+}
+.section.light-text {
+  color: #fcfcfc;
+}
+
+/* Links */
+.link {
+  font-weight: 700;
+  font-size: inherit;
+  color: currentColor;
+  transition-property: color;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+.link:hover, .link:focus {
+  color: #f8d24e;
+}
+
+/* SVG icons */
+.icon {
+  fill: currentColor;
+  transition-property: fill;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+
+/* Buttons */
+.button {
+  font-weight: 600;
+  color: #131313;
+  background-color: transparent;
+  transition-property: color, background-color;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  border: 1px solid #f8d24e;
+  border-radius: 10px;
+  padding: 12px 40px;
+}
+.button:hover, .button:focus {
+  border-color: #0a8817;
+}
+.button:focus {
+  color: #fcfcfc;
+}
+.button:disabled {
+  border-color: #ababab;
+}
+
+.button--accented:hover {
+  background-color: #0a8817;
+}
+.button--accented:focus {
+  background-color: #0a8817;
+}
+.button--accented:disabled {
+  background-color: #ababab;
+}
+
+.button--suffix::after {
+  content: " >";
+}
+
+/* Headings */
+.section-heading {
+  font-family: .section-heading secondary-font;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: 0.04em;
+}
+@media screen and (min-width: 768px) {
+  .section-heading {
+    font-size: 34px;
+    line-height: 43px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-heading {
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+  }
+}
+
+.sup-heading {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 22px;
+}
+@media screen and (min-width: 768px) {
+  .sup-heading {
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sup-heading {
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.04em;
+  }
+}/*# sourceMappingURL=index.css.map */

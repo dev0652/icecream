@@ -1,0 +1,115 @@
+.benefits {
+  background-color: $bg-primary;
+
+  padding-left: 45px;
+  padding-right: 45px;
+
+  @media screen and (min-width: $tablet) {
+    padding-left: 76px;
+    padding-right: 76px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.benefints_container {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $mobile) {
+    width: 390px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 616px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 1168px;
+  }
+}
+
+.benefits_list {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    gap: 80px;
+    flex-basis: calc((100% - 80px * 2) / 3);
+  }
+
+  @media screen and (min-width: $desktop) {
+    gap: 32px;
+    flex-basis: calc((100% - 32px * 2) / 3);
+  }
+}
+
+.icon-wrapper {
+  background-color: $accent;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  padding: 7px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 40px;
+  }
+}
+
+.benefits_info {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(44 / 36);
+
+  padding-bottom: 16px;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #fcfcfc;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 48px;
+    line-height: calc(59 / 48);
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 58px;
+    line-height: calc(71 / 58);
+    padding-bottom: 12px;
+  }
+}
+
+.benefits_text {
+  font-family: 'Montserrat';
+  font-size: 12px;
+  line-height: 170%;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #fcfcfc;
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 174%;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 176%;
+  }
+}
