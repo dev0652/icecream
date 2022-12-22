@@ -57,7 +57,7 @@
 
 // Flex element's flex-basis calculation
 
-@mixin flex-basis($items-per-row, $spacing: 32px) {
+@mixin flex-basis($items-per-row, $spacing) {
   // Number of gaps = items per row - 1;
   flex-basis: calc((100% - $spacing * ($items-per-row - 1)) / $items-per-row);
 }
