@@ -1,59 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IceCream</title>
 
-	<title>IceCream</title>
+    <!-- ---------- Fonts ---------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
 
-	<!-- ---------- Fonts ---------- -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
-		rel="stylesheet">
+    <!-- Modern normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-	<!-- ---------- Styles ---------- -->
-	<link rel="stylesheet" href="./sass/index.scss" />
+    <!-- ---------- Styles ---------- -->
+    <link rel="stylesheet" href="./sass/index.scss" />
 
-	<!-- ---------- Javascript ---------- -->
-	<script type="module" src="./index.js"></script>
-</head>
+    <!-- Javascript -->
+    <script type="module" src="./index.js"></script>
+  </head>
 
-<body>
-	The cake is a lie.
+  <body>
+    The cake is a lie.
 
-	<!-- ---------- Header ---------- -->
-	<include src="./partials/header.html"></include>
+    <!-- ---------- Header ---------- -->
+    <include src="./partials/header.html"></include>
 
-	<!-- ---------- Main ---------- -->
-	<main>
+    <!-- ---------- Main ---------- -->
+    <main>
+      <!-- ---------- Hero ---------- -->
+      <include src="./partials/hero.html"></include>
 
-		<!-- ---------- Hero ---------- -->
-		<include src="./partials/hero.html"></include>
+      <!-- ---------- Products ---------- -->
+      <include src="./partials/products.html"></include>
 
-		<!-- ---------- Products ---------- -->
-		<include src="./partials/products.html"></include>
+      <!-- ---------- Benefits (How it's made) ---------- -->
+      <include src="./partials/benefits.html"></include>
 
-		<!-- ---------- Benefits (How it's made) ---------- -->
-		<include src="./partials/benefits.html"></include>
+      <!-- ---------- Feedback ---------- -->
+      <include src="./partials/feedback.html"></include>
 
-		<!-- ---------- Feedback ---------- -->
-		<include src="./partials/feedback.html"></include>
+      <!-- ---------- Contacts ---------- -->
+      <include src="./partials/contacts.html"></include>
+    </main>
 
-		<!-- ---------- Contacts ---------- -->
-		<include src="./partials/contacts.html"></include>
+    <!-- ---------- Footer ---------- -->
+    <include src="./partials/footer.html"></include>
 
-	</main>
-
-	<!-- ---------- Footer ---------- -->
-	<include src="./partials/footer.html"></include>
-
-	<!-- ---------- Modal window ---------- -->
-	<include src="./partials/modal.html"></include>
-
-</body>
-
+    <!-- ---------- Modal window ---------- -->
+    <include src="./partials/modal.html"></include>
+    <include src="./partials/modal-ingredients.html"></include>
+    <include src="./partials/overlay.html"></include>
+  </body>
 </html>

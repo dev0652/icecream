@@ -1,0 +1,292 @@
+<!--Ссылка для проверки модалки-->
+<a href="#" class="js-open-modal" data-modal="modal-ingredients1"
+  >Ингридиенты морож.</a
+>
+<a href="#" class="js-open-modal" data-modal="modal-ingredients2"
+  >Ингридиенты кофе</a
+>
+<a href="#" class="js-open-modal" data-modal="modal-ingredients3"
+  >Ингридиенты милкшейк</a
+>
+
+<!--Модалка с ингридиентами мороженного-->
+<div class="modal modal-ingredients" data-modal="modal-ingredients1">
+  <svg class="close-btn">
+    <use href="./images/icons.svg#close-btn"></use>
+  </svg>
+  <h3 class="modal-ingredients__title">Chololate icecream</h3>
+  <div class="modal-ingredients__thumb">
+    <img
+      class="modal-ingredients__img"
+      srcset="
+        ./images/modal/ice-cream2@1x.png 132w,
+        ./images/modal/ice-cream2@2x.png 264w
+      "
+      sizes="(min-width:1200px) 132px, (min-width:768px) 132px, (min-width:480px) 132px, 100vw"
+      src="./images/modal/ice-cream2@1x.png"
+      alt="Ice-cream"
+      width="132"
+      height="132"
+    />
+  </div>
+  <ul class="modal-ingredients__list list">
+    <li class="modal-ingredients__item">
+      kcal<span class="modal-ingredients__span">320</span>
+    </li>
+    <li class="modal-ingredients__item">
+      Prote...<span class="modal-ingredients__span">4g</span>
+    </li>
+    <li class="modal-ingredients__item">
+      Fats<span class="modal-ingredients__span">8,2g</span>
+    </li>
+    <li class="modal-ingredients__item">
+      Carbs
+      <span class="modal-ingredients__span">40,4g</span>
+    </li>
+  </ul>
+  <p class="modal-ingredients__paragraph">Ingredients</p>
+  <ul class="modal-ingredients__components list">
+    <li class="modal-ingredients__component">
+      Milk<span class="modal-ingredients__component--span">100ml</span>
+    </li>
+    <li class="modal-ingredients__component">
+      Belgian chocolate<span class="modal-ingredients__component--span"
+        >20g</span
+      >
+    </li>
+    <li class="modal-ingredients__component">
+      Cream<span class="modal-ingredients__component--span">150ml</span>
+    </li>
+    <li class="modal-ingredients__component">
+      Cocoa powder<span class="modal-ingredients__component--span">30g</span>
+    </li>
+    <li class="modal-ingredients__component">
+      Sugar<span class="modal-ingredients__component--span">40g</span>
+    </li>
+    <li class="modal-ingredients__component">
+      Vanilla sugar<span class="modal-ingredients__component--span">10g</span>
+    </li>
+  </ul>
+  <form class="" name="modal_form">
+    <div class="modal-igredients__form" role="group">
+      <input
+        class="modal-ingredients__form-field"
+        type="text"
+        name="user-name"
+        id="user-name1"
+        placeholder="Name"
+        required
+      />
+      <input
+        class="modal-ingredients__form-field"
+        type="text"
+        name="user-tel"
+        id="user-tel1"
+        placeholder="Phone"
+        required
+      />
+      <textarea
+        class="modal-ingredients__form-message"
+        name="user-message"
+        id="user-message1"
+        rows="3"
+        placeholder="Comment"
+      ></textarea>
+    </div>
+    <button class="modal-ingredients__btn button" type="submit">Submit</button>
+  </form>
+</div>
+
+<!--Модалка с ингридиентами кофе-->
+<div class="modal modal-ingredients" data-modal="modal-ingredients2">
+  <svg class="close-btn">
+    <use href="./images/icons.svg#close-btn"></use>
+  </svg>
+  <h3 class="modal-ingredients__title">Ice coffee</h3>
+  <div class="modal-ingredients__thumb modal-ingredients__thumb--yellow">
+    <img
+      class="modal-ingredients__img"
+      srcset="
+        ./images/modal/ice-late@1x.png 132w,
+        ./images/modal/ice-late@2x.png 264w
+      "
+      sizes="(min-width:1200px) 132px, (min-width:768px) 132px, (min-width:480px) 132px, 100vw"
+      src="./images/modal/ice-late@1x.png"
+      alt="Ice-late"
+      width="132"
+      height="132"
+    />
+  </div>
+  <ul class="modal-ingredients__list list">
+    <li class="modal-ingredients__item modal-ingredients__item--yellow">
+      kcal<span class="modal-ingredients__span modal-ingredients__span--yellow"
+        >150</span
+      >
+    </li>
+    <li class="modal-ingredients__item modal-ingredients__item--yellow">
+      Prote...<span
+        class="modal-ingredients__span modal-ingredients__span--yellow"
+        >1g</span
+      >
+    </li>
+    <li class="modal-ingredients__item modal-ingredients__item--yellow">
+      Fats<span class="modal-ingredients__span modal-ingredients__span--yellow"
+        >2,5g</span
+      >
+    </li>
+    <li class="modal-ingredients__item modal-ingredients__item--yellow">
+      Carbs
+      <span class="modal-ingredients__span modal-ingredients__span--yellow"
+        >60,2g</span
+      >
+    </li>
+  </ul>
+  <p class="modal-ingredients__paragraph">Ingredients</p>
+  <ul class="modal-ingredients__components list">
+    <li class="modal-ingredients__component">
+      Milk<span class="modal-ingredients__component--span">200ml</span>
+    </li>
+    <li class="modal-ingredients__component">
+      Сhocolate toping<span class="modal-ingredients__component--span"
+        >20g</span
+      >
+    </li>
+    <li class="modal-ingredients__component">
+      Whater<span class="modal-ingredients__component--span">200ml</span>
+    </li>
+    <li class="modal-ingredients__component">
+      Ice<span class="modal-ingredients__component--span">30g</span>
+    </li>
+    <li class="modal-ingredients__component">
+      Sugar<span class="modal-ingredients__component--span">1g</span>
+    </li>
+    <li class="modal-ingredients__component">
+      Vanilla sugar<span class="modal-ingredients__component--span">1g</span>
+    </li>
+  </ul>
+  <form class="" name="modal_form">
+    <div class="modal-igredients__form" role="group">
+      <input
+        class="modal-ingredients__form-field modal-ingredients__form-field--yellow"
+        type="text"
+        name="user-name"
+        id="user-name2"
+        placeholder="Name"
+        required
+      />
+      <input
+        class="modal-ingredients__form-field modal-ingredients__form-field--yellow"
+        type="text"
+        name="user-tel"
+        id="user-tel2"
+        placeholder="Phone"
+        required
+      />
+      <textarea
+        class="modal-ingredients__form-message modal-ingredients__form-message--yellow"
+        name="user-message"
+        id="user-message2"
+        rows="3"
+        placeholder="Comment"
+      ></textarea>
+    </div>
+    <button class="modal-ingredients__btn button" type="submit">Submit</button>
+  </form>
+</div>
+
+<!--Модалка с ингридиентами милкшейка-->
+<div class="modal modal-ingredients" data-modal="modal-ingredients3">
+  <svg class="close-btn">
+    <use href="./images/icons.svg#close-btn"></use>
+  </svg>
+  <h3 class="modal-ingredients__title">Milkshake</h3>
+  <div class="modal-ingredients__thumb modal-ingredients__thumb--brown">
+    <img
+      class="modal-ingredients__img"
+      srcset="
+        ./images/modal/milkshake@1x.png 132w,
+        ./images/modal/milkshake@2x.png 264w
+      "
+      sizes="(min-width:1200px) 132px, (min-width:768px) 132px, (min-width:480px) 132px, 100vw"
+      src="./images/modal/milkshake@1x.png"
+      alt="Ice-cream"
+      width="132"
+      height="132"
+    />
+  </div>
+  <ul class="modal-ingredients__list list">
+    <li class="modal-ingredients__item modal-ingredients__item--brown">
+      kcal<span class="modal-ingredients__span modal-ingredients__span--brown"
+        >200</span
+      >
+    </li>
+    <li class="modal-ingredients__item modal-ingredients__item--brown">
+      Prote...<span
+        class="modal-ingredients__span modal-ingredients__span--brown"
+        >2g</span
+      >
+    </li>
+    <li class="modal-ingredients__item modal-ingredients__item--brown">
+      Fats<span class="modal-ingredients__span modal-ingredients__span--brown"
+        >1,5g</span
+      >
+    </li>
+    <li class="modal-ingredients__item modal-ingredients__item--brown">
+      Carbs
+      <span class="modal-ingredients__span modal-ingredients__span--brown"
+        >20g</span
+      >
+    </li>
+  </ul>
+  <p class="modal-ingredients__paragraph">Ingredients</p>
+  <ul class="modal-ingredients__components list">
+    <li class="modal-ingredients__component">
+      Milk<span class="modal-ingredients__component--span">400ml</span>
+    </li>
+    <li class="modal-ingredients__component">
+      Icecream<span class="modal-ingredients__component--span">200g</span>
+    </li>
+    <li class="modal-ingredients__component">
+      Cream<span class="modal-ingredients__component--span">50g</span>
+    </li>
+    <li class="modal-ingredients__component">
+      Chocolate toping<span class="modal-ingredients__component--span"
+        >30g</span
+      >
+    </li>
+    <li class="modal-ingredients__component">
+      Sugar<span class="modal-ingredients__component--span">1g</span>
+    </li>
+    <li class="modal-ingredients__component">
+      Vanilla sugar<span class="modal-ingredients__component--span">1g</span>
+    </li>
+  </ul>
+  <form class="" name="modal_form">
+    <div class="modal-igredients__form" role="group">
+      <input
+        class="modal-ingredients__form-field modal-ingredients__form-field--brown"
+        type="text"
+        name="user-name"
+        id="user-name3"
+        placeholder="Name"
+        required
+      />
+      <input
+        class="modal-ingredients__form-field modal-ingredients__form-field--brown"
+        type="text"
+        name="user-tel"
+        id="user-tel3"
+        placeholder="Phone"
+        required
+      />
+      <textarea
+        class="modal-ingredients__form-message modal-ingredients__form-message--brown"
+        name="user-message"
+        id="user-message3"
+        rows="3"
+        placeholder="Comment"
+      ></textarea>
+    </div>
+    <button class="modal-ingredients__btn button" type="submit">Submit</button>
+  </form>
+</div>
