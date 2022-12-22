@@ -8,13 +8,36 @@
 		<h2 class="section-heading">Products</h2>
 
 		<!-- Product cards -->
-		<ul class="card-set product-cards ">
+		<ul class="card-set product-cards">
 
 			<!-- Product card item 1 - Ice Cream -->
 			<li class="card-set__item product-card">
 
-				<!-- Product card image -->
-				<picture class="product-card__image"></picture>
+				<!-- Product card image wrapper -->
+				<div class="product-card__image-wrapper">
+
+					<picture class="product-card__image">
+
+						<!-- Desktop -->
+						<source media="(min-width: 1200px)"
+							srcset="./images/products/webp/desktop/image1.webp 1x, ./images/products/webp/desktop/image1@2x.webp 2x"
+							type="image/webp"
+							srcset="./images/products/jpeg/desktop/image1.jpg 1x, ./images/products/jpeg/desktop/image1@2x.jpg 2x"
+							type="image/jpeg" />
+
+						<!-- Mobile & Tablet -->
+						<source media="(max-width: 1119px)"
+							srcset="./images/products/webp/tablet/image1.webp 1x, ./images/products/webp/tablet/image1@2x.webp 2x"
+							type="image/webp"
+							srcset="./images/products/jpeg/desktop/image1.jpg 1x, ./images/products/jpeg/desktop/image1@2x.jpg 2x"
+							type="image/jpeg" />
+
+						<!-- Default -->
+						<img class="team-card-photo" src="./images/products/jpeg/desktop/image1.jpg" alt="Colorful ice-cream cones."
+							height="302" width="302" loading="lazy" />
+
+					</picture>
+				</div>
 
 				<!-- Product card meta -->
 				<div class="product-card__meta">
@@ -27,14 +50,44 @@
 						Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer
 					</p>
 
+					<!-- Arrow (link) -->
+					<a href="product-card__link">
+						<svg class="product-card__arrow" width="40" height="16">
+							<use href=""></use>
+						</svg>
+					</a>
+
 				</div>
 			</li>
 
 			<!-- Product card item 2 - Ice Coffee -->
 			<li class="card-item product-card">
 
-				<!-- Product card image -->
-				<picture class="product-card__image"></picture>
+				<!-- Product card image wrapper -->
+				<div class="product-card__image-wrapper">
+
+					<picture class="product-card__image">
+
+						<!-- Desktop -->
+						<source media="(min-width: 1200px)"
+							srcset="./images/products/webp/desktop/image2.webp 1x, ./images/products/webp/desktop/image2@2x.webp 2x"
+							type="image/webp"
+							srcset="./images/products/jpeg/desktop/image2.jpg 1x, ./images/products/jpeg/desktop/image2@2x.jpg 2x"
+							type="image/jpeg" />
+
+						<!-- Mobile & Tablet -->
+						<source media="(max-width: 1119px)"
+							srcset="./images/products/webp/tablet/image2.webp 1x, ./images/products/webp/tablet/image2@2x.webp 2x"
+							type="image/webp"
+							srcset="./images/products/jpeg/desktop/image2.jpg 1x, ./images/products/jpeg/desktop/image2@2x.jpg 2x"
+							type="image/jpeg" />
+
+						<!-- Default -->
+						<img class="team-card-photo" src="./images/products/jpeg/desktop/image2.jpg" alt="Colorful ice-cream cones."
+							height="302" width="302" loading="lazy" />
+
+					</picture>
+				</div>
 
 				<!-- Product card meta -->
 				<div class="product-card__meta">
@@ -53,8 +106,31 @@
 			<!-- Product card item 3 - Milkshakes -->
 			<li class="card-item product-card">
 
-				<!-- Product card image -->
-				<picture class="product-card__image"></picture>
+				<!-- Product card image wrapper -->
+				<div class="product-card__image-wrapper">
+
+					<picture class="product-card__image">
+
+						<!-- Desktop -->
+						<source media="(min-width: 1200px)"
+							srcset="./images/products/webp/desktop/image3.webp 1x, ./images/products/webp/desktop/image3@2x.webp 2x"
+							type="image/webp"
+							srcset="./images/products/jpeg/desktop/image3.jpg 1x, ./images/products/jpeg/desktop/image3@2x.jpg 2x"
+							type="image/jpeg" />
+
+						<!-- Mobile & Tablet -->
+						<source media="(max-width: 1119px)"
+							srcset="./images/products/webp/tablet/image3.webp 1x, ./images/products/webp/tablet/image3@2x.webp 2x"
+							type="image/webp"
+							srcset="./images/products/jpeg/desktop/image3.jpg 1x, ./images/products/jpeg/desktop/image3@2x.jpg 2x"
+							type="image/jpeg" />
+
+						<!-- Default -->
+						<img class="team-card-photo" src="./images/products/jpeg/desktop/image3.jpg" alt="Colorful ice-cream cones."
+							height="302" width="302" loading="lazy" />
+
+					</picture>
+				</div>
 
 				<!-- Product card meta -->
 				<div class="product-card__meta">
