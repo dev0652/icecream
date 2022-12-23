@@ -1,5 +1,82 @@
 <header class="header" data-header>
-	<div class="container">
-
-	</div>
+  <div class="header__container container">
+    <a class="header__logo logo" href="" aria-label="Icecream logo">
+      <svg class="logo__img" width="60" height="65">
+        <use href="./images/symbol-defs.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <nav class="nav">
+      <ul class="nav__list list">
+        <li class="nav__item">
+          <a class="nav__link link" href=" ">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link link" href=" ">How its made? </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link link" href=" ">Our products</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link link" href=" ">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__group">
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg width="32" height="32">
+          <use href="./images/symbol-defs.svg#icon-menu-open"></use>
+        </svg>
+      </button>
+      <button class="header__btn" type="button" data-modal-open>
+        Buy now
+        <svg
+          class="header__btn--icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="7"
+          height="10"
+          fill="none"
+        >
+          <path
+            fill="#000"
+            d="M.97.227a.75.75 0 0 0 0 1.06L4.682 5 .97 8.712a.75.75 0 0 0 1.06 1.061L6.273 5.53a.75.75 0 0 0 0-1.06L2.03.227a.75.75 0 0 0-1.06 0Z"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
 </header>
+<!-- ===== burger menu ======= -->
+<!-- <div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu">
+    <svg width="40" height="40" viewBox="0 0 20 20">
+      <use href="./images/symbol-defs.svg#icon-menu-open"></use>
+      >
+    </svg>
+  </button>
+
+  <ul class="mobile-menu">
+    <li class="mobile-menu-item active">
+      <a class="mobile-menu-link link" href="">Home</a>
+    </li>
+    <li class="mobile-menu-item">
+      <a class="mobile-menu-link link" href="">How its made? </a>
+    </li>
+    <li class="mobile-menu-item">
+      <a class="mobile-menu-link link" href="">Our products </a>
+    </li>
+    <li class="mobile-menu-item">
+      <a class="mobile-menu-link link" href="">Contact </a>
+    </li>
+  </ul>
+</div>
+<script
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"
+></script>
+<script defer src="js/mobile-menu.js"></script> -->
