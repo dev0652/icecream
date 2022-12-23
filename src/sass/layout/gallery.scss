@@ -43,35 +43,35 @@
   top: -98px;
   }
 }
-
-// Анімація зміни зображень
-@keyframes ice-cream {
-  0% {
-    opacity:1;
-  }
-  17% {
-    opacity:1;
-  }
-  25% {
-    opacity:0;
-  }
-  92% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
 //  Інтервал зміни зображень
-#animation img:nth-of-type(1) {
+#animation .gallery__img:nth-of-type(1) {
   animation-delay: 9s;
 }
-#animation img:nth-of-type(2) {
+#animation .gallery__img:nth-of-type(2) {
   animation-delay: 6s;
 }
-#animation img:nth-of-type(3) {
+#animation .gallery__img:nth-of-type(3) {
   animation-delay: 3s;
 }
-#animation img:nth-of-type(4) {
+#animation .gallery__img:nth-of-type(4) {
   animation-delay: 0s;
 }
+
+// // Анімація зміни зображень
+// @keyframes ice-cream {
+//   0% {
+//     opacity:1;
+//   }
+//   17% {
+//     opacity:1;
+//   }
+//   25% {
+//     opacity:0;
+//   }
+//   92% {
+//     opacity:0;
+//   }
+//   100% {
+//     opacity:1;
+//   }
+// }
