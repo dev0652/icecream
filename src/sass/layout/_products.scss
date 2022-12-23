@@ -118,6 +118,9 @@ section.products {
 
     border-radius: 50%;
     overflow: hidden;
+
+    background-position: center;
+    background-size: cover;
   }
 
   &:nth-of-type(1) {
