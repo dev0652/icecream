@@ -42,26 +42,23 @@ padding: 28px 28px;
  
 //  /* Стили для модальных окон */
 
-//  .modal-video {
-//     opacity: 0;
-//     visibility: hidden;
+ .modal-video {
+    opacity: 0;
+    visibility: hidden;
 
-//     width: 200px;
-//     height:300px;
+    position:fixed;
 
-//     position:fixed;
-
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     z-index: 30;
-//  }
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+ }
  
-//  .modal {
+ .modal {
     
 //     /* Скрываем окна  */
-//     opacity: 0;
-//     visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
     
     
 //     /*  Установаем ширину окна  */
@@ -69,11 +66,11 @@ padding: 28px 28px;
 //     max-width: 500px;
     
 //     /*  Центрируем и задаем z-index */
-//     position: fixed;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     z-index: 30; /* Должен быть выше чем у подложки*/
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;} /* Должен быть выше чем у подложки*/
     
 //     /*  Побочные стили   */
 //     box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
@@ -95,5 +92,6 @@ padding: 28px 28px;
  
  .modal-video.active {
 opacity: 2;
+visibility: visible;
 z-index: 99;
  }
