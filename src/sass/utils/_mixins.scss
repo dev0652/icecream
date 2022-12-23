@@ -61,3 +61,35 @@
   // Number of gaps = items per row - 1;
   flex-basis: calc((100% - $spacing * ($items-per-row - 1)) / $items-per-row);
 }
+
+// ***Products section ONLY *** image retinization
+
+@mixin product-card-bg($folder, $filename, $extension: webp) {
+  //
+  $img-type: webp;
+
+  @if $extension == jpg {
+    $img-type: jpeg;
+  }
+
+  background-image: url('../images/#{$folder}/#{$img-type}/tablet/#{$filename}.#{$extension}');
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    //
+    background-image: url('../images/#{$folder}/#{$img-type}/tablet/#{$filename}@2x.#{$extension}');
+  }
+
+  @media screen and (min-width: $desktop) {
+    //
+    background-image: url('../images/#{$folder}/#{$img-type}/desktop/#{$filename}.#{$extension}');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      //
+      background-image: url('../images/#{$folder}/#{$img-type}/desktop/#{$filename}@2x.#{$extension}');
+    }
+  }
+}

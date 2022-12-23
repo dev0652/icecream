@@ -75,34 +75,85 @@ section.products {
     padding: 165px 64px 60px;
   }
 
+  &:before {
+    content: '';
+    width: 200px;
+    height: 200px;
+
+    @media screen and (min-width: $desktop) {
+      width: 302px;
+      height: 302px;
+    }
+
+    position: absolute;
+    transform: translateY(-110%);
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+  }
+
+  &:after {
+    content: '';
+    width: 200px;
+    height: 200px;
+
+    @media screen and (min-width: $desktop) {
+      width: 302px;
+      height: 302px;
+    }
+
+    position: absolute;
+    transform: translateY(-110%);
+
+    margin-top: -16px;
+
+    @media screen and (min-width: $tablet) {
+      margin-top: -12px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-top: -11px;
+    }
+
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
   &:nth-of-type(1) {
     background-color: #aec6a5;
 
-    .product-card__image-wrapper {
+    &:before {
       background: linear-gradient(0deg, rgba(#aec6a5, 0.7), rgba(#aec6a5, 0.7)),
         #d9d9d9;
       box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+    }
+
+    &::after {
+      @include product-card-bg(products, image1, webp);
     }
   }
 
   &:nth-of-type(2) {
     background-color: $bg-secondary;
 
-    .product-card__image-wrapper {
+    &:before {
       background: linear-gradient(
           0deg,
           rgba($bg-secondary, 0.7),
           rgba($bg-secondary, 0.7)
         ),
         #d9d9d9;
-      // box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+    }
+    &::after {
+      @include product-card-bg(products, image2, webp);
     }
   }
 
   &:nth-of-type(3) {
     background-color: $bg-tertiary;
 
-    .product-card__image-wrapper {
+    &:before {
       background: linear-gradient(
           0deg,
           rgba($bg-tertiary, 0.7),
@@ -110,44 +161,10 @@ section.products {
         ),
         #d9d9d9;
     }
-  }
-}
 
-.product-card__image-wrapper {
-  position: absolute;
-  transform: translateY(-110%);
-
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-
-  border-radius: 50%;
-  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
-
-  @media screen and (min-width: $tablet) {
-    // width: 200px;
-    // height: 200px;
-  }
-
-  @media screen and (min-width: $desktop) {
-  }
-}
-
-.product-card__image {
-  position: relative;
-
-  border-radius: 50%;
-  overflow: hidden;
-
-  object-fit: fill;
-
-  top: -16px;
-
-  @media screen and (min-width: $tablet) {
-    top: -12px;
-  }
-  @media screen and (min-width: $desktop) {
-    top: -11px;
+    &::after {
+      @include product-card-bg(products, image3, webp);
+    }
   }
 }
 
