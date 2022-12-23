@@ -1,3 +1,5 @@
+// Modal Buy now
+
 .modal-buynow {
   max-height: 991px;
   max-width: 280px;
@@ -10,6 +12,8 @@
     padding: 32px 54px;
   }
 }
+
+// Modal title
 
 .modal-buynow__title {
   margin-bottom: 20px;
@@ -24,6 +28,8 @@
     margin-bottom: 40px;
   }
 }
+
+// Modal form
 
 .modal-buynow__group {
   @extend %flex-centered;
@@ -130,11 +136,72 @@
   }
 }
 
+// Modal products
+
 .modal-buynow__products {
   margin-bottom: 31px;
 }
 
-.buycheck {
+.buycheck-icon1 {
+  display: inline-block;
   width: 132px;
-  height: 135px;
+  height: 136px;
+  border: 2px solid #96af8c;
+  border-radius: 15px;
+
+  background-color: #ffff;
+  transition: background-color $transition-duration $transition-timing-function;
+}
+
+.buycheck:checked + .buycheck-icon1 {
+  background-color: #96af8c;
+}
+
+.buycheck-icon2 {
+  display: inline-block;
+  width: 132px;
+  height: 136px;
+  border: 2px solid #efd478;
+  border-radius: 15px;
+
+  background-color: #ffff;
+  transition: background-color $transition-duration $transition-timing-function;
+}
+
+.buycheck:checked + .buycheck-icon2 {
+  background-color: #efd478;
+}
+
+.buycheck-icon3 {
+  display: inline-block;
+  width: 132px;
+  height: 136px;
+  border: 2px solid #d6936d;
+  border-radius: 15px;
+
+  background-color: #ffff;
+  transition: background-color $transition-duration $transition-timing-function;
+}
+
+.buycheck:checked + .buycheck-icon3 {
+  background-color: #d6936d;
+}
+
+.buynow-products__item {
+  position: relative;
+}
+
+.buynow-products__title {
+  position: absolute;
+  bottom: 20;
+  left: 60;
+
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $text-dark;
 }
