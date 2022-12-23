@@ -22,7 +22,7 @@
 
   &__title {
     margin-bottom: 16px;
-    max-width: 232px;
+    max-width: 240px;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.2222;
@@ -102,6 +102,11 @@
     height: 34px;
     border-radius: 50%;
     background-color: $accent;
+
+    &:hover,
+    &:focus {
+      animation: 700ms ease-out forwards pulsing;
+    }
   }
 
   &__icon {
