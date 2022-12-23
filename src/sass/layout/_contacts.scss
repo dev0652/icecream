@@ -28,7 +28,7 @@
 .contacts__list{
     padding: 40px 32px 24px 32px;
     max-width: 280px;
-
+    
     @media screen and (min-width:768px) {
     max-width: 224px;
     padding: 40px 24px;
@@ -38,10 +38,7 @@
     max-width: 368px;
     padding: 40px 40px;
     }
-
-    padding: 40px 40px;
-    width: 368px;
-    height: 542px;
+    
     background: #FFFFFF;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
@@ -50,7 +47,6 @@
 .contacts__title{
     font-weight: 500;
     padding: 4px 15px;
-    // margin-bottom: 32px;
     background: #F8D24E;
     border-radius: 6px;
     text-transform: uppercase;
@@ -104,22 +100,36 @@
      width: 100%;
      height: 1px;
      background-color: #E1E1E1;
-     margin-top: 32px;
-     margin-bottom: 32px; 
+     margin-top: 24px;
+    margin-bottom: 24px; 
+    @media screen and (min-width:768px) {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    } 
 }
 
 .contacts__btn{
-    margin-top: 60px;
     display: flex;
-    gap: 16px;
-    
-    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 16px;    
+    align-items:center;
+    @media screen and (min-width:768px) {
+      flex-direction:initial;  
+      margin-top: 40px;
+      justify-content: center;
+    }
+    @media screen and (min-width:1200px) { 
+      margin-top: 60px;
+      justify-content: center;
+    }
+        
 }
 
 .contacts__button {
     display: flex;
-    min-width: 196px;
-    min-height: 42px;
+    width: 196px;
+    height: 42px;
     font-weight: bold;
     font-size: 14px;
     align-items: center;
@@ -145,8 +155,8 @@
 
   .contacts__button--transparent {
     display: flex;
-    min-width: 196px;
-    min-height: 42px;
+    width: 196px;
+    height: 42px;
     font-weight: bold;
     font-size: 14px;
     align-items: center;
