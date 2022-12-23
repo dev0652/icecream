@@ -1,0 +1,77 @@
+
+#animation {
+  position: relative;
+
+  width: 100%;
+  height: 178px;
+  margin: 0 auto;
+  outline: green solid 3px;
+
+// Tablet
+  @media screen and (min-width: 768px){
+      height: 283px;
+  }
+// Desktop
+  @media screen and (min-width: 1200px){
+      height: 464px;
+  }
+}
+
+.gallery__img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+}
+
+#animation .gallery__img {
+  position: absolute;
+  left: 0;
+  top: -32px;
+
+  animation-name: ice-cream;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+
+// Tablet
+  @media screen and (min-width: 768px){
+  top: -144px;
+  }
+
+// Desktop
+@media screen and (min-width: 768px){
+  top: -98px;
+  }
+}
+//  Інтервал зміни зображень
+#animation .gallery__img:nth-of-type(1) {
+  animation-delay: 9s;
+}
+#animation .gallery__img:nth-of-type(2) {
+  animation-delay: 6s;
+}
+#animation .gallery__img:nth-of-type(3) {
+  animation-delay: 3s;
+}
+#animation .gallery__img:nth-of-type(4) {
+  animation-delay: 0s;
+}
+
+// // Анімація зміни зображень
+// @keyframes ice-cream {
+//   0% {
+//     opacity:1;
+//   }
+//   17% {
+//     opacity:1;
+//   }
+//   25% {
+//     opacity:0;
+//   }
+//   92% {
+//     opacity:0;
+//   }
+//   100% {
+//     opacity:1;
+//   }
+// }
