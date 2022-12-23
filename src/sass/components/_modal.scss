@@ -1,13 +1,12 @@
 /* Стили для подложки */
 body.modal-open {
-overflow: hidden;
+  overflow: hidden;
 }
 
 .overlay {
   opacity: 0;
   visibility: hidden;
   position: fixed;
-  overflow: scroll;
 
   top: 0;
   left: 0;
@@ -22,10 +21,12 @@ overflow: hidden;
   opacity: 0;
   visibility: hidden;
 
-  position: absolute;
-  top: 0;
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, 0%);
+  transform: translate(-50%, -50%);
   z-index: 30;
 
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
@@ -36,11 +37,6 @@ overflow: hidden;
   background-color: #fcfcfc;
 
   transition: 0.3s all;
-
-  @media screen and (min-width: 768px) {
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-  }
 }
 
 /* Стили для активных классов подложки и окна */
