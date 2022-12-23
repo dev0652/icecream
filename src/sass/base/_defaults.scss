@@ -1,36 +1,36 @@
 /* My defaults */
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 a {
-	background-color: transparent;
-	text-decoration: none;
-	color: inherit;
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
 }
 
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-	cursor: pointer;
-	font-family: inherit;
-	text-align: center;
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  cursor: pointer;
+  font-family: inherit;
+  text-align: center;
 }
 
 address {
-	font-style: normal;
+  font-style: normal;
 }
 
 img,
 picture,
 svg {
-	display: block;
-	max-width: 100%;
-	height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }

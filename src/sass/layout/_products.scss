@@ -2,14 +2,13 @@
 
 section.products {
   text-align: center;
-  background-color: beige; //temp
 
   .sup-heading {
     margin-bottom: 12px;
   }
 
   .section-heading {
-    margin-bottom: 40px;
+    margin-bottom: 148px;
 
     @media screen and (min-width: $tablet) {
       // margin-bottom: 80px;
@@ -25,6 +24,12 @@ section.products {
 
 .product-cards {
   display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: calc($tablet - 1px)) {
+    row-gap: 168px;
+    justify-content: center;
+  }
 
   @media screen and (min-width: $tablet) {
     gap: 16px;
@@ -37,10 +42,20 @@ section.products {
 
 .product-card {
   position: relative;
+
   border-radius: $border-radius-card;
+  color: $text-dark;
+
+  // As a container
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // As a flex element
+  flex-basis: 280px;
+  max-width: 280px;
 
   padding: 123px 40px 16px;
-  // padding: 0 40px 16px;
 
   @media screen and (min-width: $tablet) {
     // arguments: items-per-row, spacing
@@ -49,7 +64,6 @@ section.products {
     max-width: 224px;
 
     padding: 108px 26px 12px;
-    // padding: 0 26px 12px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -58,20 +72,16 @@ section.products {
     flex-basis: 370px;
     max-width: 370px;
 
-    padding: 165px 34px 60px;
-    // padding: 0 34px 60px;
+    padding: 165px 64px 60px;
   }
 
   &:nth-of-type(1) {
-    background-color: $bg-primary;
+    background-color: #aec6a5;
 
     .product-card__image-wrapper {
-      background: linear-gradient(
-          0deg,
-          rgba($bg-primary, 0.7),
-          rgba($bg-primary, 0.7)
-        ),
+      background: linear-gradient(0deg, rgba(#aec6a5, 0.7), rgba(#aec6a5, 0.7)),
         #d9d9d9;
+      box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
     }
   }
 
@@ -85,6 +95,7 @@ section.products {
           rgba($bg-secondary, 0.7)
         ),
         #d9d9d9;
+      // box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
     }
   }
 
@@ -102,64 +113,39 @@ section.products {
   }
 }
 
-// .product-card__content {
-//   position: relative;
-//   // position: absolute;
-
-//   outline: auto;
-
-//   top: -108px;
-
-//   @media screen and (min-width: $tablet) {
-//     top: -120px;
-//   }
-
-//   @media screen and (min-width: $desktop) {
-//     top: -183px;
-//   }
-
-//   // transform: translateY(-45%);
-// }
-
 .product-card__image-wrapper {
-  // position: relative;
   position: absolute;
-  top: -108px;
+  transform: translateY(-110%);
 
-  @media screen and (min-width: $tablet) {
-    top: -120px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    top: -183px;
-  }
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
 
   border-radius: 50%;
   box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
 
-  // margin-bottom: 20px;
+  @media screen and (min-width: $tablet) {
+    // width: 200px;
+    // height: 200px;
+  }
 
-  // @media screen and (min-width: $tablet) {
-  //   margin-bottom: 16px;
-  // }
-
-  // @media screen and (min-width: $desktop) {
-  //   margin-bottom: 30px;
-  // }
+  @media screen and (min-width: $desktop) {
+  }
 }
 
 .product-card__image {
   position: relative;
-  top: -16px;
-  // left: center;
 
   border-radius: 50%;
   overflow: hidden;
 
+  object-fit: fill;
+
+  top: -16px;
+
   @media screen and (min-width: $tablet) {
     top: -12px;
   }
-
   @media screen and (min-width: $desktop) {
     top: -11px;
   }
@@ -168,31 +154,42 @@ section.products {
 .product-card__heading {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 37px;
 
-  @media screen and (min-width: $mobile) {
-    margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 22px;
+    line-height: 27px;
   }
 
   @media screen and (min-width: $desktop) {
+    font-size: 30px;
+    line-height: 37px;
+
     margin-bottom: 66px;
   }
 }
 
 .product-card__text {
-  font-size: 16px;
   line-height: 176%; // 28px
   text-align: center;
-  letter-spacing: 0.04em;
 
   margin-bottom: 101px;
 
   @media screen and (min-width: $tablet) {
+    font-size: 14px;
     margin-bottom: 75px;
   }
 
   @media screen and (min-width: $desktop) {
+    font-size: 16px;
     margin-bottom: 50px;
   }
+}
+
+.product-card__link {
+  margin-top: auto;
+  align-self: center;
 }
