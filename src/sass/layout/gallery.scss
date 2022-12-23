@@ -1,11 +1,83 @@
-// .container {
-//     margin-left: auto;
-//     margin-right: auto;
-//     padding-left: 15px;
-//     padding-right: 15px;
-//     outline: red solid 2px;
-// }
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 
-.gallary__thumb {
-    width: ;
+    @media screen and (min-width: 480px) {
+      width: 480px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
+  }
+
+#animation {
+    width: 100%;
+    height: 130px;
+    margin: 0 auto;
+    position: relative;
+    outline: green solid 3px;
+
+// Tablet
+    @media screen and (min-width: 768px){
+        height: 327px;
+    }
+// Desktop
+    @media screen and (min-width: 1200px){
+        height: 422px;
+    }
 }
+
+.gallery__img {
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+}
+
+#animation .gallery__img {
+    position: absolute;
+    left: 0;
+    top: -98px;
+
+    animation-name: ice-cream;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+}
+// Анімація зміни зображень
+@keyframes ice-cream {
+    0% {
+      opacity:1;
+    }
+    17% {
+      opacity:1;
+    }
+    25% {
+      opacity:0;
+    }
+    92% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+//  Інтервал зміни зображень
+  #animation img:nth-of-type(1) {
+    animation-delay: 9s;
+  }
+  #animation img:nth-of-type(2) {
+    animation-delay: 6s;
+  }
+  #animation img:nth-of-type(3) {
+    animation-delay: 3s;
+  }
+  #animation img:nth-of-type(4) {
+    animation-delay: 0s;
+  }
