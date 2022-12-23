@@ -1,23 +1,31 @@
 <section class="hero">
   <div class="container">
+    <!-- Main title -->
     <h1 class="hero__title">ice cream made with passion</h1>
+    <!-- Buttons -->
     <ul class="button-list">
       <li>
-        <button class="button-list__first-button" type="button">
+        <button
+          class="button-list__first-button"
+          type="button"
+          href="#products"
+        >
           Products
         </button>
       </li>
       <li>
-        <button class="button-list__second-button" type="button">
+        <button class="button-list__second-button" type="button" href="#about">
           How it’s made?
         </button>
       </li>
     </ul>
+    <!-- Round image and caption -->
     <div class="info">
       <picture>
         <!-- desktop screen -->
         <source
           media="(min-width: 1200px)"
+          type="image/png"
           srcset="
             ./images/hero/png/desktop/img-1_desk.png    1x,
             ./images/hero/png/desktop/img-1_desk@2x.png 2x
@@ -26,6 +34,7 @@
         <!-- tablet screen -->
         <source
           media="(min-width: 768px)"
+          type="image/png"
           srcset="
             ./images/hero/png/tablet/img-1_tab.png    1x,
             ./images/hero/png/tablet/img-1_tab@2x.png 2x
@@ -43,25 +52,26 @@
       <p class="info__text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et
-        <!-- тут має бути svg -->
+        <!-- тут має бути svg 'arrow' -->
       </p>
     </div>
-    <div class="numbers">
-      <ul class="numbers__list">
-        <li class="numbers__item">
-          <span class="numbers__amount">16</span>
-          cafes
-        </li>
-        <li class="numbers__item">
-          <span class="numbers__amount">23</span>
-          food trucks
-        </li>
-      </ul>
-    </div>
+    <!-- Counter -->
+    <ul class="numbers-list">
+      <li class="numbers-list__item">
+        <span class="numbers-list__amount">16</span>
+        cafes
+      </li>
+      <li class="numbers-list__item">
+        <span class="numbers-list__amount">23</span>
+        food trucks
+      </li>
+    </ul>
+    <!-- Big ice cream -->
     <picture>
       <!-- desktop screen -->
       <source
         media="(min-width: 1200px)"
+        type="image/png"
         srcset="
           ./images/hero/png/desktop/img-2_desk.png    1x,
           ./images/hero/png/desktop/img-2_desk@2x.png 2x
@@ -70,6 +80,7 @@
       <!-- tablet screen -->
       <source
         media="(min-width: 768px)"
+        type="image/png"
         srcset="
           ./images/hero/png/tablet/img-2_tab.png    1x,
           ./images/hero/png/tablet/img-2_tab@2x.png 2x
@@ -78,6 +89,7 @@
       <!-- mobile screen -->
       <source
         media="(max-width: 767px)"
+        type="image/png"
         srcset="
           ./images/hero/png/mobile/img-2_mob.png    1x,
           ./images/hero/png/mobile/img-2_mob@2x.png 2x
