@@ -50,10 +50,15 @@
   </div>
 </header>
 <!-- ===== burger menu ======= -->
-<!-- <div class="menu-container js-menu-container" id="mobile-menu">
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <a class="header__logo logo" href="" aria-label="Icecream logo">
+    <svg class="logo__img" width="60" height="65">
+      <use href="./images/symbol-defs.svg#icon-logo"></use>
+    </svg>
+  </a>
   <button class="menu-toggle js-close-menu">
-    <svg width="40" height="40" viewBox="0 0 20 20">
-      <use href="./images/symbol-defs.svg#icon-menu-open"></use>
+    <svg width="19" height="19" viewBox="0 0 20 20">
+      <use href="./images/symbol-defs.svg#icon-menu-close"></use>
       >
     </svg>
   </button>
@@ -72,6 +77,21 @@
       <a class="mobile-menu-link link" href="">Contact </a>
     </li>
   </ul>
+  <button class="header__btn" type="button" data-modal-open>
+    Buy now
+    <svg
+      class="header__btn--icon"
+      xmlns="http://www.w3.org/2000/svg"
+      width="7"
+      height="10"
+      fill="none"
+    >
+      <path
+        fill="#000"
+        d="M.97.227a.75.75 0 0 0 0 1.06L4.682 5 .97 8.712a.75.75 0 0 0 1.06 1.061L6.273 5.53a.75.75 0 0 0 0-1.06L2.03.227a.75.75 0 0 0-1.06 0Z"
+      />
+    </svg>
+  </button>
 </div>
 <script
   defer
@@ -79,4 +99,4 @@
   integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
   crossorigin="anonymous"
 ></script>
-<script defer src="js/mobile-menu.js"></script> -->
+<script defer src="js/mobile-menu.js"></script>

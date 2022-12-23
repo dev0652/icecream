@@ -11,10 +11,14 @@
 .header__container {
   display: flex;
   align-items: center;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+  @media screen and (max-width: 480px) {
     width: 100%;
   }
 }
+
 .header__group {
   display: flex;
   align-items: center;
@@ -43,6 +47,9 @@
   }
   &:disabled {
     background-color: #ababab;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 }
 .header__btn--icon {
@@ -86,10 +93,7 @@
 
   outline: none;
   fill: #ffffff;
-}
-
-@media (min-width: 1200px) {
-  .menu-toggle {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }
@@ -98,123 +102,85 @@
 .menu-toggle:focus {
   transform: transition;
 }
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 
-// .menu {
-//   display: flex;
-//   padding: 0;
-//   margin: 0;
-//   list-style: none;
-// }
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
 
-// @media (max-width: 767px) {
-//   .menu {
-//     display: none;
-//   }
-// }
+.menu .link {
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
+}
 
-// .menu .link {
-//   padding: 10px;
-//   color: inherit;
-//   text-decoration: none;
-// }
+.menu .link:hover,
+.menu .link:focus {
+  text-decoration: underline;
+}
 
-// .menu .link:hover,
-// .menu .link:focus {
-//   text-decoration: underline;
-// }
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
 
-// .menu-toggle {
-//   min-height: 40px;
-//   min-width: 40px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
+  display: flex;
+  flex-direction: column;
 
-//   margin: 0;
-//   padding: 0;
-//   background-color: transparent;
-//   cursor: pointer;
-//   border: none;
-//   border-radius: 50%;
-//   outline: none;
-//   fill: #212121;
-// }
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #84a278;
+  z-index: 999;
 
-// @media (min-width: 767px) {
-//   .menu-toggle {
-//     display: none;
-//   }
-// }
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
 
-// .menu-toggle:hover,
-// .menu-toggle:focus {
-//   transform: transition;
-// }
+.menu-container.is-open {
+  transform: translateX(0);
+}
 
-// .menu-container {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: rgb(25, 23, 23);
+}
 
-//   display: flex;
-//   flex-direction: column;
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 
-//   width: 100vw;
-//   height: 100vh;
-//   padding: 32px;
-//   background-color: #84a278;
-//   z-index: 999;
+  margin-bottom: auto;
+}
 
-//   transform: translateX(100%);
-//   transition: transform 250ms ease-in-out;
-//   @media screen and (min-width: 1200px) {
-//     display: none;
-//   }
-// }
+.mobile-menu .link {
+  display: block;
+  padding-bottom: 32px;
+  color: #fcfcfc;
+  text-decoration: none;
 
-// .menu-container.is-open {
-//   transform: translateX(0);
-// }
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 59px;
 
-// .menu-container .menu-toggle {
-//   position: absolute;
-//   top: 16px;
-//   right: 16px;
-//   color: rgb(25, 23, 23);
-// }
+  align-items: center;
+  text-align: center;
+}
 
-// .mobile-menu {
-//   padding: 0;
-//   margin: 0;
-//   list-style: none;
-
-//   margin-bottom: auto;
-// }
-
-// .mobile-menu .link {
-//   display: block;
-//   padding: 32px;
-//   color: #212121;
-//   text-decoration: none;
-
-//   font-style: normal;
-//   font-weight: 700;
-//   font-size: 48px;
-//   line-height: 59px;
-
-//   align-items: center;
-//   text-align: center;
-// }
-// .mobile-contacts-link {
-//   font-family: 'Roboto';
-//   font-style: normal;
-//   font-weight: 500;
-//   font-size: 24px;
-//   line-height: 28px;
-//   letter-spacing: 0.02em;
-
-//   color: #757575;
-// }
-// .mobile-menu-item.active a {
-//   color: #131313;
-// }
+.mobile-menu-item.active a {
+  color: #131313;
+}
