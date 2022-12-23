@@ -1,0 +1,99 @@
+.modal-video {
+    width: 280px;
+    height: auto;
+padding: 28px 28px;
+
+    @media screen and (min-width:780px) {
+        width:568px;
+        padding: 32px 60px;
+    }
+}
+
+.video__title {
+    font-family: 'Seymour One';
+    font-size: 16px;
+    line-height:24px;
+    color: #131313;
+
+    margin-bottom: 20px;
+
+    @media screen and (min-width:768px) {
+        font-size: 20px;
+        line-height: 28px;
+
+        margin-bottom: 32px;
+    }
+}
+
+.video__text {
+    font-family: 'Montserrat';
+    line-height: 20px;
+    color: #131313;
+
+    margin-top: 20px;
+
+    @media screen and (min-width:768px) {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-top: 32px;
+    }
+}
+ 
+//  /* Стили для модальных окон */
+
+//  .modal-video {
+//     opacity: 0;
+//     visibility: hidden;
+
+//     width: 200px;
+//     height:300px;
+
+//     position:fixed;
+
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     z-index: 30;
+//  }
+ 
+//  .modal {
+    
+//     /* Скрываем окна  */
+//     opacity: 0;
+//     visibility: hidden;
+    
+    
+//     /*  Установаем ширину окна  */
+//     width: 100%;
+//     max-width: 500px;
+    
+//     /*  Центрируем и задаем z-index */
+//     position: fixed;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     z-index: 30; /* Должен быть выше чем у подложки*/
+    
+//     /*  Побочные стили   */
+//     box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+//     text-align: center;
+//     padding: 30px;
+//     border-radius: 3px;
+//     background-color: #fff;
+//     transition: 0.3s all;
+//  }
+ 
+ 
+//  /* Стили для активных классов подложки и окна */
+ 
+ .modal.active,
+ .overlay.active{
+    opacity: 1;
+    visibility: visible;
+ }
+ 
+ .modal-video.active {
+opacity: 2;
+z-index: 99;
+ }
