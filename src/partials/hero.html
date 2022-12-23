@@ -23,22 +23,42 @@
     <div class="info">
       <picture>
         <!-- desktop screen -->
+        <!-- webp format -->
         <source
           media="(min-width: 1200px)"
-          type="image/png"
+          srcset="
+            ./images/hero/webp/desktop/img-1_desk.webp    1x,
+            ./images/hero/webp/desktop/img-1_desk@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <!-- png format -->
+        <source
+          media="(min-width: 1200px)"
           srcset="
             ./images/hero/png/desktop/img-1_desk.png    1x,
             ./images/hero/png/desktop/img-1_desk@2x.png 2x
           "
+          type="image/png"
         />
         <!-- tablet screen -->
+        <!-- webp format -->
         <source
           media="(min-width: 768px)"
-          type="image/png"
+          srcset="
+            ./images/hero/webp/tablet/img-1_tab.webp    1x,
+            ./images/hero/webp/tablet/img-1_tab@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <!-- png format -->
+        <source
+          media="(min-width: 768px)"
           srcset="
             ./images/hero/png/tablet/img-1_tab.png    1x,
             ./images/hero/png/tablet/img-1_tab@2x.png 2x
           "
+          type="image/png"
         />
         <img
           class="info__img"
@@ -66,34 +86,64 @@
         food trucks
       </li>
     </ul>
-    <!-- Big ice cream -->
+    <!-- Big ice cream image -->
     <picture>
       <!-- desktop screen -->
+      <!-- webp format -->
       <source
         media="(min-width: 1200px)"
-        type="image/png"
+        srcset="
+          ./images/hero/webp/desktop/img-2_desk.webp    1x,
+          ./images/hero/webp/desktop/img-2_desk@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <!-- png format -->
+      <source
+        media="(min-width: 1200px)"
         srcset="
           ./images/hero/png/desktop/img-2_desk.png    1x,
           ./images/hero/png/desktop/img-2_desk@2x.png 2x
         "
+        type="image/png"
       />
       <!-- tablet screen -->
+      <!-- webp format -->
       <source
         media="(min-width: 768px)"
-        type="image/png"
+        srcset="
+          ./images/hero/webp/tablet/img-2_tab.webp    1x,
+          ./images/hero/webp/tablet/img-2_tab@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <!-- png format -->
+      <source
+        media="(min-width: 768px)"
         srcset="
           ./images/hero/png/tablet/img-2_tab.png    1x,
           ./images/hero/png/tablet/img-2_tab@2x.png 2x
         "
+        type="image/png"
       />
       <!-- mobile screen -->
+      <!-- webp format-->
       <source
         media="(max-width: 767px)"
-        type="image/png"
+        srcset="
+          ./images/hero/webp/mobile/img-2_mob.webp    1x,
+          ./images/hero/webp/mobile/img-2_mob@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <!-- png format-->
+      <source
+        media="(max-width: 767px)"
         srcset="
           ./images/hero/png/mobile/img-2_mob.png    1x,
           ./images/hero/png/mobile/img-2_mob@2x.png 2x
         "
+        type="image/png"
       />
       <img
         class="hero__main-img"
