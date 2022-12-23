@@ -9,6 +9,9 @@ body {
   letter-spacing: 0.04em;
   color: $text-dark;
 
+  // $folder, $filename, $extension: webp
+  @include bg-image(bg, bg);
+
   &.scroll-locked {
     overflow: hidden;
   }
