@@ -1,4 +1,7 @@
 /* Стили для подложки */
+body.modal-open {
+overflow: hidden;
+}
 
 .overlay {
   opacity: 0;
