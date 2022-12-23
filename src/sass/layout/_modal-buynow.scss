@@ -16,7 +16,7 @@
 // Modal title
 
 .modal-buynow__title {
-  margin-bottom: 20px;
+  margin-bottom: 83px;
 
   font-family: $secondary-font;
   font-weight: 400;
@@ -139,6 +139,9 @@
 // Modal products
 
 .modal-buynow__products {
+  display: flex;
+  flex-direction: column;
+  gap: 85px;
   margin-bottom: 31px;
 }
 
@@ -188,10 +191,14 @@
 }
 
 .buynow-products__item {
+  @extend %flex-centered;
+  flex-direction: column;
+  gap: 82px;
   position: relative;
 }
 
 .buynow-products__title {
+  display: block;
   position: absolute;
   bottom: 20;
   left: 60;
@@ -204,4 +211,151 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $text-dark;
+}
+
+// Ice cream product
+
+.buycheck-icon1::before {
+  display: block;
+  content: '';
+  width: 132px;
+  height: 132px;
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  border-radius: 50%;
+
+  position: absolute;
+  bottom: 6;
+  left: 44;
+  transform: translateY(-45%);
+}
+
+.buycheck-icon1::after {
+  display: block;
+  content: '';
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+
+  position: absolute;
+  bottom: 17;
+  left: 44;
+  transform: translateY(-45%);
+
+  background-image: url(../images/buynow/webp/mobile/icecream.webp),
+    url(../images/buynow/jpeg/mobile/icecream.jpg);
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/buynow/webp/mobile/icecream@2x.webp),
+      url(../images/buynow/jpeg/mobile/icecream@2x.jpg);
+  }
+}
+
+// Ice coffee product
+
+.buycheck-icon2::before {
+  display: block;
+  content: '';
+  width: 132px;
+  height: 132px;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+  border-radius: 50%;
+
+  position: absolute;
+  bottom: 6;
+  left: 44;
+  transform: translateY(-45%);
+}
+
+.buycheck-icon2::after {
+  display: block;
+  content: '';
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+
+  position: absolute;
+  bottom: 17;
+  left: 44;
+  transform: translateY(-45%);
+
+  background-image: url(../images/buynow/webp/mobile/icecoffee.webp),
+    url(../images/buynow/jpeg/mobile/icecoffee.jpg);
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/buynow/webp/mobile/icecoffee@2x.webp),
+      url(../images/buynow/jpeg/mobile/icecoffee@2x.jpg);
+  }
+}
+
+// Milkshake product
+
+.buycheck-icon3::before {
+  display: block;
+  content: '';
+  width: 132px;
+  height: 132px;
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+
+  position: absolute;
+  bottom: 6;
+  left: 44;
+  transform: translateY(-45%);
+}
+
+.buycheck-icon3::after {
+  display: block;
+  content: '';
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+
+  position: absolute;
+  bottom: 17;
+  left: 44;
+  transform: translateY(-45%);
+
+  background-image: url(../images/buynow/webp/mobile/milkshake.webp),
+    url(../images/buynow/jpeg/mobile/milkshake.jpg);
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/buynow/webp/mobile/milkshake@2x.webp),
+      url(../images/buynow/jpeg/mobile/milkshake@2x.jpg);
+  }
 }
