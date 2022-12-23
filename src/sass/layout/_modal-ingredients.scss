@@ -8,11 +8,6 @@
     min-width: 568px;
     padding: 32px 40px;
   }
-
-  @media screen and (min-width: 768px) {
-    top: 0;
-    transform: translateX(-50%) translateY(0%);
-  }
 }
 
 .modal-ingredients__title {
