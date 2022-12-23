@@ -1,13 +1,16 @@
 .hero {
     background-color: $bg-primary;
     font-family: $primary-font;
+
+    padding-top: 50px;
+    padding-bottom: 236px;
+
     position: relative;
+
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: center;
     background-position-y: bottom;
-    padding-top: 50px;
-    padding-bottom: 236px;
 
     // mobile screen
     background-image: url(../images/hero/png/mobile/dots_mob.png);
@@ -19,9 +22,10 @@
     }
 
     // tablet screen
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
     padding-top: 14px;
     padding-bottom: 12px;
+
     background-image: url(../images/hero/png/tablet/dots_tab.png);
     background-size: 768px;
 
@@ -33,9 +37,10 @@
     }
 
     // desktop screen
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
     padding-top: 45px;
     padding-bottom: 65px;
+
     background-image: url(../images/hero/png/desktop/dots_desk.png);
     background-size: 1200px;
     
@@ -55,14 +60,15 @@
     text-transform: uppercase;
     color: $text-light;
     max-width: 247px;
+
     margin-bottom: 32px;
     letter-spacing: 0.04em;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         margin-bottom: 24px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         font-size: 38px;
         max-width: 367px;
         margin-bottom: 28px;
@@ -81,14 +87,14 @@
     }
 
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         width: 268px;
         height: 329px;
         left: 50%;
         transform: translateX(11%);
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         width: 456px;
         height: 560px;
     }
@@ -100,7 +106,7 @@
     gap: 12px;
     margin-bottom: 12px;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         gap: 34px;
         margin-bottom: 42px;
     }
@@ -112,10 +118,11 @@
     font-weight: 600;
     font-size: 12px;
     line-height: calc(15 / 12);
+
     display: flex;
     align-items: center;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         font-size: 14px;
     }
 }
@@ -125,6 +132,7 @@
     border-radius: 8px;
     color: #000000;
     padding: 11px 26px;
+
     transition-property: border-color;
     transition-duration: $transition-duration;
     transition-timing-function: $transition-timing-function;
@@ -133,10 +141,11 @@
         border-color: $accent-secondary;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         padding: 12px 34px;
         line-height: calc(18 / 14);
         border-radius: 10px;
+
         transition-property: border-color, color;
 
         &:focus {
@@ -149,9 +158,10 @@
 .button-list__second-button {
     border: none;
     align-items: center;
+    color: #F8D24E;
     text-decoration-line: underline;
     text-underline-offset: 2px;
-    color: #F8D24E;
+
 
     &:hover {
         color: $accent-secondary;
@@ -165,7 +175,7 @@
         color: $inactive;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         line-height: calc(17 / 14);
     }
 }
@@ -209,19 +219,26 @@
     }
 }
 
-
 .info__text {
-    width: 139px;
+    width: 150px;
     font-weight: 400;
     font-size: 12px;
     line-height: calc(17 / 14);
     color: $text-light;
 
-    @media screen and (min-width: 1200px) {
-        width: 200px;
+    margin-bottom: 12px;
+
+    @media screen and (min-width: $desktop) {
+        width: 220px;
         font-size: 14px;
         line-height: calc(20 / 14);
+
+        margin-bottom: 24px;
     }
+}
+
+.info__icon {
+    fill: $text-light;
 }
 
 .numbers-list {
@@ -238,7 +255,7 @@
         display: none;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         transform: translateX(505px);
         top: 53px;
         gap: 16px;
@@ -253,7 +270,7 @@
     line-height: calc(10 / 8);
     color: $text-light;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         font-size: 14px;
         line-height: calc(17 / 14);
     }
