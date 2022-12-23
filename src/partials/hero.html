@@ -1,5 +1,163 @@
 <section class="hero">
-	<div class="container">
-
-	</div>
+  <div class="container">
+    <!-- Main title -->
+    <h1 class="hero__title">ice cream made with passion</h1>
+    <!-- Buttons -->
+    <ul class="button-list">
+      <li>
+        <button
+          class="button-list__first-button"
+          type="button"
+          href="#products"
+        >
+          Products
+        </button>
+      </li>
+      <li>
+        <button class="button-list__second-button" type="button" href="#about">
+          How it’s made?
+        </button>
+      </li>
+    </ul>
+    <!-- Round image and caption -->
+    <div class="info">
+      <picture>
+        <!-- desktop screen -->
+        <!-- webp format -->
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero/webp/desktop/img-1_desk.webp    1x,
+            ./images/hero/webp/desktop/img-1_desk@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <!-- png format -->
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero/png/desktop/img-1_desk.png    1x,
+            ./images/hero/png/desktop/img-1_desk@2x.png 2x
+          "
+          type="image/png"
+        />
+        <!-- tablet screen -->
+        <!-- webp format -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero/webp/tablet/img-1_tab.webp    1x,
+            ./images/hero/webp/tablet/img-1_tab@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <!-- png format -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero/png/tablet/img-1_tab.png    1x,
+            ./images/hero/png/tablet/img-1_tab@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          class="info__img"
+          src="./images/hero/png/desktop/img-1_desk.png"
+          alt="Many ice creams"
+          width="225"
+          height="225"
+          loading="lazy"
+        />
+      </picture>
+      <div class="info__thumb">
+        <p class="info__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <!-- icon arrow -->
+        <svg class="info__icon" width="40" height="16">
+          <use href="./images/symbol-defs.svg#icon-arrow"></use>
+        </svg>
+      </div>
+    </div>
+    <!-- Counter -->
+    <ul class="numbers-list">
+      <li class="numbers-list__item">
+        <span class="numbers-list__amount">16</span>
+        cafes
+      </li>
+      <li class="numbers-list__item">
+        <span class="numbers-list__amount">23</span>
+        food trucks
+      </li>
+    </ul>
+    <!-- Big ice cream image -->
+    <picture>
+      <!-- desktop screen -->
+      <!-- webp format -->
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/hero/webp/desktop/img-2_desk.webp    1x,
+          ./images/hero/webp/desktop/img-2_desk@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <!-- png format -->
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/hero/png/desktop/img-2_desk.png    1x,
+          ./images/hero/png/desktop/img-2_desk@2x.png 2x
+        "
+        type="image/png"
+      />
+      <!-- tablet screen -->
+      <!-- webp format -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/hero/webp/tablet/img-2_tab.webp    1x,
+          ./images/hero/webp/tablet/img-2_tab@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <!-- png format -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/hero/png/tablet/img-2_tab.png    1x,
+          ./images/hero/png/tablet/img-2_tab@2x.png 2x
+        "
+        type="image/png"
+      />
+      <!-- mobile screen -->
+      <!-- webp format-->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/hero/webp/mobile/img-2_mob.webp    1x,
+          ./images/hero/webp/mobile/img-2_mob@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <!-- png format-->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/hero/png/mobile/img-2_mob.png    1x,
+          ./images/hero/png/mobile/img-2_mob@2x.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        class="hero__main-img"
+        src="./images/hero/png/desktop/img-2_desk.png"
+        alt="Ice cream"
+        width="456"
+        height="560"
+        loading="lazy"
+      />
+    </picture>
+  </div>
 </section>
