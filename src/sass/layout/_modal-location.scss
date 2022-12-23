@@ -1,0 +1,805 @@
+fieldset {
+    border: 0;
+    margin: 0;
+}
+
+
+
+
+// Видалити, коли виправлять
+// .container {
+//     padding-left: 15px;
+//     padding-right: 15px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     width: 100%;
+
+//     @media screen and (min-width: 480px) {
+//         width: 480px;
+//     }
+
+//     @media screen and (min-width: 768px) {
+//         width: 768px;
+//     }
+
+//     @media screen and (min-width: 1200px) {
+//         width: 1200px;
+//     }
+// }
+
+/**
+  |============================
+  | Оверлей
+  |============================
+*/
+.overlay {
+
+    /* Скрываем подложку  */
+    opacity: 0;
+    visibility: hidden;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+}
+
+
+
+
+/**
+  |============================
+  | Модалка
+  |============================
+*/
+
+.modal {
+    align-items: center;
+    text-align: center;
+
+
+    /* Скрываем окна  */
+    opacity: 0;
+    visibility: hidden;
+
+
+    /*  Установаем ширину окна  */
+    width: calc(100% - 30px);
+    min-width: 280px;
+    max-width: 480px;
+    height: 90vh;
+    overflow: auto;
+
+    padding: 30px 28px;
+
+    /*  Центрируем и задаем z-index */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    /* Должен быть выше чем у подложки*/
+
+    /*  Побочные стили   */
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+    text-align: center;
+    border-radius: 3px;
+    background-color: #FCFCFC;
+    transition: 0.3s all;
+
+
+    border: 2px solid #EFD478;
+    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+    border-radius: 15.7808px;
+
+    @media screen and (min-width: 768px) {
+        max-width: 568px;
+        height: 664px;
+        padding: 32px 54px;
+        overflow: visible;
+
+    }
+
+    &--ingredients {
+        padding-top: 28px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 32px;
+
+
+        @media screen and (min-width: 768px) {
+            width: 568px;
+            max-height: 995px;
+            // min-height: 100vh;
+            padding: 32px 40px;
+
+            overflow: overlay;
+        }
+    }
+
+
+
+
+    &--read-more {
+        padding: 28px;
+        height: inherit;
+
+        @media screen and (min-width: 768px) {
+            padding: 32px 60px;
+            height: 449px;
+        }
+
+    }
+
+    &--our-location {
+        padding: 28px;
+        height: inherit;
+
+        @media screen and (min-width: 768px) {
+            padding: 32px 60px;
+            height: 458px;
+        }
+    }
+
+    &--franchise {
+        height: inherit;
+        padding: 28px;
+
+        @media screen and (min-width: 768px) {
+            padding: 32px 60px;
+            height: 668px;
+        }
+    }
+
+    // Стилі в самій модалці
+    &__title {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Seymour One';
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+
+        color: #131313;
+
+        @media screen and (min-width: 768px) {
+            font-size: 20px;
+            line-height: 1.4;
+            margin-bottom: 40px;
+        }
+
+
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__field {
+        position: relative;
+
+        z-index: 10;
+    }
+
+    &__field:not(:last-child) {
+        margin-bottom: 12px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__group>&__field--mb16 {
+        margin-bottom: 16px;
+    }
+
+    &__wrapped {
+        margin: 0 auto;
+        width: 132px;
+        height: 200px;
+        position: relative;
+
+
+        &--green {
+            &::after {
+                position: absolute;
+                top: 8px;
+                left: 0;
+
+
+                border-radius: 100%;
+                content: "";
+                width: 132px;
+                height: 132px;
+                background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+                box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+                z-index: 10;
+
+
+            }
+        }
+
+        &--yellow {
+            &::after {
+                position: absolute;
+                top: 8px;
+                left: 0;
+
+
+                border-radius: 100%;
+                content: "";
+                width: 132px;
+                height: 132px;
+                background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+                box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+                z-index: 10;
+
+
+            }
+        }
+
+        &--brown {
+            &::after {
+                position: absolute;
+                top: 8px;
+                left: 0;
+
+
+                border-radius: 100%;
+                content: "";
+                width: 132px;
+                height: 132px;
+                background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+                box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+                z-index: 10;
+            }
+        }
+    }
+
+    &__label {
+        font-family: 'Montserrat';
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #131313;
+    }
+
+    &__img {
+
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 15;
+    }
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 40px;
+        }
+
+    }
+
+    &__group--mb32 {
+        margin-bottom: 32px;
+    }
+
+    &__input {
+        width: 100%;
+        max-width: 368px;
+        height: 100%;
+
+
+        resize: none;
+
+        background-color: rgba(248, 210, 78, 0.1);
+        border: 1px solid #84A178;
+        border-radius: 10px;
+
+        padding: 8px 12px;
+        font-family: 'Montserrat';
+
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.4;
+        color: #131313;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:focus,
+        &:hover {
+            border-color: #EFD478;
+            outline: none;
+        }
+
+        @media screen and (min-width: 768px) {
+            font-size: 14px;
+            padding: 11px 16px;
+
+        }
+
+        &::placeholder {
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.4;
+            color: #131313;
+
+            @media screen and (min-width: 768px) {
+                font-size: 14px;
+            }
+        }
+
+        &:not(:placeholder-shown):required:invalid {
+            border-color: red;
+        }
+    }
+
+    &__button {
+        display: block;
+        padding: 12px 34px;
+        background-color: #F8D24E;
+        border-radius: 10px;
+        border: 0px;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: auto;
+        width: 114px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+
+        border-color: #F8D24E;
+        color: #131313;
+
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+
+        @media screen and (min-width: 768px) {
+            width: 121px;
+            font-size: 14px;
+            line-height: 1.21;
+        }
+
+        &:hover {
+            background-color: #0A8817;
+        }
+
+        &:focus {
+            background-color: #0A8817;
+            color: #FCFCFC;
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+
+    // Модалка  ingredients
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 39px;
+
+        @media screen and (min-width: 768px) {
+            gap: 20px;
+            margin-bottom: 48px;
+        }
+    }
+
+    &__item {
+
+        width: 53px;
+        height: 72px;
+        position: relative;
+
+
+        @media screen and (min-width: 768px) {
+            width: 65px;
+            height: 90px;
+        }
+    }
+
+    &__item-values {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        border-radius: 100%;
+        width: 43px;
+        height: 43px;
+
+        transform: translate(-50%, 0%);
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 2.8;
+        /* or 280% */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+
+        background-color: #9CBE8F;
+        border: 2px solid #9CBE8F;
+        box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+
+        @media screen and (min-width: 768px) {
+            width: 53px;
+            height: 53px;
+            font-size: 12px;
+            line-height: 2.33;
+        }
+    }
+
+    &__item-feature {
+        width: 53px;
+        height: 72px;
+        padding-bottom: 8px;
+
+        position: absolute;
+        top: 0;
+        border-radius: 40px;
+
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 1.2;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+        justify-content: center;
+
+        color: #131313;
+        border: 2px solid #9CBE8F;
+
+        @media screen and (min-width: 768px) {
+            width: 65px;
+            height: 90px;
+            font-size: 12px;
+            line-height: 1.25;
+        }
+    }
+
+    &__wrapped--h140 {
+        height: 140px;
+        margin-bottom: 24px;
+    }
+
+    &__compound-list {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 488px;
+        margin-bottom: 48px;
+    }
+
+    &__compound-title {
+        font-family: 'Montserrat';
+
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.4;
+        /* identical to box height, or 140% */
+
+
+        align-items: center;
+        text-align: center;
+
+        color: #131313;
+
+        margin-bottom: 24px;
+
+
+    }
+
+    &__compound-item {
+        font-family: 'Montserrat';
+
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.76;
+
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        letter-spacing: 0.04em;
+
+        color: #131313;
+
+        &:not(:last-child) {
+            margin-bottom: 11px;
+        }
+    }
+
+
+    // Модалка Read more
+    &__discription {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.375;
+        color: #131313;
+        text-align: start;
+
+        @media screen and (min-width: 768px) {
+            width: 448px;
+            font-size: 16px;
+        }
+
+    }
+
+    &__video {
+        width: 100%;
+        height: 199px;
+        margin-bottom: 20px;
+
+        display: block;
+        border: 0;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and (min-width: 768px) {
+            width: 100%;
+            ;
+            height: 205px;
+            margin-bottom: 32px;
+        }
+
+    }
+
+    &__map {
+        display: block;
+        border: 0;
+        margin-left: auto;
+        margin-right: auto;
+
+        width: 100%;
+        height: 199px;
+        margin-bottom: 24px;
+
+        @media screen and (min-width: 768px) {
+            width: 100%;
+            height: 260px;
+            margin-bottom: 32px;
+        }
+
+    }
+
+    &__link {
+        text-decoration: none;
+        width: 134px;
+
+        @media screen and (min-width: 768px) {
+            width: 145px;
+        }
+    }
+
+}
+
+.modal__title--w221px {
+    text-align: center;
+    width: 221px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        width: 322px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .modal__title--mb32 {
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .modal__title--mb24 {
+        margin-bottom: 24px;
+    }
+}
+
+
+
+
+
+
+.modal__title--w142px {
+    width: 142px;
+    font-size: 20px;
+    margin-bottom: 22px;
+
+    @media screen and (min-width: 768px) {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+}
+
+.modal--franchise>.modal__discription {
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+    }
+}
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+
+
+
+
+}
+
+
+/* Стили для кнопки закрытия */
+
+.modal__cross {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    fill: #444;
+    cursor: pointer;
+}
+
+
+// Сховіні чекбокси
+.checkbox--none {
+    appearance: none;
+    position: absolute;
+}
+
+
+// Контейнер кастомного чекбоксу
+.checkbox__checker {
+    width: 132px;
+    height: 132px;
+    border: 2px solid #96AF8C;
+    filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+    border-radius: 15.7808px;
+
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #131313;
+
+    border-top: hidden;
+    position: absolute;
+    z-index: 9;
+    top: 15%;
+    transform: translate(50%, 0);
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.checkbox__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    gap: 20px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        margin-bottom: 44px;
+    }
+
+}
+
+.checkbox__field {
+    cursor: pointer;
+
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
+
+}
+
+
+// Активація кастомного чекбоксу
+.checkbox--none:checked+.checkbox__label {
+    &--green {
+        background-color: #96af8c;
+    }
+
+    &--yellow {
+        background-color: #EFD478;
+    }
+
+    &--brown {
+        background-color: #D6936D;
+    }
+
+}
+
+
+
+
+.checkbox__label {
+    z-index: 9;
+    filter: drop-shadow(0 5.26027px 19.726px #d414431a);
+    width: 132px;
+    height: 150px;
+    user-select: none;
+
+    border-top-width: 0;
+    border-radius: 15.7808px;
+    place-content: flex-end center;
+    align-items: flex-end;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, 33%);
+    padding-bottom: 20px;
+
+
+    text-align: center;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: #131313;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.25;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    border: 2px solid currentColor;
+
+    &--green {
+        border-color: #96af8c;
+    }
+
+    &--yellow {
+        border-color: #EFD478;
+    }
+
+    &--brown {
+        border-color: #D6936D;
+    }
+
+}
