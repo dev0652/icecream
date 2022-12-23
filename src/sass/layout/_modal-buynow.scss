@@ -1,0 +1,140 @@
+.modal-buynow {
+  max-height: 991px;
+  max-width: 280px;
+  padding: 28px 28px;
+  z-index: $z-modal;
+
+  @media screen and (min-width: $tablet) {
+    max-height: 644px;
+    min-width: 568px;
+    padding: 32px 54px;
+  }
+}
+
+.modal-buynow__title {
+  margin-bottom: 20px;
+
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $text-dark;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 40px;
+  }
+}
+
+.modal-buynow__group {
+  @extend %flex-centered;
+  flex-direction: column;
+  gap: 12px;
+
+  margin-bottom: 26px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 32px;
+  }
+}
+
+.modal-buynow__field {
+  width: 224px;
+  height: 32px;
+  padding: 0 12px;
+
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.41;
+
+  background: $bg-formfield;
+  border: 1px solid $bg-fieldborder;
+  border-radius: 10px;
+  outline: none;
+  outline-offset: -1px;
+
+  transition: outline 100ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: $tablet) {
+    width: 368px;
+    height: 42px;
+    padding: 0 16px;
+
+    font-size: 14px;
+    line-height: 1.42;
+  }
+
+  &:not(:placeholder-shown):valid {
+    outline: 2px solid green;
+  }
+
+  &:not(:placeholder-shown):invalid {
+    outline: 2px solid red;
+    background: rgba(100, 0, 0, 0.1);
+  }
+}
+
+.modal_form__comments {
+  width: 224px;
+  height: 65px;
+  padding: 8px 12px;
+  resize: none;
+
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.41;
+
+  background: $bg-formfield;
+  border: 1px solid $bg-fieldborder;
+  border-radius: 10px;
+  outline: none;
+  outline-offset: -1px;
+
+  @media screen and (min-width: $tablet) {
+    width: 368px;
+    height: 84px;
+    padding: 11px 16px;
+
+    font-size: 14px;
+    line-height: 1.42;
+  }
+}
+
+.buynow-btn {
+  min-width: 132px;
+  min-height: 42px;
+  padding: 12px 34px;
+
+  font-size: 14px;
+  line-height: 1.21;
+
+  border: none;
+  background-color: $accent;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-secondary;
+  }
+
+  &:focus {
+    color: #ffffff;
+  }
+
+  &:disabled {
+    background-color: $inactive;
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 121px;
+  }
+}
+
+.modal-buynow__products {
+  margin-bottom: 31px;
+}
+
+.buycheck {
+  width: 132px;
+  height: 135px;
+}
