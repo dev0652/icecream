@@ -13,15 +13,18 @@
     gap: 16px;
     align-items: center;
     font-size: 12px;
+    margin-top: calc(($section-padding + 353px) * -1);
 
     @media screen and (min-width:768px) {
     flex-direction: initial;  
     font-size: 14px;
+    margin-top: calc(($section-padding + 299px) * -1);
     } 
 
     @media screen and (min-width:1200px) {  
     gap: 32px;
     font-size: 16px;
+    margin-top: calc(($section-padding + 128px) * -1);
     }    
 
 }
@@ -59,6 +62,9 @@
     line-height: calc(29/16);    
     letter-spacing: 0.04em;    
     color: #D6936D;
+    &:hover{
+      text-decoration: underline;
+    }
     &::after{
         content: "";
         display: block;
