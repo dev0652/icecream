@@ -26,16 +26,17 @@
 
 }
 .contacts__list{
-    // align-items: center;
-    // justify-content: center;
+    padding: 40px 32px 24px 32px;
     max-width: 280px;
 
     @media screen and (min-width:768px) {
     max-width: 224px;
+    padding: 40px 24px;
     }
 
     @media screen and (min-width:1200px) {
     max-width: 368px;
+    padding: 40px 40px;
     }
 
     padding: 40px 40px;
