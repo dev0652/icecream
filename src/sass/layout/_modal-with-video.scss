@@ -27,8 +27,11 @@ padding: 28px 28px;
 
 .video__text {
     font-family: 'Montserrat';
+    font-size: 14px;
     line-height: 20px;
     color: #131313;
+
+    text-align:left;
 
     margin-top: 20px;
 
@@ -37,14 +40,26 @@ padding: 28px 28px;
         line-height: 22px;
 
         margin-top: 32px;
+
+        text-align: justify;
     }
 }
  
+.video__content {
+    width:224px;
+    height:auto;
+
+    @media screen and (min-width:768px) {
+        width:448px;
+        height:205px;
+    }
+}
+
 //  /* Стили для модальных окон */
 
  .modal-video {
-    opacity: 0;
-    visibility: hidden;
+    // opacity: 0;
+    // visibility: hidden;
 
     position:fixed;
 
@@ -52,13 +67,15 @@ padding: 28px 28px;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 30;
+
+max-width:600px;
  }
  
  .modal {
     
 //     /* Скрываем окна  */
-    opacity: 0;
-    visibility: hidden;
+    // opacity: 0;
+    // visibility: hidden;
     
     
 //     /*  Установаем ширину окна  */
@@ -70,7 +87,8 @@ padding: 28px 28px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 30;} /* Должен быть выше чем у подложки*/
+    z-index: 30;
+} /* Должен быть выше чем у подложки*/
     
 //     /*  Побочные стили   */
 //     box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
