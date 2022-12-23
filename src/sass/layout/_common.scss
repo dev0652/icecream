@@ -75,6 +75,11 @@ body {
   fill: currentColor;
 
   @include transition(fill);
+
+  // &:hover,
+  // &:focus {
+  //   animation: 700ms ease-out forwards pulsing;
+  // }
 }
 
 /* Buttons */

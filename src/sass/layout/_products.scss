@@ -105,7 +105,8 @@ section.products {
     }
 
     position: absolute;
-    transform: translateY(-110%);
+    transform: translateY(-110%) scale(0);
+    animation: 900ms ease-out forwards product-image-pulsing;
 
     margin-top: -16px;
 
@@ -134,6 +135,7 @@ section.products {
 
     &::after {
       @include product-card-bg(products, image1, webp);
+      animation-delay: 100ms;
     }
   }
 
@@ -150,6 +152,7 @@ section.products {
     }
     &::after {
       @include product-card-bg(products, image2, webp);
+      animation-delay: 1200ms;
     }
   }
 
@@ -167,6 +170,7 @@ section.products {
 
     &::after {
       @include product-card-bg(products, image3, webp);
+      animation-delay: 600ms;
     }
   }
 }
