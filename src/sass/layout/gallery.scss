@@ -1,4 +1,3 @@
-
 #animation {
   position: relative;
 
@@ -7,13 +6,13 @@
   margin: 0 auto;
   outline: green solid 3px;
 
-// Tablet
-  @media screen and (min-width: 768px){
-      height: 283px;
+  // Tablet
+  @media screen and (min-width: 768px) {
+    height: 283px;
   }
-// Desktop
-  @media screen and (min-width: 1200px){
-      height: 464px;
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    height: 464px;
   }
 }
 
@@ -33,14 +32,14 @@
   animation-duration: 12s;
   animation-timing-function: ease-in-out;
 
-// Tablet
-  @media screen and (min-width: 768px){
-  top: -144px;
+  // Tablet
+  @media screen and (min-width: 768px) {
+    top: -144px;
   }
 
-// Desktop
-@media screen and (min-width: 768px){
-  top: -98px;
+  // Desktop
+  @media screen and (min-width: 768px) {
+    top: -98px;
   }
 }
 //  Інтервал зміни зображень
