@@ -1,0 +1,56 @@
+.modal-video {
+  width: 280px;
+  height: auto;
+  padding: 28px 28px;
+
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    padding: 32px 60px;
+  }
+}
+
+.video__title {
+  font-family: 'Seymour One';
+  font-size: 16px;
+  line-height: 24px;
+  color: #131313;
+
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 28px;
+
+    margin-bottom: 32px;
+  }
+}
+
+.video__text {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: 20px;
+  color: #131313;
+
+  text-align: left;
+
+  margin-top: 20px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 22px;
+
+    margin-top: 32px;
+
+    text-align: justify;
+  }
+}
+
+.video__content {
+  width: 224px;
+  height: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 448px;
+    height: 205px;
+  }
+}

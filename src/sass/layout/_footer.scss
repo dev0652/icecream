@@ -1,0 +1,161 @@
+.footer {
+  // font-family: $primary-font;
+  background-color: #84a178;
+
+  &__blocks {
+    border-bottom: 1px solid #e1e1e1;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 32px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-bottom: 60px;
+    }
+  }
+
+  &__text-block {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    max-width: 240px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2222;
+    text-transform: uppercase;
+
+    color: $text-light;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 8px;
+      max-width: 352px;
+      font-size: 26px;
+      line-height: 1.23;
+      letter-spacing: 0.04em;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 14px;
+      max-width: 100%;
+      font-weight: 400;
+      font-size: 30px;
+    }
+  }
+
+  &__subtitle {
+    max-width: 200px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $text-light;
+    @media screen and (min-width: $tablet) {
+      max-width: 352px;
+      font-size: 48px;
+      line-height: 1.229;
+      letter-spacing: 0.06em;
+    }
+    @media screen and (min-width: $desktop) {
+      max-width: 100%;
+      font-size: 58px;
+      line-height: 1.22;
+    }
+  }
+
+  &__contact-block {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-bottom: 28px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.socials {
+  @extend %flex-centered;
+  justify-content: right;
+  gap: 20px;
+  margin-bottom: 20px;
+  @media screen and (min-width: $tablet) {
+    gap: 30px;
+    margin-bottom: 34px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 40px;
+  }
+
+  &__link {
+    @extend %flex-centered;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: $accent;
+
+    &:hover,
+    &:focus {
+      animation: 700ms ease-out forwards pulsing;
+    }
+  }
+
+  &__icon {
+    fill: #84a178;
+    @include transition(fill);
+  }
+
+  &__link:hover .socials__icon,
+  &__link:focus .socials__icon {
+    fill: $text-light;
+  }
+}
+
+.footer__contact {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+  text-align: right;
+  color: $text-dark;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
+  &--white {
+    color: $text-light;
+  }
+}
+
+.footer__copyright {
+  padding: 20px 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+
+  color: #7a7a7a;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 12px;
+  }
+}

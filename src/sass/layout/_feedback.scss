@@ -1,14 +1,16 @@
 .feedback {
-  padding-top: 178px;
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  background-image: url(../images/feedback/Backgroud_mobile.png);
-  -webkit-transform: translatey(-50%);
-  -moz-transform: translatey(-50%);
-  -ms-transform: translatey(-50%);
-  -o-transform: translatey(-50%);
-  transform: translatey(-50%);
+  padding-top: 80px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 140px;
+    padding-bottom: 100px;
+  }
 }
 
 .feedback .wrap {
@@ -63,7 +65,7 @@
   display: flex;
   justify-content: center;
   gap: 18px;
-  z-index: 3333;
+  z-index: 3;
   height: 12px;
 }
 
@@ -136,7 +138,7 @@
   color: #131313;
 
   @media screen and (min-width: 768px) {
-font-size: 16px;
+    font-size: 16px;
   }
 }
 
