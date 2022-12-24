@@ -18,7 +18,8 @@ button,
 [type='button'],
 [type='reset'],
 [type='submit'] {
-  cursor: pointer;
+  // cursor: pointer;
+  cursor: url(../images/cursor.svg), auto;
   font-family: inherit;
   text-align: center;
 }
