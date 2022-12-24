@@ -1,0 +1,208 @@
+.contacts{
+    background-color: #84A178;
+}
+
+.place{
+    margin-bottom: 32px;
+}
+
+.contacts__group{
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    font-size: 12px;
+    margin-top: calc(($section-padding + 353px) * -1);
+
+    @media screen and (min-width:768px) {
+    flex-direction: initial;  
+    font-size: 14px;
+    margin-top: calc(($section-padding + 299px) * -1);
+    } 
+
+    @media screen and (min-width:1200px) {  
+    gap: 32px;
+    font-size: 16px;
+    margin-top: calc(($section-padding + 128px) * -1);
+    }    
+
+}
+.contacts__card{
+    padding: 40px 32px 24px 32px;
+    max-width: 280px;
+    
+    @media screen and (min-width:768px) {
+    max-width: 224px;
+    padding: 40px 24px;
+    }
+
+    @media screen and (min-width:1200px) {
+    max-width: 368px;
+    padding: 40px 40px;
+    }
+    
+    background: #FFFFFF;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+}
+
+.contacts__title{
+    font-weight: 500;
+    padding: 4px 15px;
+    background: #F8D24E;
+    border-radius: 6px;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+}
+
+.contacts__link--apricot{
+    font-weight: 500;
+    line-height: calc(29/16);    
+    letter-spacing: 0.04em;    
+    color: #D6936D;
+    &:hover{
+      text-decoration: underline;
+    }
+    &::after{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #E1E1E1;
+        margin-top: 24px;
+        margin-bottom: 24px; 
+        @media screen and (min-width:768px) {
+        margin-top: 32px;
+        margin-bottom: 32px;
+        }
+    }
+}
+
+.city{
+    margin-bottom: 8px;
+}
+
+.contacts__text--bold{
+    font-weight: 500;
+    line-height: calc(30/16);
+    letter-spacing: 0.04em;
+    color: #131313;
+}
+
+
+.contacts__text--grey{
+    font-weight: 500;
+    line-height: calc(30/16);
+    letter-spacing: 0.04em;
+    color: #ABABAB;
+    
+}
+
+.workhours::after{
+     content: "";
+     display: block;
+     width: 100%;
+     height: 1px;
+     background-color: #E1E1E1;
+     margin-top: 24px;
+    margin-bottom: 24px; 
+    @media screen and (min-width:768px) {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    } 
+}
+
+.contacts__btn{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 16px;    
+    align-items:center;
+    @media screen and (min-width:768px) {
+      flex-direction:initial;  
+      margin-top: 40px;
+      justify-content: center;
+    }
+    @media screen and (min-width:1200px) { 
+      margin-top: 60px;
+      justify-content: center;
+    }
+        
+}
+
+.contacts__button {
+    display: flex;
+    width: 196px;
+    height: 42px;
+    font-weight: bold;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #F8D24E;
+    border-radius: 10px;
+
+    transition-property: background-color;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+
+    &:hover {
+      background-color: #0A8817;
+      color: #000000;
+    }
+    &:focus {
+      background-color: #0A8817;
+      color: #FFFFFF;
+    }
+    &:disabled {
+      background-color: #ABABAB;
+    }
+    &:focus .btn__icon{
+      fill: #FFFFFF; 
+    }
+  }
+  
+
+  .contacts__button--transparent {
+    display: flex;
+    width: 196px;
+    height: 42px;
+    font-weight: bold;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid #F8D24E;
+
+    transition-property: border;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+
+    &:hover {
+      border:2px solid #0A8817;
+      color: #000000;
+      
+    }
+    &:focus {
+      fill:#FFFFFF;
+      color: #FFFFFF;
+    }
+    &:disabled {
+        border:2px solid #ABABAB;
+    }
+    &:focus .btn__icon{
+      fill: #FFFFFF; 
+    }
+  }
+
+  
+  .btn__icon {
+    margin-left: 8px;
+    fill:#000000;
+   }
+
+

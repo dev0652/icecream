@@ -1,0 +1,67 @@
+<!-- Модалка franchise -->
+<div class="modal modal--franchise" data-modal="modal_franchise">
+  <!--   Svg иконка для закрытия окна  -->
+  <svg class="close-btn js-modal-close">
+    <use href="./images/symbol-defs.svg#close-btn"></use>
+  </svg>
+  <p class="modal--franchise-title">
+    Thank you for your interest in owning an Ice Cream shop
+  </p>
+  <p class="modal--franchise-discription">
+    Due to the overwhelming volume of franchise requests we are not accepting
+    new franchisee applications at this time. Once the application process
+    resumes, we will contact you for further information. Please fill out the
+    contact information below and we will reach out for additional information.
+    We appreciate your patience.
+  </p>
+  <form class="" name="modal__form">
+    <div role="group" class="modal--franchise-form">
+      <!-- Ім'я -->
+        <input
+          type="text"
+          class="modal--franchise-input"
+          name="name"
+          required
+          placeholder="Name"
+          title="Name"
+        />
+      </label>
+
+      <!-- Телефон -->
+        <input
+          type="tel"
+          class="modal--franchise-input"
+          required
+          name="tel"
+          placeholder="Phone"
+          minlength="13"
+          maxlength="13"
+          pattern="\+?[0-9\s\-\(\)]+"
+          title="+380980000000"
+        />
+      </label>
+
+      <!-- Пошта -->
+        <input
+          type="email"
+          class="modal--franchise-input"
+          required
+          pattern="\+?[0-9\s\-\(\)]+"
+          name="mail"
+          placeholder="Email"
+        />
+      </label>
+
+      <!-- Комент -->
+        <textarea
+          class="modal--franchise-message"
+          name="comment"
+          rows="3"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+    </div>
+    <!-- Кнопка -->
+    <button class="button modal--franchise-button" type="submit">Submit</button>
+  </form>
+</div>

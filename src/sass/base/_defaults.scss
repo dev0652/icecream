@@ -18,7 +18,7 @@ button,
 [type='button'],
 [type='reset'],
 [type='submit'] {
-  cursor: pointer;
+  // cursor: pointer;
   font-family: inherit;
   text-align: center;
 }
@@ -33,4 +33,13 @@ svg {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+:root {
+  cursor: url(../images/cursor.svg), auto;
+}
+
+a,
+button {
+  cursor: url(../images/cursor-filled.svg), pointer;
 }
