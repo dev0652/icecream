@@ -112,8 +112,7 @@
     }
 }
 
-.button-list__first-button,
-.button-list__second-button {
+.button-list-btn {
     background-color: transparent;
     font-weight: 600;
     font-size: 12px;
@@ -127,7 +126,7 @@
     }
 }
 
-.button-list__first-button {
+.button-list-btn--first {
     border: 2px solid #F8D24E;
     border-radius: 8px;
     color: #000000;
@@ -155,7 +154,7 @@
     }
 }
 
-.button-list__second-button {
+.button-list-btn--second {
     border: none;
     align-items: center;
     color: #F8D24E;
@@ -184,6 +183,8 @@
     display: flex;
     align-items: center;
     gap: 32px;
+
+    position: relative;
 
     @media screen and (max-width: 767px) {
         display: none;
@@ -226,19 +227,24 @@
     line-height: calc(17 / 14);
     color: $text-light;
 
-    margin-bottom: 12px;
+    margin-bottom: 0;
 
     @media screen and (min-width: $desktop) {
         width: 220px;
         font-size: 14px;
         line-height: calc(20 / 14);
-
-        margin-bottom: 24px;
     }
 }
 
 .info__icon {
     fill: $text-light;
+    position: absolute;
+    bottom: 12px;
+
+    @media screen and (min-width: $desktop) {
+        bottom: 24px;
+        transform: translateY(-50%);
+    }
 }
 
 .numbers-list {
