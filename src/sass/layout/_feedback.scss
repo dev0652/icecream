@@ -1,15 +1,15 @@
 .feedback {
   padding-top: 80px;
-  padding-bottom: 40px;
+  padding-bottom: 417px;
 
   @media screen and (min-width: 768px) {
     padding-top: 100px;
-    padding-bottom: 80px;
+    padding-bottom: 404px;
   }
 
   @media screen and (min-width: 1200px) {
     padding-top: 140px;
-    padding-bottom: 100px;
+    padding-bottom: 254px;
   }
 }
 
@@ -17,7 +17,7 @@
   position: relative;
   width: 100%;
   max-width: 1013px;
-  padding: 40px 22px;
+  // padding: 40px 22px;
   margin: auto;
 }
 
@@ -30,7 +30,7 @@
   justify-content: center;
   align-items: center;
   max-width: 280px;
-  height: auto;
+  height: 256px;
   padding: 35px 39px;
   background: #84a178;
   border-radius: 10px;
@@ -60,7 +60,7 @@
 .feedback .dots {
   position: absolute;
   width: 100%;
-  bottom: 60px;
+  bottom: -24px;
   left: 0;
   display: flex;
   justify-content: center;
@@ -108,7 +108,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding: 0 0 70px 0;
+  // padding: 0 0 70px 0;
   opacity: 0;
 }
 
