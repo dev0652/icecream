@@ -14,12 +14,10 @@
 .header__container {
   display: flex;
   align-items: center;
-  // @media screen and (min-width: 1200px) {
-  //   width: 1200px;
-  // }
-  // @media screen and (max-width: 480px) {
-  //   width: 100%;
-  // }
+
+  @media screen and (max-width: calc($mobile - 1px)) {
+    width: 100%;
+  }
 }
 
 .logo__img {
@@ -119,7 +117,7 @@
 // Мобильное меню
 .burger-button {
   position: relative;
-  margin-left: auto;
+  // margin-left: auto;
 
   min-height: 32px;
   min-width: 32px;
