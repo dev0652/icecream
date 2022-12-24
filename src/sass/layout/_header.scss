@@ -1,22 +1,27 @@
 .header {
   background-color: #84a278;
   display: flex;
-  position: absolute;
+  align-items: baseline;
+  position: fixed;
+  top: 0;
+  left: 0;
   padding-top: 8px;
   padding-bottom: 8px;
-  z-index: 100;
+  z-index: $z-header;
 
   width: 100%;
 }
 .header__container {
   display: flex;
   align-items: center;
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
-  @media screen and (max-width: 480px) {
+
+  @media screen and (max-width: calc($mobile - 1px)) {
     width: 100%;
   }
+}
+
+.logo__img {
+  fill: #f8d24e;
 }
 
 .header__group {
@@ -103,26 +108,30 @@
   }
   color: #fcfcfc;
 }
-.logo__img {
-  fill: #f8d24e;
+
+.nav__link {
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 
 // Мобильное меню
-.menu-toggle {
+.burger-button {
   position: relative;
+  // margin-left: auto;
+
   min-height: 32px;
   min-width: 32px;
+
   display: flex;
   align-items: center;
   justify-content: center;
 
   margin-right: 0px;
   background-color: transparent;
-  cursor: pointer;
   border: none;
 
-  outline: none;
   fill: #ffffff;
+
   @media screen and (min-width: 768px) {
     margin-right: 32px;
   }

@@ -1,29 +1,42 @@
 <header class="header" data-header>
-  <div class="header__container container">
-    <a class="header__logo logo" href="" aria-label="Icecream logo">
+  <div class="container header__container">
+    <!-- Logo -->
+    <a class="logo header__logo" href="" aria-label="Icecream logo">
       <svg class="logo__img" width="60" height="65">
         <use href="./images/symbol-defs.svg#icon-logo"></use>
       </svg>
     </a>
+
+    <!-- Header navigation -->
     <nav class="nav">
       <ul class="nav__list list">
+        <!-- Nav item 1 - Home -->
         <li class="nav__item">
           <a class="nav__link link" href=" ">Home</a>
         </li>
+
+        <!-- Nav item 2 - How it's made -->
         <li class="nav__item">
           <a class="nav__link link" href=" ">How it's made? </a>
         </li>
+
+        <!-- Nav item 3 - Our products -->
         <li class="nav__item">
           <a class="nav__link link" href=" ">Our products</a>
         </li>
+
+        <!-- Nav item 4 - Contacts -->
         <li class="nav__item">
           <a class="nav__link link" href=" ">Contacts</a>
         </li>
       </ul>
     </nav>
+
+    <!-- Burger button & header button wrapper -->
     <div class="header__group">
+      <!-- Mobile menu open button (burger) -->
       <button
-        class="menu-toggle js-open-menu"
+        class="burger-button menu-toggle js-open-menu"
         aria-expanded="false"
         aria-controls="mobile-menu"
       >
@@ -31,8 +44,16 @@
           <use href="./images/symbol-defs.svg#icon-menu-open"></use>
         </svg>
       </button>
-      <button class="header__btn" type="button" data-modal-open>
+
+      <!-- Header button (Buy Now) -->
+      <button
+        class="header__btn js-open-modal"
+        data-modal="modal-buynow"
+        type="button"
+        data-modal-open
+      >
         Buy now
+
         <svg
           class="header__btn--icon"
           xmlns="http://www.w3.org/2000/svg"
@@ -49,13 +70,17 @@
     </div>
   </div>
 </header>
-<!-- ===== burger menu ======= -->
+
+<!-- Mobile menu -->
 <div class="menu-container js-menu-container" id="mobile-menu">
+  <!-- Mobile menu logo -->
   <a class="header__logo logo" href="" aria-label="Icecream logo">
     <svg class="logo__img" width="60" height="65">
       <use href="./images/symbol-defs.svg#icon-logo"></use>
     </svg>
   </a>
+
+  <!-- Mobile menu close button -->
   <button class="menu-toggle js-close-menu">
     <svg width="19" height="19" viewBox="0 0 20 20">
       <use href="./images/symbol-defs.svg#icon-menu-close"></use>
@@ -63,22 +88,34 @@
     </svg>
   </button>
 
+  <!-- Mobile menu  -->
   <ul class="mobile-menu">
     <li class="mobile-menu-item active">
       <a class="mobile-menu-link link" href="">Home</a>
     </li>
+
     <li class="mobile-menu-item">
       <a class="mobile-menu-link link" href="">How it's made? </a>
     </li>
+
     <li class="mobile-menu-item">
       <a class="mobile-menu-link link" href="">Our products </a>
     </li>
+
     <li class="mobile-menu-item">
       <a class="mobile-menu-link link" href="">Contact </a>
     </li>
   </ul>
-  <button class="header__btn--mobile" type="button" data-modal-open>
+
+  <!-- Mobile menu button (Buy Now) -->
+  <button
+    class="header__btn--mobile js-open-modal"
+    data-modal="modal-buynow"
+    type="button"
+    data-modal-open
+  >
     Buy now
+
     <svg
       class="header__btn--icon"
       xmlns="http://www.w3.org/2000/svg"
@@ -93,10 +130,12 @@
     </svg>
   </button>
 </div>
+
 <script
   defer
   src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
   integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
   crossorigin="anonymous"
 ></script>
+
 <script defer src="js/mobile-menu.js"></script>

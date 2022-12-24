@@ -1,0 +1,156 @@
+// Модалка franchise
+
+.modal--franchise {
+  max-height: 674px;
+  min-width: 280px;
+  padding: 26px;
+
+  @media screen and (min-width: 768px) {
+    max-height: 668px;
+    min-width: 568px;
+    padding: 30px 58px;
+  }
+}
+
+.modal--franchise-title {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 221px;
+  margin-bottom: 20px;
+
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: calc(24 / 15);
+
+  color: #131313;
+
+  @media screen and (min-width: 768px) {
+    max-width: 332px;
+    margin-bottom: 24px;
+
+    font-size: 20px;
+    line-height: calc(28 / 20);
+  }
+}
+
+.modal--franchise-discription {
+  max-width: 222px;
+  margin-bottom: 24px;
+  text-align: start;
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 140%;
+
+  @media screen and (min-width: 768px) {
+    max-width: 450px;
+    margin-bottom: 32px;
+
+    font-size: 14px;
+    line-height: calc(22 / 14);
+  }
+}
+
+.modal--franchise-form {
+  @extend %flex-centered;
+  flex-direction: column;
+  gap: 12px;
+
+  @media screen and (min-width: 768px) {
+    gap: 16px;
+  }
+}
+
+.modal--franchise-input {
+  width: 224px;
+  height: 32px;
+  padding-left: 12px;
+  padding-right: 12px;
+
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(17 / 12);
+
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  outline: none;
+  outline-offset: -1px;
+  color: #131313;
+
+  @media screen and (min-width: 768px) {
+    width: 368px;
+    height: 42px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    font-size: 14px;
+    line-height: calc(20 / 14);
+  }
+}
+
+.modal--franchise-message {
+  width: 224px;
+  height: 64px;
+  padding: 7px 12px;
+  margin-bottom: 24px;
+
+  resize: none;
+
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(17 / 12);
+
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  outline: none;
+  outline-offset: -1px;
+  color: #131313;
+
+  @media screen and (min-width: 768px) {
+    width: 368px;
+    height: 84px;
+    padding: 10px 16px;
+    margin-bottom: 32px;
+
+    font-size: 14px;
+    line-height: calc(20 / 14);
+  }
+}
+
+.modal--franchise-button {
+  min-width: 114px;
+  min-height: 42px;
+  padding: 12px 34px;
+
+  font-size: 12px;
+  line-height: calc(15 / 12);
+
+  border: none;
+  background-color: #f8d24e;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #0a8817;
+  }
+
+  &:focus {
+    color: #ffffff;
+  }
+
+  &:disabled {
+    background-color: #ababab;
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 121px;
+  }
+}
