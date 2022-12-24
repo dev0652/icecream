@@ -85,6 +85,12 @@ body {
 
 /* Buttons */
 
+button {
+  &:hover {
+    animation: 700ms ease-out forwards shake;
+  }
+}
+
 .button,
 %button {
   font-weight: 600;

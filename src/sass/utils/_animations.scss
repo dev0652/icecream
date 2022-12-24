@@ -76,23 +76,45 @@
   }
 }
 
-// Animation Gallery 
+// Animation Gallery
 
 @keyframes ice-cream {
-	0% {
-	  opacity:1;
-	}
-	17% {
-	  opacity:1;
-	}
-	25% {
-	  opacity:0;
-	}
-	92% {
-	  opacity:0;
-	}
-	100% {
-	  opacity:1;
-	}
+  0% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  92% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-  
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(3px, 0, 0);
+  }
+}
