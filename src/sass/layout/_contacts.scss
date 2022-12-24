@@ -13,19 +13,22 @@
     gap: 16px;
     align-items: center;
     font-size: 12px;
+    margin-top: calc(($section-padding + 353px) * -1);
 
     @media screen and (min-width:768px) {
     flex-direction: initial;  
     font-size: 14px;
+    margin-top: calc(($section-padding + 299px) * -1);
     } 
 
     @media screen and (min-width:1200px) {  
     gap: 32px;
     font-size: 16px;
+    margin-top: calc(($section-padding + 128px) * -1);
     }    
 
 }
-.contacts__list{
+.contacts__card{
     padding: 40px 32px 24px 32px;
     max-width: 280px;
     
@@ -59,6 +62,9 @@
     line-height: calc(29/16);    
     letter-spacing: 0.04em;    
     color: #D6936D;
+    &:hover{
+      text-decoration: underline;
+    }
     &::after{
         content: "";
         display: block;
@@ -137,6 +143,11 @@
     border: none;
     background-color: #F8D24E;
     border-radius: 10px;
+
+    transition-property: background-color;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+
     &:hover {
       background-color: #0A8817;
       color: #000000;
@@ -148,10 +159,11 @@
     &:disabled {
       background-color: #ABABAB;
     }
+    &:focus .btn__icon{
+      fill: #FFFFFF; 
+    }
   }
-  .contacts__button:focus .btn__icon{
-    fill: #FFFFFF; 
-  }
+  
 
   .contacts__button--transparent {
     display: flex;
@@ -165,6 +177,11 @@
     background-color: transparent;
     border-radius: 10px;
     border: 2px solid #F8D24E;
+
+    transition-property: border;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+
     &:hover {
       border:2px solid #0A8817;
       color: #000000;
@@ -177,11 +194,12 @@
     &:disabled {
         border:2px solid #ABABAB;
     }
+    &:focus .btn__icon{
+      fill: #FFFFFF; 
+    }
   }
 
-  .contacts__button--transparent:focus .btn__icon{
-    fill: #FFFFFF; 
-  }
+  
   .btn__icon {
     margin-left: 8px;
     fill:#000000;
