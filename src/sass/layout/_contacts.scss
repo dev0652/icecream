@@ -143,6 +143,11 @@
     border: none;
     background-color: #F8D24E;
     border-radius: 10px;
+
+    transition-property: background-color;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+
     &:hover {
       background-color: #0A8817;
       color: #000000;
@@ -154,10 +159,11 @@
     &:disabled {
       background-color: #ABABAB;
     }
+    &:focus .btn__icon{
+      fill: #FFFFFF; 
+    }
   }
-  .contacts__button:focus .btn__icon{
-    fill: #FFFFFF; 
-  }
+  
 
   .contacts__button--transparent {
     display: flex;
@@ -171,6 +177,11 @@
     background-color: transparent;
     border-radius: 10px;
     border: 2px solid #F8D24E;
+
+    transition-property: border;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+
     &:hover {
       border:2px solid #0A8817;
       color: #000000;
@@ -183,11 +194,12 @@
     &:disabled {
         border:2px solid #ABABAB;
     }
+    &:focus .btn__icon{
+      fill: #FFFFFF; 
+    }
   }
 
-  .contacts__button--transparent:focus .btn__icon{
-    fill: #FFFFFF; 
-  }
+  
   .btn__icon {
     margin-left: 8px;
     fill:#000000;
