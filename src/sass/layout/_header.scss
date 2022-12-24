@@ -30,6 +30,8 @@
   min-height: 42px;
   font-weight: bold;
   font-size: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 
   align-items: center;
   justify-content: center;
@@ -45,9 +47,7 @@
     background-color: #0a8817;
     color: #ffffff;
   }
-  &:disabled {
-    background-color: #ababab;
-  }
+
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -55,6 +55,36 @@
 .header__btn--icon {
   margin-left: 8px;
 }
+// кнопка мобильного меню
+.header__btn--mobile {
+  display: flex;
+  min-width: 152px;
+  min-height: 42px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 14px;
+
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background-color: #f8d24e;
+  border-radius: 10px;
+  &:hover {
+    background-color: #0a8817;
+    color: #000000;
+  }
+  &:focus {
+    background-color: #0a8817;
+    color: #ffffff;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+// НАВИГАЦИЯ=================================================
 .nav {
   margin-left: auto;
 }
@@ -86,13 +116,16 @@
   align-items: center;
   justify-content: center;
 
-  margin-right: 32px;
+  margin-right: 0px;
   background-color: transparent;
   cursor: pointer;
   border: none;
 
   outline: none;
   fill: #ffffff;
+  @media screen and (min-width: 768px) {
+    margin-right: 32px;
+  }
   @media screen and (min-width: 1200px) {
     display: none;
   }
@@ -153,8 +186,8 @@
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 50px;
+  right: 25px;
   color: rgb(25, 23, 23);
 }
 
@@ -179,6 +212,10 @@
 
   align-items: center;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    padding-bottom: 40px;
+  }
 }
 
 .mobile-menu-item.active a {
