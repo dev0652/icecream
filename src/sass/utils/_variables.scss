@@ -28,8 +28,10 @@ $text-light: #fcfcfc;
 
 // Background
 $bg-primary: #84a278;
-$bg-secondary: #efd478;
-$bg-tertiary: #d6936d;
+$bg-secondary: rgb(239, 212, 120);
+$bg-tertiary: rgb(214, 147, 109);
+$bg-formfield: rgba(248, 210, 78, 0.1);
+$bg-fieldborder: #84a178;
 
 // Borders
 $border-radius-button: 10px;

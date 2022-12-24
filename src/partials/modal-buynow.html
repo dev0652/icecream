@@ -1,0 +1,86 @@
+<a href="#" class="js-open-modal" data-modal="modal-buynow">Buy now</a>
+
+<div class="modal modal-buynow" data-modal="modal-buynow">
+  <svg class="close-btn js-modal-close">
+    <use href="./images/symbol-defs.svg#close-btn"></use>
+  </svg>
+  <p class="modal-buynow__title">Buy now</p>
+
+  <form class="modal-buynow__form" autocomplete="off">
+    <ul class="modal-buynow__products">
+      <li class="buynow-products__item">
+        <label class="buycheck-label"
+          ><input
+            class="buycheck visually-hidden"
+            type="checkbox"
+            name="product"
+            value="icecream"
+          />
+          <span class="buycheck-icon1"></span>
+          <span class="buynow-products__title">Ice Cream</span></label
+        >
+      </li>
+      <li class="buynow-products__item">
+        <label class="buycheck-label"
+          ><input
+            class="buycheck visually-hidden"
+            type="checkbox"
+            name="product"
+            value="icecoffee"
+          />
+          <span class="buycheck-icon2"></span>
+          <span class="buynow-products__title">Ice Coffee</span></label
+        >
+      </li>
+      <li class="buynow-products__item">
+        <label class="buycheck-label"
+          ><input
+            class="buycheck visually-hidden"
+            type="checkbox"
+            name="product"
+            value="milkshake"
+          />
+          <span class="buycheck-icon3"></span>
+          <span class="buynow-products__title">Milkshake</span></label
+        >
+      </li>
+    </ul>
+    <div class="modal-buynow__group" role="group">
+      <label for="name">
+        <input
+          class="modal-buynow__field"
+          type="text"
+          name="user_name"
+          pattern="^[a-zA-Z]+$"
+          title="Please type only letters"
+          required
+          id="name"
+          placeholder="Name"
+          autocomplete="off"
+        />
+      </label>
+      <label for="telephone">
+        <input
+          class="modal-buynow__field tel-input"
+          type="tel"
+          name="user_phone"
+          pattern="^[0-9]{10,13}"
+          title="Please type only digits, min 10, max 13"
+          required
+          id="telephone"
+          placeholder="Phone"
+          autocomplete="off"
+        />
+      </label>
+      <label>
+        <textarea
+          class="modal_form__comments"
+          name="user_comments"
+          rows="5"
+          placeholder="Comments"
+        ></textarea>
+      </label>
+    </div>
+    <button class="button buynow-btn" type="submit">Submit</button>
+  </form>
+</div>
