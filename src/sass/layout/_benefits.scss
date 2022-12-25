@@ -46,6 +46,11 @@
   @media screen and (min-width: $desktop) {
     margin-bottom: 40px;
   }
+  @include transition(transform);
+
+  &:hover {
+    transform: scale(1.5);
+  }
 }
 
 .benefits__info {
