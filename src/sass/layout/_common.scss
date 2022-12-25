@@ -3,11 +3,9 @@
 :root {
   font-family: $primary-font;
   font-size: $primary-font-size;
-}
 
-// css-tricks.com/fixed-headers-on-page-links-and-overlapping-content-oh-my/
-html {
   scroll-padding-top: 80px; /* height of sticky header */
+  // css-tricks.com/fixed-headers-on-page-links-and-overlapping-content-oh-my/
 }
 
 body {
