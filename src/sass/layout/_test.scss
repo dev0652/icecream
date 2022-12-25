@@ -1,3 +1,8 @@
+.test-white {
+  background: #fff;
+  padding-top: 103px;
+}
+
 .test-list {
   display: flex;
   flex-wrap: wrap;
@@ -5,12 +10,10 @@
   column-gap: 32px;
   row-gap: 82px;
 
-  margin-top: 83px;
   margin-bottom: 32px;
 
   @media screen and (min-width: $tablet) {
     // flex-direction: row;
-    margin-top: 103px;
     margin-bottom: 40px;
   }
 }
