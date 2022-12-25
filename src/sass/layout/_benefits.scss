@@ -28,6 +28,10 @@
   @media screen and (min-width: $desktop) {
     flex-basis: calc((100% - 32px * 2) / 3);
   }
+
+  &:hover .benefits__icon-wrapper {
+    transform: scale(1.5);
+  }
 }
 
 .benefits__icon-wrapper {
@@ -48,9 +52,9 @@
   }
   @include transition(transform);
 
-  &:hover {
-    transform: scale(1.5);
-  }
+  // &:hover {
+  //   transform: scale(2);
+  // }
 }
 
 .benefits__info {
