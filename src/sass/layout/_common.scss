@@ -5,12 +5,20 @@
   font-size: $primary-font-size;
 }
 
+// css-tricks.com/fixed-headers-on-page-links-and-overlapping-content-oh-my/
+html {
+  scroll-padding-top: 80px; /* height of sticky header */
+}
+
 body {
   letter-spacing: 0.04em;
   color: $text-dark;
 
   // $folder, $filename, $extension: webp
-  @include bg-image(bg, bg);
+  // @include bg-image(bg, bg);
+
+  // $gradient-color, $folder, $filename, $extension: webp
+  @include bg-with-overlay(rgba(#eee, 0.4), bg, bg);
   background-attachment: fixed;
 
   &.scroll-locked {
@@ -36,11 +44,6 @@ body {
     width: $desktop;
   }
 }
-
-// .overlay {
-// 	max-width: 1600px;
-// 	margin: 0 auto;
-// }
 
 .section {
   padding: $section-padding 0;
