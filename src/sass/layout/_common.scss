@@ -5,11 +5,9 @@
   font-size: $primary-font-size;
 }
 
-section:target::before {
-  content: '';
-  display: block;
-  height: 100px; /* fixed header height*/
-  margin: -100px 0 0; /* negative fixed header height */
+// css-tricks.com/fixed-headers-on-page-links-and-overlapping-content-oh-my/
+html {
+  scroll-padding-top: 80px; /* height of sticky header */
 }
 
 body {
