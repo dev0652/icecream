@@ -1,0 +1,13 @@
+// animation
+.text-focus-in {
+  animation: text-focus-in 1000ms cubic-bezier(0.55, 0.085, 0.68, 0.53) both
+    500ms;
+}
+
+.tracking-in-contract {
+  animation: tracking-in-contract 2s cubic-bezier(0.215, 0.61, 0.355, 1) both 1s;
+}
+
+.text-flicker-in-glow {
+  animation: text-flicker-in-glow 4s linear both 1.4s;
+}
