@@ -100,8 +100,8 @@
     max-width: 490px;
   }
 
-  animation-name: bounce-in-top;
-  animation-duration: 3000ms;
+  // animation-name: bounce-in-top;
+  // animation-duration: 3000ms;
 }
 
 // About image
@@ -127,7 +127,9 @@
     max-width: 490px;
     top: 39px;
   }
-
+}
+// animation
+.bounce-in-top {
   animation-name: bounce-in-top;
   animation-duration: 3000ms;
 }

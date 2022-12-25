@@ -1,297 +1,296 @@
 .hero {
-    background-color: $bg-primary;
-    font-family: $primary-font;
+  background-color: $bg-primary;
+  font-family: $primary-font;
 
-    padding-top: 50px;
-    padding-bottom: 236px;
+  padding-top: 50px;
+  padding-bottom: 236px;
 
-    position: relative;
+  position: relative;
 
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: center;
-    background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: bottom;
 
-    // mobile screen
-    background-image: url(../images/hero/png/mobile/dots_mob.png);
+  // mobile screen
+  background-image: url(../images/hero/png/mobile/dots_mob.png);
 
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(../images/hero/png/mobile/dots_mob@2x.png);
-    }
+    background-image: url(../images/hero/png/mobile/dots_mob@2x.png);
+  }
 
-    // tablet screen
-    @media screen and (min-width: $tablet) {
+  // tablet screen
+  @media screen and (min-width: $tablet) {
     padding-top: 14px;
     padding-bottom: 12px;
 
     background-image: url(../images/hero/png/tablet/dots_tab.png);
     background-size: 768px;
 
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/hero/png/tablet/dots_tab@2x.png);
-        }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero/png/tablet/dots_tab@2x.png);
     }
+  }
 
-    // desktop screen
-    @media screen and (min-width: $desktop) {
+  // desktop screen
+  @media screen and (min-width: $desktop) {
     padding-top: 45px;
     padding-bottom: 65px;
 
     background-image: url(../images/hero/png/desktop/dots_desk.png);
     background-size: 1200px;
-    
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/hero/png/desktop/dots_desk@2x.png);
-        }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero/png/desktop/dots_desk@2x.png);
     }
+  }
 }
 
-.hero__title {
-    font-family: 'Seymour One';
-    font-weight: 400;
-    font-size: 26px;
-    line-height: calc(33 / 26);
-    text-transform: uppercase;
-    color: $text-light;
-    max-width: 247px;
+.hero__title,
+.hero__sup-title {
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 26px;
+  line-height: calc(33 / 26);
+  text-transform: uppercase;
+  color: $text-light;
+  max-width: 247px;
 
-    margin-bottom: 32px;
-    letter-spacing: 0.04em;
+  margin-bottom: 32px;
+  letter-spacing: 0.04em;
 
-    @media screen and (min-width: $tablet) {
-        margin-bottom: 24px;
-    }
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 24px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        font-size: 38px;
-        max-width: 367px;
-        margin-bottom: 28px;
-    }
+  @media screen and (min-width: $desktop) {
+    font-size: 38px;
+    max-width: 367px;
+    margin-bottom: 28px;
+  }
 }
 
 .hero__main-img {
-    width: 177px;
-    height: 217px;
-    position: absolute;
-    bottom: 0;
+  width: 177px;
+  height: 217px;
+  position: absolute;
+  bottom: 0;
 
-    @media screen and (max-width: 767px) {
-        left: 50%;
-        transform: translateX(-45%);
-    }
+  @media screen and (max-width: 767px) {
+    left: 50%;
+    transform: translateX(-45%);
+  }
 
+  @media screen and (min-width: $tablet) {
+    width: 268px;
+    height: 329px;
+    left: 50%;
+    transform: translateX(11%);
+  }
 
-    @media screen and (min-width: $tablet) {
-        width: 268px;
-        height: 329px;
-        left: 50%;
-        transform: translateX(11%);
-    }
-
-    @media screen and (min-width: $desktop) {
-        width: 456px;
-        height: 560px;
-    }
+  @media screen and (min-width: $desktop) {
+    width: 456px;
+    height: 560px;
+  }
 }
 
 .button-list {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
 
-    @media screen and (min-width: $desktop) {
-        gap: 34px;
-        margin-bottom: 42px;
-    }
+  @media screen and (min-width: $desktop) {
+    gap: 34px;
+    margin-bottom: 42px;
+  }
 }
 
 .button-list-btn {
-    background-color: transparent;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: calc(15 / 12);
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    @media screen and (min-width: $desktop) {
-        font-size: 14px;
-    }
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+  }
 }
 
 .button-list-btn--first {
-    border: 2px solid #F8D24E;
-    border-radius: 8px;
-    color: #000000;
-    padding: 11px 26px;
+  border: 2px solid #f8d24e;
+  border-radius: 8px;
+  color: #000000;
+  padding: 11px 26px;
 
-    transition-property: border-color;
-    transition-duration: $transition-duration;
-    transition-timing-function: $transition-timing-function;
+  transition-property: border-color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
 
-    &:hover {
-        border-color: $accent-secondary;
+  &:hover {
+    border-color: $accent-secondary;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 12px 34px;
+    line-height: calc(18 / 14);
+    border-radius: 10px;
+
+    transition-property: border-color, color;
+
+    &:focus {
+      border-color: $accent-secondary;
+      color: $text-light;
     }
-
-    @media screen and (min-width: $desktop) {
-        padding: 12px 34px;
-        line-height: calc(18 / 14);
-        border-radius: 10px;
-
-        transition-property: border-color, color;
-
-        &:focus {
-            border-color: $accent-secondary;
-            color: $text-light;
-        }
-    }
+  }
 }
 
 .button-list-btn--second {
-    border: none;
-    align-items: center;
-    color: #F8D24E;
-    text-decoration-line: underline;
-    text-underline-offset: 2px;
+  border: none;
+  align-items: center;
+  color: #f8d24e;
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
 
+  &:hover {
+    color: $accent-secondary;
+  }
 
-    &:hover {
-        color: $accent-secondary;
-    }
+  &:focus {
+    color: $text-light;
+  }
 
-    &:focus {
-        color: $text-light;
-    }
+  &:disabled {
+    color: $inactive;
+  }
 
-    &:disabled {
-        color: $inactive;
-    }
-
-    @media screen and (min-width: $desktop) {
-        line-height: calc(17 / 14);
-    }
+  @media screen and (min-width: $desktop) {
+    line-height: calc(17 / 14);
+  }
 }
 
 .info {
-    display: flex;
-    align-items: center;
-    gap: 32px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
 
-    position: relative;
+  position: relative;
 
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
-    @media screen and (min-width: $desktop) {
-        gap: 16px;
-    }
+  @media screen and (min-width: $desktop) {
+    gap: 16px;
+  }
 }
 
 .info__img {
-    animation-name: spin;
-    animation-duration: 17s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+  animation-name: spin;
+  animation-duration: 17s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
-    @media screen and (max-width: 1199px) {
-        width: 152px;
-    }
+  @media screen and (max-width: 1199px) {
+    width: 152px;
+  }
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .info__text {
-    width: 150px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: calc(17 / 14);
-    color: $text-light;
+  width: 150px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(17 / 14);
+  color: $text-light;
 
-    margin-bottom: 0;
+  margin-bottom: 0;
 
-    @media screen and (min-width: $desktop) {
-        width: 220px;
-        font-size: 14px;
-        line-height: calc(20 / 14);
-    }
+  @media screen and (min-width: $desktop) {
+    width: 220px;
+    font-size: 14px;
+    line-height: calc(20 / 14);
+  }
 }
 
 .info__icon {
-    fill: $text-light;
-    position: absolute;
-    bottom: 12px;
+  fill: $text-light;
+  position: absolute;
+  bottom: 12px;
 
-    @media screen and (min-width: $desktop) {
-        bottom: 24px;
-        transform: translateY(-50%);
-    }
+  @media screen and (min-width: $desktop) {
+    bottom: 24px;
+    transform: translateY(-50%);
+  }
 }
 
 .numbers-list {
-    display: flex;
-    text-align: right;
-    flex-direction: column;
-    gap: 20px;
-    position: absolute;
-    top: 28px;
-    left: 50%;
-    transform: translateX(307px);
+  display: flex;
+  text-align: right;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  transform: translateX(307px);
 
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
-    @media screen and (min-width: $desktop) {
-        transform: translateX(505px);
-        top: 53px;
-        gap: 16px;
-    }
+  @media screen and (min-width: $desktop) {
+    transform: translateX(505px);
+    top: 53px;
+    gap: 16px;
+  }
 }
 
 .numbers-list__item {
-    display: flex;
-    flex-direction: column;
-    font-weight: 400;
-    font-size: 8px;
-    line-height: calc(10 / 8);
-    color: $text-light;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: calc(10 / 8);
+  color: $text-light;
 
-    @media screen and (min-width: $desktop) {
-        font-size: 14px;
-        line-height: calc(17 / 14);
-    }
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
 }
 
 .numbers-list__amount {
-    font-weight: 900;
-    font-size: 28px;
-    line-height: calc(34 / 28);
-    margin-bottom: 4px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: $text-dark;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: calc(34 / 28);
+  margin-bottom: 4px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $text-dark;
 
-    @media screen and (min-width: $desktop) {
-        font-size: 46px;
-    }
+  @media screen and (min-width: $desktop) {
+    font-size: 46px;
+  }
 }
