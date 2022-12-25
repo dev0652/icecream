@@ -62,20 +62,6 @@
   }
 }
 
-// Product cards animation
-
-@keyframes product-image-pulsing {
-  0% {
-    transform: translateY(-110%) scale(1, 1);
-  }
-  50% {
-    transform: translateY(-110%) scale(1.5, 1.5);
-  }
-  100% {
-    transform: translateY(-110%) scale(1, 1);
-  }
-}
-
 // Animation Gallery
 
 @keyframes ice-cream {
