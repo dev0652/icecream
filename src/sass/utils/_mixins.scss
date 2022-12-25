@@ -139,3 +139,25 @@
     }
   }
 }
+
+// ***Buy now modal products ONLY *** image retinization
+
+@mixin buynow-checkbox-bg($filename, $extension: jpg) {
+  background-image: url('../images/buynow/jpeg/mobile/#{$filename}.#{$extension}');
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/buynow/jpeg/mobile/#{$filename}@2x.#{$extension}');
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-image: url('../images/buynow/jpeg/tablet/#{$filename}.#{$extension}');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/buynow/jpeg/tablet/#{$filename}@2x.#{$extension}');
+    }
+  }
+}
