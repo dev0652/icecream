@@ -21,6 +21,8 @@
           type="text"
           class="modal--franchise-input"
           name="name"
+          pattern="[a-zA-Z\u0400-\u04ff\s]{3,30}"
+          title="Please type only letters, e.g. Boris Johnson"
           required
           placeholder="Name"
           title="Name"
@@ -33,11 +35,9 @@
           class="modal--franchise-input"
           required
           name="tel"
+          pattern="[+\0-9]{10,}"
+          title="Please use international format, e.g. +61XXXXXXXXXXXX, min 10 digits"
           placeholder="Phone"
-          minlength="13"
-          maxlength="13"
-          pattern="\+?[0-9\s\-\(\)]+"
-          title="+380980000000"
         />
       </label>
 
@@ -46,7 +46,6 @@
           type="email"
           class="modal--franchise-input"
           required
-          pattern="\+?[0-9\s\-\(\)]+"
           name="mail"
           placeholder="Email"
         />
