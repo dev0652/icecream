@@ -37,6 +37,10 @@ body.modal-open {
   background-color: #fcfcfc;
 
   transition: 0.4s all;
+
+  &.active {
+    transform: translate(-50%, -50%);
+  }
 }
 
 /* Стили для активных классов подложки и окна */
@@ -45,10 +49,6 @@ body.modal-open {
 .overlay.active {
   opacity: 1;
   visibility: visible;
-}
-
-.modal.active {
-  transform: translate(-50%, -50%);
 }
 
 /* Стили для кнопки закрытия */
