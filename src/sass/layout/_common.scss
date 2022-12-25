@@ -45,11 +45,13 @@ body {
 .section {
   padding: $section-padding 0;
 
-  &.dark-text {
+  &.dark-text,
+  &--dark-text {
     color: $text-dark;
   }
 
-  &.light-text {
+  &.light-text,
+  &--light-text {
     color: $text-light;
   }
 }
@@ -81,99 +83,4 @@ body {
   // &:focus {
   //   animation: 700ms ease-out forwards pulsing;
   // }
-}
-
-/* Buttons */
-
-button {
-  &:hover {
-    animation: 700ms ease-out forwards shake;
-  }
-}
-
-.button,
-%button {
-  font-weight: 600;
-
-  color: $text-dark;
-  background-color: transparent;
-  @include transition-multiple(color, background-color);
-
-  border: 1px solid $accent;
-  border-radius: $border-radius-button;
-  padding: 12px 40px;
-
-  &:hover,
-  &:focus {
-    border-color: $accent-secondary;
-  }
-
-  &:focus {
-    color: $text-light;
-  }
-
-  &:disabled {
-    border-color: $inactive;
-  }
-}
-
-.button--accented,
-%button--accented {
-  &:hover {
-    background-color: $accent-secondary;
-  }
-
-  &:focus {
-    background-color: $accent-secondary;
-  }
-
-  &:disabled {
-    background-color: $inactive;
-  }
-}
-
-.button--suffix,
-%button--suffix {
-  &::after {
-    content: ' >';
-  }
-}
-
-/* Headings */
-
-.section-heading {
-  font-family: $secondary-font;
-  text-transform: uppercase;
-
-  font-size: 30px;
-  line-height: 38px;
-
-  @media screen and (min-width: $tablet) {
-    font-size: 34px;
-    line-height: 43px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    font-size: 36px;
-    line-height: 45px;
-    letter-spacing: 0.06em;
-  }
-}
-
-.sup-heading {
-  font-weight: 800;
-  text-transform: uppercase;
-
-  font-size: 18px;
-  line-height: 22px;
-
-  @media screen and (min-width: $tablet) {
-    font-size: 22px;
-    line-height: 27px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    font-size: 30px;
-    line-height: 37px;
-  }
 }

@@ -1,0 +1,70 @@
+/* Buttons */
+
+button {
+  &:hover {
+    animation: 700ms ease-out forwards shake;
+  }
+}
+
+.button,
+%button {
+  font-weight: 600;
+  @include fz-lh(14, 18);
+
+  padding: calc(12px - 1px) 34px;
+
+  color: $text-dark;
+  background-color: transparent;
+  @include transition-multiple(color, background-color);
+  // transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) 250ms;
+
+  border: 1px solid $accent;
+  border-radius: $border-radius-button;
+  padding: 12px 40px;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-secondary;
+  }
+
+  &:focus {
+    color: $text-light;
+    fill: $text-light;
+  }
+
+  &:disabled {
+    border-color: $inactive;
+  }
+}
+
+.button--accented,
+%button--accented {
+  @extend .button;
+
+  background-color: $accent;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-secondary;
+  }
+
+  &:disabled {
+    background-color: $inactive;
+  }
+}
+
+.button--modal {
+  @include fz-lh(12, 15);
+
+  @media screen and (min-width: $tablet) {
+    @include fz-lh(14, 17);
+  }
+}
+
+.button--long {
+  padding: calc(12px - 1px) 40px;
+}
+
+.chevron {
+  margin-left: 4px;
+}
