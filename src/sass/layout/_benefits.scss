@@ -32,6 +32,7 @@
   &:hover .benefits__icon-wrapper {
     transform: scale(1.5);
   }
+
   &:hover .benefits__info {
     transform: scale(1.3) translateY(7%);
   }
@@ -64,34 +65,27 @@
   text-align: center;
 
   @media screen and (min-width: $tablet) {
-    font-size: 48px;
-    line-height: calc(59 / 48);
+    @include fz-lh(48, 59);
     margin-bottom: 12px;
   }
 
   @media screen and (min-width: $desktop) {
-    font-size: 58px;
-    line-height: calc(71 / 58);
-    padding-bottom: 12px;
+    @include fz-lh(58, 72);
   }
 
   @include transition(transform);
 }
 
 .benefits__text {
-  font-size: 12px;
-  line-height: 170%;
-
   text-align: center;
   letter-spacing: 0.02em;
+  @include fz-lh(12, 20);
 
   @media screen and (min-width: $tablet) {
-    font-size: 14px;
-    line-height: 174%;
+    @include fz-lh(14, 24);
   }
 
   @media screen and (min-width: $desktop) {
-    font-size: 16px;
-    line-height: 176%;
+    @include fz-lh(16, 28);
   }
 }
