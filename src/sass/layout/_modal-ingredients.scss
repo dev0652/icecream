@@ -229,6 +229,11 @@
     padding-left: 16px;
     padding-right: 16px;
   }
+
+  &:not(:placeholder-shown):invalid {
+    outline: 2px solid red;
+    background: rgba(100, 0, 0, 0.1);
+  }
 }
 
 .modal-ingredients__form-message {

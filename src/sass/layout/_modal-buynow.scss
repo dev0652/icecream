@@ -73,10 +73,6 @@
     line-height: 1.42;
   }
 
-  &:not(:placeholder-shown):valid {
-    outline: 2px solid green;
-  }
-
   &:not(:placeholder-shown):invalid {
     outline: 2px solid red;
     background: rgba(100, 0, 0, 0.1);
