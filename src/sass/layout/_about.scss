@@ -8,12 +8,10 @@
   justify-content: center;
 }
 .about__text {
-  font-family: 'Montserrat';
   font-weight: 700;
   font-size: 18px;
 
   text-align: center;
-  color: #fcfcfc;
   text-transform: uppercase;
   line-height: 22px;
 
@@ -21,14 +19,11 @@
 
   @media screen and (min-width: 768px) {
     font-weight: 800;
-    font-size: 22px;
-    line-height: 27px;
-    letter-spacing: 0.04em;
+    @include fz-lh(22, 27);
   }
 
   @media screen and (min-width: 1200px) {
-    font-size: 30px;
-    line-height: 37px;
+    @include fz-lh(30, 37);
   }
 }
 
@@ -41,8 +36,6 @@
   line-height: 38px;
 
   text-align: center;
-  color: #fcfcfc;
-
   text-transform: uppercase;
 
   margin-bottom: 32px;
