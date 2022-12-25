@@ -30,66 +30,29 @@
   margin-left: auto;
 }
 .header__btn {
-  display: flex;
-  min-width: 152px;
-  min-height: 42px;
-  font-weight: bold;
-  font-size: 14px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  @extend .button--accented;
+  @extend %flex-centered;
 
-  align-items: center;
-  justify-content: center;
-
-  border: none;
-  background-color: #f8d24e;
-  border-radius: 10px;
-  &:hover {
-    background-color: #0a8817;
-    color: #000000;
-  }
-  &:focus {
-    background-color: #0a8817;
-    color: #ffffff;
-  }
-
-  @media screen and (max-width: 768px) {
-    display: none;
+  &.header__btn--main {
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 }
-.header__btn--icon {
-  margin-left: 8px;
-}
-// кнопка мобильного меню
+
+// Mobile menu button
+
 .header__btn--mobile {
-  display: flex;
-  min-width: 152px;
-  min-height: 42px;
-  margin-left: auto;
-  margin-right: auto;
-  font-weight: bold;
-  font-size: 14px;
-
-  align-items: center;
-  justify-content: center;
-
-  border: none;
-  background-color: #f8d24e;
-  border-radius: 10px;
-  &:hover {
-    background-color: #0a8817;
-    color: #000000;
-  }
-  &:focus {
-    background-color: #0a8817;
-    color: #ffffff;
-  }
+  padding: calc(12px - 1px) 36px;
+  align-self: center;
 
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
-// НАВИГАЦИЯ=================================================
+
+// Navigation menu
+
 .nav {
   margin-left: auto;
 }
@@ -114,22 +77,20 @@
   padding-bottom: 13px;
 }
 
-// Мобильное меню
-.burger-button {
+// Mobile menu
+
+.menu-toggle {
   position: relative;
-  // margin-left: auto;
+  @extend %flex-centered;
 
-  min-height: 32px;
-  min-width: 32px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 32px;
+  width: 32px;
 
   margin-right: 0px;
-  background-color: transparent;
+  // margin-left: auto;
   border: none;
 
+  background-color: transparent;
   fill: #ffffff;
 
   @media screen and (min-width: 768px) {
@@ -198,6 +159,8 @@
   top: 50px;
   right: 25px;
   color: rgb(25, 23, 23);
+  background-color: transparent;
+  border: none;
 }
 
 .mobile-menu {
