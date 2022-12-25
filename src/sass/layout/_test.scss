@@ -1,3 +1,152 @@
-.test-class {
-  color: black;
+.test-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  column-gap: 32px;
+  row-gap: 82px;
+
+  margin-top: 83px;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: $tablet) {
+    // flex-direction: row;
+    margin-top: 103px;
+    margin-bottom: 40px;
+  }
+}
+
+.test-list__item {
+  // position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+
+  flex-basis: 132px;
+}
+
+.test-checkbox {
+  appearance: none;
+}
+
+.test-label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  display: block;
+  padding: 95px calc(13px - 2px) 20px;
+  text-align: center;
+
+  border: 2px solid;
+  border-radius: $border-radius-button;
+
+  color: $text-dark;
+
+  transition: background-color $transition-duration $transition-timing-function;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+
+  user-select: none;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: -2;
+    transform: translateY(-50%);
+
+    content: '';
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    // @media screen and (min-width: $tablet) {}
+  }
+
+  &:after {
+    position: absolute;
+    top: -7px;
+    left: -2;
+    transform: translateY(-50%);
+    // visibility: hidden;
+
+    content: '';
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    background-position: center;
+    background-size: cover;
+
+    // @media screen and (min-width: $tablet) {}
+  }
+
+  &--icecream {
+    border-color: #96af8c;
+
+    &:before {
+      background: linear-gradient(
+          0deg,
+          rgba(156, 190, 143, 0.7),
+          rgba(156, 190, 143, 0.7)
+        ),
+        #d9d9d9;
+      box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    }
+
+    &:after {
+      // $folder, $filename, $extension: webp
+      @include buynow-checkbox-bg(buynow, icecream, jpg);
+    }
+
+    .test-checkbox:checked ~ & {
+      background-color: #96af8c;
+    }
+  }
+  &--icecoffee {
+    border-color: #efd478;
+
+    &:before {
+      background: linear-gradient(
+          0deg,
+          rgba(248, 210, 78, 0.7),
+          rgba(248, 210, 78, 0.7)
+        ),
+        #d9d9d9;
+      box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+    }
+
+    &:after {
+      // $folder, $filename, $extension: webp
+      @include buynow-checkbox-bg(buynow, icecoffee, jpg);
+    }
+
+    .test-checkbox:checked ~ & {
+      background-color: #efd478;
+    }
+  }
+  &--milkshake {
+    border-color: #d6936d;
+
+    &:before {
+      background: linear-gradient(
+          0deg,
+          rgba(213, 117, 63, 0.7),
+          rgba(213, 117, 63, 0.7)
+        ),
+        #d9d9d9;
+      box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+    }
+
+    &:after {
+      // $folder, $filename, $extension: webp
+      @include buynow-checkbox-bg(buynow, milkshake, jpg);
+    }
+
+    .test-checkbox:checked ~ & {
+      background-color: #d6936d;
+    }
+  }
 }

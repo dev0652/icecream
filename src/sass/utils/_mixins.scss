@@ -139,3 +139,35 @@
     }
   }
 }
+
+// ***Buy Now modal ONLY *** image retinization
+
+@mixin buynow-checkbox-bg($folder, $filename, $extension: jpg) {
+  //
+  $img-type: jpeg;
+
+  @if $extension == webp {
+    $img-type: webp;
+  }
+
+  background-image: url('../images/#{$folder}/#{$img-type}/mobile/#{$filename}.#{$extension}');
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    //
+    background-image: url('../images/#{$folder}/#{$img-type}/mobile/#{$filename}@2x.#{$extension}');
+  }
+
+  @media screen and (min-width: $tablet) {
+    //
+    background-image: url('../images/#{$folder}/#{$img-type}/tablet/#{$filename}.#{$extension}');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      //
+      background-image: url('../images/#{$folder}/#{$img-type}/tablet/#{$filename}@2x.#{$extension}');
+    }
+  }
+}
