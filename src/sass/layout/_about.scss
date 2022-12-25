@@ -7,55 +7,17 @@
   align-items: center;
   justify-content: center;
 }
-.about__text {
-  font-weight: 700;
-  font-size: 18px;
-
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 22px;
-
-  margin-bottom: 12px;
-
-  @media screen and (min-width: 768px) {
-    font-weight: 800;
-    @include fz-lh(22, 27);
-  }
-
-  @media screen and (min-width: 1200px) {
-    @include fz-lh(30, 37);
-  }
-}
 
 .about__title {
-  font-family: 'Seymour One';
-
-  font-size: 30px;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  line-height: 38px;
-
-  text-align: center;
-  text-transform: uppercase;
-
+  max-width: 200px;
   margin-bottom: 32px;
 
-  max-width: 200px;
-
-  display: block;
-
   @media screen and (min-width: 768px) {
-    font-size: 34px;
-    line-height: 43px;
-    letter-spacing: 0.06em;
     max-width: none;
     margin-bottom: 72px;
   }
 
   @media screen and (min-width: 1200px) {
-    font-size: 36px;
-    line-height: 45px;
-
     margin-bottom: 82px;
   }
 }
