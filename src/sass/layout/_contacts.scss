@@ -1,5 +1,5 @@
 .contacts {
-  background-color: #84a178;
+  background-color: $bg-primary;
 }
 
 .place {
@@ -42,7 +42,7 @@
 
   background: #ffffff;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-  border-radius: 24px;
+  border-radius: $border-radius-card;
 
   @include transition-multiple(transform, box-shadow);
 
@@ -55,7 +55,7 @@
 .contacts__title {
   font-weight: 500;
   padding: 4px 15px;
-  background: #f8d24e;
+  background: $accent;
   border-radius: 6px;
   text-transform: uppercase;
   text-align: center;
@@ -66,7 +66,7 @@
   font-weight: 500;
   line-height: calc(29 / 16);
   letter-spacing: 0.04em;
-  color: #d6936d;
+  color: $bg-tertiary;
   &:hover {
     text-decoration: underline;
   }
@@ -93,14 +93,14 @@
   font-weight: 500;
   line-height: calc(30 / 16);
   letter-spacing: 0.04em;
-  color: #131313;
+  color: $text-dark;
 }
 
 .contacts__text--grey {
   font-weight: 500;
   line-height: calc(30 / 16);
   letter-spacing: 0.04em;
-  color: #ababab;
+  color: $inactive;
 }
 
 .workhours::after {

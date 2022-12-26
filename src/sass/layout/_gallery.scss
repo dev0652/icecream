@@ -51,7 +51,7 @@ section.gallery {
   }
 
   @media screen and (min-width: 1200px) {
-    border-radius: 24px;
+    border-radius: $border-radius-card;
   }
 
   animation-name: ice-cream;

@@ -13,7 +13,7 @@
   font-family: 'Seymour One';
   font-size: 16px;
   line-height: 24px;
-  color: #131313;
+  color: $text-dark;
 
   margin-bottom: 20px;
 
@@ -26,10 +26,10 @@
 }
 
 .video__text {
-  font-family: 'Montserrat';
+  font-family: $primary-font;
   font-size: 14px;
   line-height: 20px;
-  color: #131313;
+  color: $text-dark;
 
   text-align: left;
 

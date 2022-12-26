@@ -1,5 +1,5 @@
 .header {
-  background-color: #84a278;
+  background-color: $bg-primary-darker;
   display: flex;
   align-items: baseline;
   position: fixed;
@@ -21,7 +21,7 @@
 }
 
 .logo__img {
-  fill: #f8d24e;
+  fill: $accent;
 }
 
 .header__group {
@@ -69,7 +69,7 @@
   &:not(:last-child) {
     margin-right: 28px;
   }
-  color: #fcfcfc;
+  color: $text-light;
 }
 
 .nav__link {
@@ -140,7 +140,7 @@
   width: 100vw;
   height: 100vh;
   padding: 32px;
-  background-color: #84a278;
+  background-color: $bg-primary-darker;
   z-index: 999;
 
   transform: translateX(100%);
@@ -174,7 +174,7 @@
 .mobile-menu .link {
   display: block;
   padding-bottom: 32px;
-  color: #fcfcfc;
+  color: $text-light;
   text-decoration: none;
 
   font-style: normal;
@@ -191,5 +191,5 @@
 }
 
 .mobile-menu-item.active a {
-  color: #131313;
+  color: $text-dark;
 }

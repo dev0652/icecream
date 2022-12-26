@@ -19,7 +19,7 @@
   font-size: 20px;
   line-height: calc(28 / 20);
 
-  color: #131313;
+  color: $text-dark;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 24px;
@@ -91,7 +91,7 @@
 
   border: 2px solid #9cbe8f;
   border-radius: 40px;
-  color: #131313;
+  color: $text-dark;
 
   &--yellow {
     border: 2px solid rgba(248, 210, 78, 0.7);
@@ -162,7 +162,7 @@
   font-size: 20px;
   line-height: calc(28 / 20);
 
-  color: #131313;
+  color: $text-dark;
 }
 
 .modal-ingredients__components {
@@ -210,11 +210,11 @@
   line-height: 140%;
 
   background: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84a178;
-  border-radius: 10px;
+  border: 1px solid $bg-primary;
+  border-radius: $border-radius-button;
   outline: none;
   outline-offset: -1px;
-  color: #131313;
+  color: $text-dark;
 
   &--yellow {
     border: 1px solid rgba(248, 210, 78);
@@ -250,11 +250,11 @@
   line-height: 140%;
 
   background: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84a178;
-  border-radius: 10px;
+  border: 1px solid $bg-primary;
+  border-radius: $border-radius-button;
   outline: none;
   outline-offset: -1px;
-  color: #131313;
+  color: $text-dark;
 
   &--yellow {
     border: 1px solid rgba(248, 210, 78);
@@ -281,11 +281,11 @@
   line-height: calc(17 / 14);
 
   border: none;
-  background-color: #f8d24e;
+  background-color: $accent;
 
   &:hover,
   &:focus {
-    background-color: #0a8817;
+    background-color: $contrast;
   }
 
   &:focus {
@@ -293,7 +293,7 @@
   }
 
   &:disabled {
-    background-color: #ababab;
+    background-color: $inactive;
   }
 
   @media screen and (min-width: 768px) {

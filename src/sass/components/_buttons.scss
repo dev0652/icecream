@@ -24,7 +24,7 @@ button {
 
   &:hover,
   &:focus {
-    border-color: $accent-secondary;
+    border-color: $contrast;
   }
 
   &:focus {
@@ -45,7 +45,7 @@ button {
 
   &:hover,
   &:focus {
-    background-color: $accent-secondary;
+    background-color: $contrast;
   }
 
   &:disabled {

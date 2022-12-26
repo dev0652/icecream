@@ -31,18 +31,17 @@
   max-width: 280px;
   height: 256px;
   padding: 35px 39px;
-  background: #84a178;
-  border-radius: 10px;
-  font-family: 'Montserrat';
+  background: $bg-primary;
+  border-radius: $border-radius-button;
   font-size: 12px;
   line-height: 2.55;
-  color: #fcfcfc;
+  color: $text-light;
 
   @media screen and (min-width: 768px) {
     max-width: 705px;
     height: 138px;
     padding: 28px 80px;
-    border-radius: 24px;
+    border-radius: $border-radius-card;
     font-weight: 500;
     font-size: 14px;
     line-height: 1, 86;
@@ -86,7 +85,7 @@
 
 .feedback .dots .dot.active,
 .feedback .dots .dot:hover {
-  background: #84a178;
+  background: $bg-primary;
 }
 
 .feedback .dots .dot.active {
@@ -129,12 +128,11 @@
 }
 
 .feedback .cont div h2 {
-  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 20px;
   line-height: 1.86;
   text-align: center;
-  color: #131313;
+  color: $text-dark;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;

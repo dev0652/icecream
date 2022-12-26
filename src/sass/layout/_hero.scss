@@ -1,5 +1,5 @@
 .hero {
-  background-color: $bg-primary;
+  background-color: $bg-primary-darker;
   font-family: $primary-font;
 
   padding-top: 50px;
@@ -127,7 +127,7 @@
 }
 
 .button-list-btn--first {
-  border: 2px solid #f8d24e;
+  border: 2px solid $accent;
   border-radius: 8px;
   color: #000000;
   padding: 11px 26px;
@@ -137,18 +137,18 @@
   transition-timing-function: $transition-timing-function;
 
   &:hover {
-    border-color: $accent-secondary;
+    border-color: $contrast;
   }
 
   @media screen and (min-width: $desktop) {
     padding: 12px 34px;
     line-height: calc(18 / 14);
-    border-radius: 10px;
+    border-radius: $border-radius-button;
 
     transition-property: border-color, color;
 
     &:focus {
-      border-color: $accent-secondary;
+      border-color: $contrast;
       color: $text-light;
     }
   }
@@ -157,12 +157,12 @@
 .button-list-btn--second {
   border: none;
   align-items: center;
-  color: #f8d24e;
+  color: $accent;
   text-decoration-line: underline;
   text-underline-offset: 2px;
 
   &:hover {
-    color: $accent-secondary;
+    color: $contrast;
   }
 
   &:focus {
