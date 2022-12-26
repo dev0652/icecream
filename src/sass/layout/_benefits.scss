@@ -21,6 +21,11 @@
 }
 
 .benefits__item {
+  @media screen and (max-width: calc($tablet - 1px)) {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
   @media screen and (min-width: $tablet) {
     flex-basis: calc((100% - 80px * 2) / 3);
   }
