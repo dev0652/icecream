@@ -20,13 +20,13 @@
 
   font-family: $secondary-font;
   font-weight: 400;
-  font-size: 16px;
+  font-size: rem(16);
   line-height: 1.5;
   color: $text-dark;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 103px;
-    font-size: 20px;
+    font-size: rem(20);
     line-height: 1.4;
   }
 }
@@ -53,13 +53,13 @@
 
   font-family: $primary-font;
   font-weight: 400;
-  font-size: 12px;
+  font-size: rem(12);
   line-height: 1.41;
 
   background: $bg-formfield;
-  border: 1px solid $bg-fieldborder;
-  border-radius: 10px;
-  outline: none;
+  border: 1px solid $bg-primary;
+  border-radius: $border-radius-button;
+
   outline-offset: -1px;
 
   transition: outline 100ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -69,7 +69,7 @@
     height: 42px;
     padding: 0 16px;
 
-    font-size: 14px;
+    font-size: rem(14);
     line-height: 1.42;
   }
 
@@ -87,13 +87,13 @@
 
   font-family: $primary-font;
   font-weight: 400;
-  font-size: 12px;
+  font-size: rem(12);
   line-height: 1.41;
 
   background: $bg-formfield;
-  border: 1px solid $bg-fieldborder;
-  border-radius: 10px;
-  outline: none;
+  border: 1px solid $bg-primary;
+  border-radius: $border-radius-button;
+
   outline-offset: -1px;
 
   @media screen and (min-width: $tablet) {
@@ -101,7 +101,7 @@
     height: 84px;
     padding: 11px 16px;
 
-    font-size: 14px;
+    font-size: rem(14);
     line-height: 1.42;
   }
 }
@@ -111,7 +111,7 @@
   min-height: 42px;
   padding: 12px 34px;
 
-  font-size: 14px;
+  font-size: rem(14);
   line-height: 1.21;
 
   border: none;
@@ -119,7 +119,7 @@
 
   &:hover,
   &:focus {
-    background-color: $accent-secondary;
+    background-color: $contrast;
   }
 
   &:focus {
@@ -174,7 +174,7 @@
   text-align: center;
   font-family: $primary-font;
   font-weight: 700;
-  font-size: 16px;
+  font-size: rem(16);
   line-height: 1.25;
   text-align: center;
   letter-spacing: 0.04em;
@@ -246,7 +246,7 @@
   // Ice coffee product
 
   &--icecoffee {
-    border-color: #efd478;
+    border-color: $bg-secondary;
 
     &:before {
       background: linear-gradient(
@@ -263,14 +263,14 @@
     }
 
     .buycheck:checked ~ & {
-      background-color: #efd478;
+      background-color: $bg-secondary;
     }
   }
 
   // Milkshake product
 
   &--milkshake {
-    border-color: #d6936d;
+    border-color: $bg-tertiary;
 
     &:before {
       background: linear-gradient(
@@ -287,7 +287,7 @@
     }
 
     .buycheck:checked ~ & {
-      background-color: #d6936d;
+      background-color: $bg-tertiary;
     }
   }
 }

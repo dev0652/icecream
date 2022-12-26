@@ -1,5 +1,5 @@
 .hero {
-  background-color: $bg-primary;
+  background-color: $bg-primary-darker;
   font-family: $primary-font;
 
   padding-top: 50px;
@@ -27,7 +27,7 @@
     padding-bottom: 12px;
 
     background-image: url(../images/hero/png/tablet/dots_tab.png);
-    background-size: 768px;
+    background-size: $tablet;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -42,7 +42,7 @@
     padding-bottom: 65px;
 
     background-image: url(../images/hero/png/desktop/dots_desk.png);
-    background-size: 1200px;
+    background-size: $desktop;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -56,8 +56,7 @@
 .hero__sup-title {
   font-family: 'Seymour One';
   font-weight: 400;
-  font-size: 26px;
-  line-height: calc(33 / 26);
+  @include fz-lh(26, 33);
   text-transform: uppercase;
   color: $text-light;
   max-width: 247px;
@@ -70,7 +69,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    font-size: 38px;
+    font-size: rem(38);
     max-width: 367px;
     margin-bottom: 28px;
   }
@@ -82,7 +81,7 @@
   position: absolute;
   bottom: 0;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: calc($tablet - 1px)) {
     left: 50%;
     transform: translateX(-45%);
   }
@@ -115,19 +114,18 @@
 .button-list-btn {
   background-color: transparent;
   font-weight: 600;
-  font-size: 12px;
-  line-height: calc(15 / 12);
+  @include fz-lh(12, 15);
 
   display: flex;
   align-items: center;
 
   @media screen and (min-width: $desktop) {
-    font-size: 14px;
+    font-size: rem(14);
   }
 }
 
 .button-list-btn--first {
-  border: 2px solid #f8d24e;
+  border: 2px solid $accent;
   border-radius: 8px;
   color: #000000;
   padding: 11px 26px;
@@ -137,18 +135,18 @@
   transition-timing-function: $transition-timing-function;
 
   &:hover {
-    border-color: $accent-secondary;
+    border-color: $contrast;
   }
 
   @media screen and (min-width: $desktop) {
     padding: 12px 34px;
     line-height: calc(18 / 14);
-    border-radius: 10px;
+    border-radius: $border-radius-button;
 
     transition-property: border-color, color;
 
     &:focus {
-      border-color: $accent-secondary;
+      border-color: $contrast;
       color: $text-light;
     }
   }
@@ -157,12 +155,12 @@
 .button-list-btn--second {
   border: none;
   align-items: center;
-  color: #f8d24e;
+  color: $accent;
   text-decoration-line: underline;
   text-underline-offset: 2px;
 
   &:hover {
-    color: $accent-secondary;
+    color: $contrast;
   }
 
   &:focus {
@@ -185,7 +183,7 @@
 
   position: relative;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: calc($tablet - 1px)) {
     display: none;
   }
 
@@ -200,11 +198,11 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: calc($tablet - 1px)) {
     display: none;
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: calc($desktop - 1px)) {
     width: 152px;
   }
 }
@@ -222,16 +220,14 @@
 .info__text {
   width: 150px;
   font-weight: 400;
-  font-size: 12px;
-  line-height: calc(17 / 14);
+  @include fz-lh(12, 17);
   color: $text-light;
 
   margin-bottom: 0;
 
   @media screen and (min-width: $desktop) {
     width: 220px;
-    font-size: 14px;
-    line-height: calc(20 / 14);
+    @include fz-lh(14, 20);
   }
 }
 
@@ -256,7 +252,7 @@
   left: 50%;
   transform: translateX(307px);
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: calc($tablet - 1px)) {
     display: none;
   }
 
@@ -270,27 +266,24 @@
 .numbers-list__item {
   display: flex;
   flex-direction: column;
-  font-weight: 400;
-  font-size: 8px;
-  line-height: calc(10 / 8);
+  // font-weight: 400;
+  @include fz-lh(8, 10);
   color: $text-light;
 
   @media screen and (min-width: $desktop) {
-    font-size: 14px;
-    line-height: calc(17 / 14);
+    @include fz-lh(14, 17);
   }
 }
 
 .numbers-list__amount {
   font-weight: 900;
-  font-size: 28px;
-  line-height: calc(34 / 28);
+  @include fz-lh(28, 34);
   margin-bottom: 4px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $text-dark;
 
   @media screen and (min-width: $desktop) {
-    font-size: 46px;
+    font-size: rem(46);
   }
 }

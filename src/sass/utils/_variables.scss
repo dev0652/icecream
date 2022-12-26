@@ -19,7 +19,7 @@ $secondary-font-size: 2.25rem; // 36px
 
 // Colors
 $accent: #f8d24e;
-$accent-secondary: #0a8817;
+$contrast: #0a8817;
 $inactive: #ababab;
 
 // Text color
@@ -27,11 +27,12 @@ $text-dark: #131313;
 $text-light: #fcfcfc;
 
 // Background
-$bg-primary: #84a278;
-$bg-secondary: rgb(239, 212, 120);
-$bg-tertiary: rgb(214, 147, 109);
+$bg-primary: #84a178;
+$bg-primary-darker: #84a278;
+$bg-primary-lighter: #aec6a5;
+$bg-secondary: #efd478;
+$bg-tertiary: #d6936d;
 $bg-formfield: rgba(248, 210, 78, 0.1);
-$bg-fieldborder: #84a178;
 
 // Borders
 $border-radius-button: 10px;

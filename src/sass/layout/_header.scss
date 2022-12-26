@@ -1,5 +1,5 @@
 .header {
-  background-color: #84a278;
+  background-color: $bg-primary-darker;
   display: flex;
   align-items: baseline;
   position: fixed;
@@ -21,7 +21,7 @@
 }
 
 .logo__img {
-  fill: #f8d24e;
+  fill: $accent;
 }
 
 .header__group {
@@ -34,7 +34,7 @@
   @extend %flex-centered;
 
   &.header__btn--main {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $tablet) {
       display: none;
     }
   }
@@ -46,7 +46,7 @@
   padding: calc(12px - 1px) 36px;
   align-self: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }
@@ -58,7 +58,7 @@
 }
 .nav__list {
   display: none;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,7 +69,7 @@
   &:not(:last-child) {
     margin-right: 28px;
   }
-  color: #fcfcfc;
+  color: $text-light;
 }
 
 .nav__link {
@@ -93,10 +93,10 @@
   background-color: transparent;
   fill: #ffffff;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-right: 32px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     display: none;
   }
 }
@@ -112,7 +112,7 @@
   list-style: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: calc($tablet - 1px)) {
   .menu {
     display: none;
   }
@@ -140,12 +140,12 @@
   width: 100vw;
   height: 100vh;
   padding: 32px;
-  background-color: #84a278;
+  background-color: $bg-primary-darker;
   z-index: 999;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     display: none;
   }
 }
@@ -174,22 +174,21 @@
 .mobile-menu .link {
   display: block;
   padding-bottom: 32px;
-  color: #fcfcfc;
+  color: $text-light;
   text-decoration: none;
 
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 59px;
+  @include fz-lh(32, 59);
 
   align-items: center;
   text-align: center;
-  @media screen and (min-width: 768px) {
-    font-size: 48px;
+  @media screen and (min-width: $tablet) {
+    font-size: rem(48);
     padding-bottom: 40px;
   }
 }
 
 .mobile-menu-item.active a {
-  color: #131313;
+  color: $text-dark;
 }

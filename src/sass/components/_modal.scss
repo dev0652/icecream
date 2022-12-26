@@ -32,9 +32,9 @@ body.modal-open {
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   text-align: center;
 
-  border: 2px solid #f8d24e;
-  border-radius: 10px;
-  background-color: #fcfcfc;
+  border: 2px solid $accent;
+  border-radius: $border-radius-button;
+  background-color: $text-light;
 
   transition: 0.4s all;
 
@@ -59,9 +59,8 @@ body.modal-open {
   position: absolute;
   top: 12px;
   right: 12px;
-  cursor: pointer;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 24px;
     height: 24px;
   }

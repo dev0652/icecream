@@ -4,11 +4,11 @@ section.gallery {
 
   padding-bottom: calc(130px - 32px);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding-bottom: calc(327px - 144px);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding-bottom: calc(422px - 98px);
   }
 }
@@ -19,19 +19,19 @@ section.gallery {
 
   transform: translateY(-32px);
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: calc($tablet - 1px)) {
     // height: 130px;
     width: 280px;
     margin: 0 auto;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     // width: 704px;
     // height: 327px;
     transform: translateY(-144px);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     // width: 1013px;
     // height: 422px;
     margin-left: calc(94px - 16px);
@@ -46,12 +46,12 @@ section.gallery {
 
   border-radius: 8px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     border-radius: 18px;
   }
 
-  @media screen and (min-width: 1200px) {
-    border-radius: 24px;
+  @media screen and (min-width: $desktop) {
+    border-radius: $border-radius-card;
   }
 
   animation-name: ice-cream;

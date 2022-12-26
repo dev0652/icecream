@@ -1,6 +1,6 @@
 .footer {
   // font-family: $primary-font;
-  background-color: #84a178;
+  background-color: $bg-primary;
 
   &__blocks {
     border-bottom: 1px solid #e1e1e1;
@@ -15,7 +15,7 @@
   }
 
   &__text-block {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: calc($tablet - 1px)) {
       margin-bottom: 40px;
     }
   }
@@ -65,7 +65,7 @@
   }
 
   &__contact-block {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: calc($tablet - 1px)) {
       margin-bottom: 40px;
     }
     @media screen and (min-width: $tablet) {
@@ -107,7 +107,7 @@
   }
 
   &__icon {
-    fill: #84a178;
+    fill: $bg-primary;
     @include transition(fill);
   }
 

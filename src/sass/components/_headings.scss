@@ -7,19 +7,16 @@
   text-transform: uppercase;
   text-align: center;
 
-  font-size: 30px;
-  line-height: 38px;
+  @include fz-lh(30, 38);
   letter-spacing: 0.04em;
 
   @media screen and (min-width: $tablet) {
-    font-size: 34px;
-    line-height: 43px;
+    @include fz-lh(34, 43);
     letter-spacing: 0.06em;
   }
 
   @media screen and (min-width: $desktop) {
-    font-size: 36px;
-    line-height: 45px;
+    @include fz-lh(36, 45);
   }
 }
 
@@ -29,16 +26,13 @@
 
   margin-bottom: 12px;
 
-  font-size: 18px;
-  line-height: 22px;
+  @include fz-lh(18, 22);
 
   @media screen and (min-width: $tablet) {
-    font-size: 22px;
-    line-height: 27px;
+    @include fz-lh(22, 27);
   }
 
   @media screen and (min-width: $desktop) {
-    font-size: 30px;
-    line-height: 37px;
+    @include fz-lh(30, 37);
   }
 }

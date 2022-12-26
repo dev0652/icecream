@@ -5,7 +5,7 @@
   min-width: 280px;
   padding: 26px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     max-height: 668px;
     min-width: 568px;
     padding: 30px 58px;
@@ -19,36 +19,28 @@
   margin-bottom: 20px;
 
   font-family: $secondary-font;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: calc(24 / 15);
+  @include fz-lh(15, 24);
 
-  color: #131313;
+  color: $text-dark;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     max-width: 332px;
     margin-bottom: 24px;
-
-    font-size: 20px;
-    line-height: calc(28 / 20);
+    @include fz-lh(20, 28);
   }
 }
 
-.modal--franchise-discription {
+.modal--franchise-description {
   max-width: 222px;
   margin-bottom: 24px;
   text-align: start;
-  font-family: $primary-font;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 140%;
 
-  @media screen and (min-width: 768px) {
+  @include fz-lh(14, 20);
+
+  @media screen and (min-width: $tablet) {
     max-width: 450px;
     margin-bottom: 32px;
-
-    font-size: 14px;
-    line-height: calc(22 / 14);
+    @include fz-lh(16, 22);
   }
 }
 
@@ -57,7 +49,7 @@
   flex-direction: column;
   gap: 12px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     gap: 16px;
   }
 }
@@ -69,25 +61,22 @@
   padding-right: 12px;
 
   font-family: $primary-font;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: calc(17 / 12);
+  @include fz-lh(12, 17);
 
   background: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84a178;
-  border-radius: 10px;
-  outline: none;
-  outline-offset: -1px;
-  color: #131313;
+  border: 1px solid $bg-primary;
+  border-radius: $border-radius-button;
 
-  @media screen and (min-width: 768px) {
+  outline-offset: -1px;
+  color: $text-dark;
+
+  @media screen and (min-width: $tablet) {
     width: 368px;
     height: 42px;
     padding-left: 16px;
     padding-right: 16px;
 
-    font-size: 14px;
-    line-height: calc(20 / 14);
+    @include fz-lh(14, 20);
   }
 
   &:not(:placeholder-shown):invalid {
@@ -105,25 +94,22 @@
   resize: none;
 
   font-family: $primary-font;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: calc(17 / 12);
+  @include fz-lh(12, 17);
 
   background: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84a178;
-  border-radius: 10px;
-  outline: none;
-  outline-offset: -1px;
-  color: #131313;
+  border: 1px solid $bg-primary;
+  border-radius: $border-radius-button;
 
-  @media screen and (min-width: 768px) {
+  outline-offset: -1px;
+  color: $text-dark;
+
+  @media screen and (min-width: $tablet) {
     width: 368px;
     height: 84px;
     padding: 10px 16px;
     margin-bottom: 32px;
 
-    font-size: 14px;
-    line-height: calc(20 / 14);
+    @include fz-lh(14, 20);
   }
 }
 
@@ -132,11 +118,10 @@
   min-height: 42px;
   padding: 12px 34px;
 
-  font-size: 12px;
-  line-height: calc(15 / 12);
+  @include fz-lh(12, 15);
 
   border: none;
-  background-color: #f8d24e;
+  background-color: $accent;
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -144,7 +129,7 @@
 
   &:hover,
   &:focus {
-    background-color: #0a8817;
+    background-color: $contrast;
   }
 
   &:focus {
@@ -152,10 +137,10 @@
   }
 
   &:disabled {
-    background-color: #ababab;
+    background-color: $inactive;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     min-width: 121px;
   }
 }
