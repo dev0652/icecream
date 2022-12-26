@@ -7,7 +7,8 @@
   z-index: $z-modal;
 
   @media screen and (min-width: $tablet) {
-    max-height: 644px;
+    // max-height: 644px;
+    max-height: 677px;
     min-width: 568px;
     padding: 32px 54px;
   }

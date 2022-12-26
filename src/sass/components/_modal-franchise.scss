@@ -1,12 +1,14 @@
 // Модалка franchise
 
 .modal--franchise {
-  max-height: 674px;
+  // max-height: 674px;
+  max-height: 714px;  
   min-width: 280px;
   padding: 26px;
 
   @media screen and (min-width: $tablet) {
-    max-height: 668px;
+    // max-height: 668px;
+    max-height: 690px;
     min-width: 568px;
     padding: 30px 58px;
   }
