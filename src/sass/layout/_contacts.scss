@@ -65,11 +65,12 @@
 .contacts__link--apricot {
   font-weight: 500;
   line-height: calc(29 / 16);
-  letter-spacing: 0.04em;
   color: $bg-tertiary;
+
   &:hover {
     text-decoration: underline;
   }
+
   &::after {
     content: '';
     display: block;
@@ -92,14 +93,12 @@
 .contacts__text--bold {
   font-weight: 500;
   line-height: calc(30 / 16);
-  letter-spacing: 0.04em;
   color: $text-dark;
 }
 
 .contacts__text--grey {
   font-weight: 500;
   line-height: calc(30 / 16);
-  letter-spacing: 0.04em;
   color: $inactive;
 }
 
