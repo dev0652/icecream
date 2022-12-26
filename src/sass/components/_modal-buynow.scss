@@ -7,8 +7,7 @@
   z-index: $z-modal;
 
   @media screen and (min-width: $tablet) {
-    // max-height: 644px;
-    max-height: 677px;
+    max-height: 653px;
     min-width: 568px;
     padding: 32px 54px;
   }
@@ -80,9 +79,19 @@
   }
 }
 
-.modal_form__comments {
+.buynow-comments__label {
   width: 224px;
   height: 65px;
+
+  @media screen and (min-width: $tablet) {
+    width: 368px;
+    height: 84px;
+  }
+}
+
+.modal_form__comments {
+  width: 224px;
+
   padding: 8px 12px;
   resize: none;
 
@@ -99,7 +108,7 @@
 
   @media screen and (min-width: $tablet) {
     width: 368px;
-    height: 84px;
+
     padding: 11px 16px;
 
     font-size: rem(14);
@@ -108,7 +117,7 @@
 }
 
 .buynow-btn {
-  min-width: 132px;
+  min-width: 114px;
   min-height: 42px;
   padding: 12px 34px;
 
@@ -215,11 +224,11 @@
     background-size: cover;
   }
 
-  &:hover,
-  &:focus {
-    animation: heartBeat;
-    animation-duration: 1s;
-  }
+  // &:hover,
+  // &:focus {
+  //   animation: heartBeat;
+  //   animation-duration: 1s;
+  // }
 
   // Ice cream product
 
@@ -242,6 +251,22 @@
 
     .buycheck:checked ~ & {
       background-color: #96af8c;
+    }
+
+    &:after,
+    &:before {
+      scale: 1;
+      transition: scale $transition-duration $transition-timing-function,
+        box-shadow $transition-duration $transition-timing-function;
+    }
+
+    &:hover,
+    &:focus {
+      &:after,
+      &:before {
+        scale: 1.1;
+        box-shadow: 0px 5px 19px #96af8c;
+      }
     }
   }
   // Ice coffee product
@@ -266,6 +291,22 @@
     .buycheck:checked ~ & {
       background-color: $bg-secondary;
     }
+
+    &:after,
+    &:before {
+      scale: 1;
+      transition: scale $transition-duration $transition-timing-function,
+        box-shadow $transition-duration $transition-timing-function;
+    }
+
+    &:hover,
+    &:focus {
+      &:after,
+      &:before {
+        scale: 1.1;
+        box-shadow: 0px 5px 19px $bg-secondary;
+      }
+    }
   }
 
   // Milkshake product
@@ -289,6 +330,22 @@
 
     .buycheck:checked ~ & {
       background-color: $bg-tertiary;
+    }
+
+    &:after,
+    &:before {
+      scale: 1;
+      transition: scale $transition-duration $transition-timing-function,
+        box-shadow $transition-duration $transition-timing-function;
+    }
+
+    &:hover,
+    &:focus {
+      &:after,
+      &:before {
+        scale: 1.1;
+        box-shadow: 0px 5px 19px $bg-tertiary;
+      }
     }
   }
 }
