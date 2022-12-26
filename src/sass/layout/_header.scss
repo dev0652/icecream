@@ -34,7 +34,7 @@
   @extend %flex-centered;
 
   &.header__btn--main {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $tablet) {
       display: none;
     }
   }
@@ -46,7 +46,7 @@
   padding: calc(12px - 1px) 36px;
   align-self: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }
@@ -58,7 +58,7 @@
 }
 .nav__list {
   display: none;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,10 +93,10 @@
   background-color: transparent;
   fill: #ffffff;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-right: 32px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     display: none;
   }
 }
@@ -112,7 +112,7 @@
   list-style: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: calc($tablet - 1px)) {
   .menu {
     display: none;
   }
@@ -145,7 +145,7 @@
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     display: none;
   }
 }
@@ -184,7 +184,7 @@
 
   align-items: center;
   text-align: center;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 48px;
     padding-bottom: 40px;
   }

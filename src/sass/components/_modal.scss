@@ -61,7 +61,7 @@ body.modal-open {
   right: 12px;
   cursor: pointer;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 24px;
     height: 24px;
   }

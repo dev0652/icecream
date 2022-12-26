@@ -12,12 +12,12 @@
   max-width: 200px;
   margin-bottom: 32px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     max-width: none;
     margin-bottom: 72px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 82px;
   }
 }
@@ -41,16 +41,16 @@
   margin-top: 0;
   margin-bottom: 62px;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
     width: 330px;
     max-width: 330px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 0px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: 490px;
     max-width: 490px;
   }
@@ -72,12 +72,12 @@
   max-width: 279px;
   width: 100%;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
     width: 330px;
     top: 26px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: 490px;
     max-width: 490px;
     top: 39px;
@@ -95,11 +95,11 @@
   @extend %flex-centered;
   flex-direction: column;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     align-items: flex-start;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-right: 121px;
   }
 }
@@ -108,13 +108,13 @@
   text-align: center;
   max-width: 220px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     line-height: 176%;
     text-align: left;
     max-width: none;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: 27px;
 
@@ -123,7 +123,7 @@
 }
 
 .about__paragraph:first-child {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 16px;
     line-height: 28px;
   }
@@ -135,23 +135,23 @@
 }
 
 .about__paragraph:nth-child(-n + 2) {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 8px;
   }
 }
 
 .about__paragraph:last-of-type {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 32px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 54px;
   }
 }
 .paragraph--item {
   display: none;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: block;
   }
 }
@@ -165,12 +165,12 @@
 }
 
 .about__description {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     gap: 38px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     gap: 109px;
   }
 }

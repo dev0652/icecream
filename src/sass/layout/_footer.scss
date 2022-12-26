@@ -15,7 +15,7 @@
   }
 
   &__text-block {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: calc($tablet - 1px)) {
       margin-bottom: 40px;
     }
   }
@@ -65,7 +65,7 @@
   }
 
   &__contact-block {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: calc($tablet - 1px)) {
       margin-bottom: 40px;
     }
     @media screen and (min-width: $tablet) {

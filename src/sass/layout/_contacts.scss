@@ -14,13 +14,13 @@
   font-size: 12px;
   margin-top: calc(($section-padding + 353px) * -1);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     flex-direction: initial;
     font-size: 14px;
     margin-top: calc(($section-padding + 299px) * -1);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     gap: 32px;
     font-size: 16px;
     margin-top: calc(($section-padding + 128px) * -1);
@@ -30,12 +30,12 @@
   padding: 40px 32px 24px 32px;
   max-width: 280px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     max-width: 224px;
     padding: 40px 24px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     max-width: 368px;
     padding: 40px 40px;
   }
@@ -78,7 +78,7 @@
     background-color: #e1e1e1;
     margin-top: 24px;
     margin-bottom: 24px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       margin-top: 32px;
       margin-bottom: 32px;
     }
@@ -112,7 +112,7 @@
   margin-top: 24px;
   margin-bottom: 24px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-top: 32px;
     margin-bottom: 32px;
   }
@@ -125,12 +125,12 @@
   gap: 16px;
   align-items: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     flex-direction: initial;
     margin-top: 40px;
     justify-content: center;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-top: 60px;
     justify-content: center;
   }

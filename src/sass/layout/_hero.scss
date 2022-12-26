@@ -27,7 +27,7 @@
     padding-bottom: 12px;
 
     background-image: url(../images/hero/png/tablet/dots_tab.png);
-    background-size: 768px;
+    background-size: $tablet;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -42,7 +42,7 @@
     padding-bottom: 65px;
 
     background-image: url(../images/hero/png/desktop/dots_desk.png);
-    background-size: 1200px;
+    background-size: $desktop;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -82,7 +82,7 @@
   position: absolute;
   bottom: 0;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: calc($tablet - 1px)) {
     left: 50%;
     transform: translateX(-45%);
   }
@@ -185,7 +185,7 @@
 
   position: relative;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: calc($tablet - 1px)) {
     display: none;
   }
 
@@ -200,11 +200,11 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: calc($tablet - 1px)) {
     display: none;
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: calc($desktop - 1px)) {
     width: 152px;
   }
 }
@@ -256,7 +256,7 @@
   left: 50%;
   transform: translateX(307px);
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: calc($tablet - 1px)) {
     display: none;
   }
 

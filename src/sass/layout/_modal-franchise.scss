@@ -5,7 +5,7 @@
   min-width: 280px;
   padding: 26px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     max-height: 668px;
     min-width: 568px;
     padding: 30px 58px;
@@ -25,7 +25,7 @@
 
   color: $text-dark;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     max-width: 332px;
     margin-bottom: 24px;
 
@@ -43,7 +43,7 @@
   font-size: 13px;
   line-height: 140%;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     max-width: 450px;
     margin-bottom: 32px;
 
@@ -57,7 +57,7 @@
   flex-direction: column;
   gap: 12px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     gap: 16px;
   }
 }
@@ -80,7 +80,7 @@
   outline-offset: -1px;
   color: $text-dark;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 368px;
     height: 42px;
     padding-left: 16px;
@@ -116,7 +116,7 @@
   outline-offset: -1px;
   color: $text-dark;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 368px;
     height: 84px;
     padding: 10px 16px;
@@ -155,7 +155,7 @@
     background-color: $inactive;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     min-width: 121px;
   }
 }
