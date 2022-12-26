@@ -24,8 +24,9 @@
     margin-bottom: 16px;
     max-width: 240px;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 1.2222;
+
+    @include fz-lh(18, 22);
+
     text-transform: uppercase;
 
     color: $text-light;
@@ -33,37 +34,33 @@
     @media screen and (min-width: $tablet) {
       margin-bottom: 8px;
       max-width: 352px;
-      font-size: 26px;
-      line-height: 1.23;
-      letter-spacing: 0.04em;
+      @include fz-lh(26, 32);
     }
     @media screen and (min-width: $desktop) {
       margin-bottom: 14px;
       max-width: 100%;
+
       font-weight: 400;
-      font-size: 30px;
+      @include fz-lh(30, 37);
     }
   }
 
   &__subtitle {
     max-width: 200px;
     font-weight: 700;
-    font-size: 34px;
-    line-height: 1.2;
+    @include fz-lh(34, 41);
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
     color: $text-light;
     @media screen and (min-width: $tablet) {
       max-width: 352px;
-      font-size: 48px;
-      line-height: 1.229;
+      @include fz-lh(48, 59);
       letter-spacing: 0.06em;
     }
     @media screen and (min-width: $desktop) {
       max-width: 100%;
-      font-size: 58px;
-      line-height: 1.22;
+      @include fz-lh(58, 71);
     }
   }
 
@@ -122,16 +119,15 @@
 
 .footer__contact {
   font-weight: 700;
-  font-size: 12px;
-  line-height: 1.86;
+  @include fz-lh(12, 22);
   text-align: right;
   color: $text-dark;
 
   @media screen and (min-width: $tablet) {
-    font-size: 14px;
+    @include fz-lh(14);
   }
   @media screen and (min-width: $desktop) {
-    font-size: 16px;
+    @include fz-lh(16);
     letter-spacing: 0.02em;
   }
   &--white {
@@ -143,8 +139,7 @@
   padding: 20px 0;
 
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.52;
+  @include fz-lh(14, 21);
   text-align: center;
 
   color: #7a7a7a;
@@ -152,10 +147,7 @@
     display: flex;
     justify-content: center;
     padding: 12px 0;
-    line-height: 1.86;
+    @include fz-lh(12, 22);
     letter-spacing: 0.02em;
-  }
-  @media screen and (min-width: $desktop) {
-    font-size: 12px;
   }
 }

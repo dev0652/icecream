@@ -111,6 +111,7 @@
   background-color: #e1e1e1;
   margin-top: 24px;
   margin-bottom: 24px;
+
   @media screen and (min-width: 768px) {
     margin-top: 32px;
     margin-bottom: 32px;
@@ -123,6 +124,7 @@
   margin-top: 20px;
   gap: 16px;
   align-items: center;
+
   @media screen and (min-width: 768px) {
     flex-direction: initial;
     margin-top: 40px;
@@ -135,71 +137,14 @@
 }
 
 .contacts__button {
-  display: flex;
-  width: 196px;
-  height: 42px;
-  font-weight: bold;
-  font-size: 14px;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  background-color: #f8d24e;
-  border-radius: 10px;
-
-  transition-property: background-color;
-  transition-duration: $transition-duration;
-  transition-timing-function: $transition-timing-function;
-
-  &:hover {
-    background-color: #0a8817;
-    color: #000000;
-  }
-  &:focus {
-    background-color: #0a8817;
-    color: #ffffff;
-  }
-  &:disabled {
-    background-color: #ababab;
-  }
-  &:focus .btn__icon {
-    fill: #ffffff;
-  }
+  @extend .button--accented;
+  @extend %flex-centered;
+  min-width: 196px;
 }
 
 .contacts__button--transparent {
-  display: flex;
-  width: 196px;
-  height: 42px;
-  font-weight: bold;
-  font-size: 14px;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  background-color: transparent;
-  border-radius: 10px;
-  border: 2px solid #f8d24e;
+  @extend .button;
+  @extend %flex-centered;
 
-  transition-property: border;
-  transition-duration: $transition-duration;
-  transition-timing-function: $transition-timing-function;
-
-  &:hover {
-    border: 2px solid #0a8817;
-    color: #000000;
-  }
-  &:focus {
-    fill: #ffffff;
-    color: #ffffff;
-  }
-  &:disabled {
-    border: 2px solid #ababab;
-  }
-  &:focus .btn__icon {
-    fill: #ffffff;
-  }
-}
-
-.btn__icon {
-  margin-left: 8px;
-  fill: #000000;
+  min-width: 196px;
 }
