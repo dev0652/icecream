@@ -72,15 +72,15 @@ body.modal-open {
 }
 
 *::-webkit-scrollbar {
-  width: 12px;
+  width: 5px;
 }
 
 *::-webkit-scrollbar-track {
-  background: #f8d24e;
+  background: #84a278;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #84a278;
+  background-color: #f8d24e;
   border-radius: 20px;
-  border: 3px solid #f8d24e;
+  // border: 3px solid #f8d24e;
 }
