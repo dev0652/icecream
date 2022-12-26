@@ -115,7 +115,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    font-size: 14px;
+    font-size: rem(14);
     line-height: 27px;
 
     text-align: justify;
@@ -124,7 +124,7 @@
 
 .about__paragraph:first-child {
   @media screen and (min-width: $desktop) {
-    font-size: 16px;
+    font-size: rem(16);
     line-height: 28px;
   }
 }

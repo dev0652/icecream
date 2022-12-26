@@ -16,7 +16,7 @@
 
   font-family: $secondary-font;
   font-weight: 400;
-  font-size: 20px;
+  font-size: rem(20);
   line-height: calc(28 / 20);
 
   color: $text-dark;
@@ -86,7 +86,7 @@
 
   font-family: $primary-font;
   font-weight: 400;
-  font-size: 10px;
+  font-size: rem(10);
   line-height: calc(12 / 10);
 
   border: 2px solid #9cbe8f;
@@ -107,7 +107,7 @@
     padding-top: 61px;
     padding-bottom: 14px;
 
-    font-size: 12px;
+    font-size: rem(12);
     line-height: calc(15 / 12);
   }
 }
@@ -126,7 +126,7 @@
   padding-bottom: 8px;
 
   font-weight: 500;
-  font-size: 10px;
+  font-size: rem(10);
   line-height: calc(28 / 10);
 
   border-radius: 50px;
@@ -159,7 +159,7 @@
 
   font-family: $primary-font;
   font-weight: 500;
-  font-size: 20px;
+  font-size: rem(20);
   line-height: calc(28 / 20);
 
   color: $text-dark;
@@ -181,7 +181,7 @@
 
   font-family: $primary-font;
   font-weight: 400;
-  font-size: 14px;
+  font-size: rem(14);
   line-height: 176%;
   letter-spacing: 0.04em;
 
@@ -206,7 +206,7 @@
 
   font-family: $primary-font;
   font-weight: 400;
-  font-size: 14px;
+  font-size: rem(14);
   line-height: 140%;
 
   background: rgba(248, 210, 78, 0.1);
@@ -246,7 +246,7 @@
 
   font-family: $primary-font;
   font-weight: 400;
-  font-size: 14px;
+  font-size: rem(14);
   line-height: 140%;
 
   background: rgba(248, 210, 78, 0.1);
@@ -277,7 +277,7 @@
   min-height: 42px;
   padding: 12px 34px;
 
-  font-size: 14px;
+  font-size: rem(14);
   line-height: calc(17 / 14);
 
   border: none;

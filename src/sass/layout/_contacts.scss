@@ -11,18 +11,18 @@
   flex-direction: column;
   gap: 16px;
   align-items: center;
-  font-size: 12px;
+  font-size: rem(12);
   margin-top: calc(($section-padding + 353px) * -1);
 
   @media screen and (min-width: $tablet) {
     flex-direction: initial;
-    font-size: 14px;
+    font-size: rem(14);
     margin-top: calc(($section-padding + 299px) * -1);
   }
 
   @media screen and (min-width: $desktop) {
     gap: 32px;
-    font-size: 16px;
+    font-size: rem(16);
     margin-top: calc(($section-padding + 128px) * -1);
   }
 }

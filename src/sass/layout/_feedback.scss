@@ -33,7 +33,7 @@
   padding: 35px 39px;
   background: $bg-primary;
   border-radius: $border-radius-button;
-  font-size: 12px;
+  font-size: rem(12);
   line-height: 2.55;
   color: $text-light;
 
@@ -43,7 +43,7 @@
     padding: 28px 80px;
     border-radius: $border-radius-card;
     font-weight: 500;
-    font-size: 14px;
+    font-size: rem(14);
     line-height: 1, 86;
     letter-spacing: 0.04em;
   }
@@ -51,7 +51,7 @@
   @media screen and (min-width: $desktop) {
     max-width: 968px;
     padding: 42px 73px;
-    font-size: 16px;
+    font-size: rem(16);
   }
 }
 
@@ -129,13 +129,13 @@
 
 .feedback .cont div h2 {
   font-weight: 500;
-  font-size: 20px;
+  font-size: rem(20);
   line-height: 1.86;
   text-align: center;
   color: $text-dark;
 
   @media screen and (min-width: $tablet) {
-    font-size: 16px;
+    font-size: rem(16);
   }
 }
 
@@ -571,7 +571,7 @@
 
 // @media all and (max-width: 300px) {
 //   body {
-//     font-size: 14px;
+//     font-size: rem(14);
 //   }
 // }
 

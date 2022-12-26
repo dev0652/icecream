@@ -20,13 +20,13 @@
 
   font-family: $secondary-font;
   font-weight: 400;
-  font-size: 16px;
+  font-size: rem(16);
   line-height: 1.5;
   color: $text-dark;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 103px;
-    font-size: 20px;
+    font-size: rem(20);
     line-height: 1.4;
   }
 }
@@ -53,7 +53,7 @@
 
   font-family: $primary-font;
   font-weight: 400;
-  font-size: 12px;
+  font-size: rem(12);
   line-height: 1.41;
 
   background: $bg-formfield;
@@ -69,7 +69,7 @@
     height: 42px;
     padding: 0 16px;
 
-    font-size: 14px;
+    font-size: rem(14);
     line-height: 1.42;
   }
 
@@ -87,7 +87,7 @@
 
   font-family: $primary-font;
   font-weight: 400;
-  font-size: 12px;
+  font-size: rem(12);
   line-height: 1.41;
 
   background: $bg-formfield;
@@ -101,7 +101,7 @@
     height: 84px;
     padding: 11px 16px;
 
-    font-size: 14px;
+    font-size: rem(14);
     line-height: 1.42;
   }
 }
@@ -111,7 +111,7 @@
   min-height: 42px;
   padding: 12px 34px;
 
-  font-size: 14px;
+  font-size: rem(14);
   line-height: 1.21;
 
   border: none;
@@ -174,7 +174,7 @@
   text-align: center;
   font-family: $primary-font;
   font-weight: 700;
-  font-size: 16px;
+  font-size: rem(16);
   line-height: 1.25;
   text-align: center;
   letter-spacing: 0.04em;

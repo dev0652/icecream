@@ -19,7 +19,7 @@
 
   font-family: $secondary-font;
   font-weight: 400;
-  font-size: 16px;
+  font-size: rem(16);
   line-height: calc(24 / 16);
 
   color: $text-dark;
@@ -27,7 +27,7 @@
   @media screen and (min-width: $tablet) {
     margin-bottom: 32px;
 
-    font-size: 20px;
+    font-size: rem(20);
     line-height: calc(28 / 20);
   }
 }
@@ -54,7 +54,7 @@
   min-height: 42px;
   padding: 12px 34px;
 
-  font-size: 12px;
+  font-size: rem(12);
   line-height: calc(15 / 12);
 
   border: none;
@@ -79,7 +79,7 @@
 
   @media screen and (min-width: $tablet) {
     min-width: 145px;
-    font-size: 14px;
+    font-size: rem(14);
     line-height: calc(17 / 14);
   }
 }

@@ -179,13 +179,13 @@
 
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: rem(32);
   line-height: 59px;
 
   align-items: center;
   text-align: center;
   @media screen and (min-width: $tablet) {
-    font-size: 48px;
+    font-size: rem(48);
     padding-bottom: 40px;
   }
 }

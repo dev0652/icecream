@@ -183,17 +183,17 @@ section.products {
   text-transform: uppercase;
   font-weight: 700;
 
-  font-size: 20px;
+  font-size: rem(20);
   line-height: 24px;
   margin-bottom: 40px;
 
   @media screen and (min-width: $tablet) {
-    font-size: 22px;
+    font-size: rem(22);
     line-height: 27px;
   }
 
   @media screen and (min-width: $desktop) {
-    font-size: 30px;
+    font-size: rem(30);
     line-height: 37px;
 
     margin-bottom: 66px;
@@ -207,12 +207,12 @@ section.products {
   margin-bottom: 101px;
 
   @media screen and (min-width: $tablet) {
-    font-size: 14px;
+    font-size: rem(14);
     margin-bottom: 75px;
   }
 
   @media screen and (min-width: $desktop) {
-    font-size: 16px;
+    font-size: rem(16);
     margin-bottom: 50px;
   }
 }
