@@ -11,15 +11,14 @@
 
 .video__title {
   font-family: 'Seymour One';
-  font-size: rem(16);
-  line-height: 24px;
+  @include fz-lh(16, 24);
+
   color: $text-dark;
 
   margin-bottom: 20px;
 
   @media screen and (min-width: $tablet) {
-    font-size: rem(20);
-    line-height: 28px;
+    @include fz-lh(20, 28);
 
     margin-bottom: 32px;
   }
@@ -27,8 +26,8 @@
 
 .video__text {
   font-family: $primary-font;
-  font-size: rem(14);
-  line-height: 20px;
+  @include fz-lh(14, 20);
+
   color: $text-dark;
 
   text-align: left;
@@ -36,8 +35,7 @@
   margin-top: 20px;
 
   @media screen and (min-width: $tablet) {
-    font-size: rem(16);
-    line-height: 22px;
+    @include fz-lh(16, 22);
 
     margin-top: 32px;
 

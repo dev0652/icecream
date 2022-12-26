@@ -59,7 +59,7 @@
   background: $bg-formfield;
   border: 1px solid $bg-primary;
   border-radius: $border-radius-button;
-  outline: none;
+
   outline-offset: -1px;
 
   transition: outline 100ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -93,7 +93,7 @@
   background: $bg-formfield;
   border: 1px solid $bg-primary;
   border-radius: $border-radius-button;
-  outline: none;
+
   outline-offset: -1px;
 
   @media screen and (min-width: $tablet) {

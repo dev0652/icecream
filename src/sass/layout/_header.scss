@@ -179,8 +179,7 @@
 
   font-style: normal;
   font-weight: 700;
-  font-size: rem(32);
-  line-height: 59px;
+  @include fz-lh(32, 59);
 
   align-items: center;
   text-align: center;

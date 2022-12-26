@@ -182,20 +182,16 @@ section.products {
 .product-card__heading {
   text-transform: uppercase;
   font-weight: 700;
+  @include fz-lh(20, 24);
 
-  font-size: rem(20);
-  line-height: 24px;
   margin-bottom: 40px;
 
   @media screen and (min-width: $tablet) {
-    font-size: rem(22);
-    line-height: 27px;
+    @include fz-lh(22, 27);
   }
 
   @media screen and (min-width: $desktop) {
-    font-size: rem(30);
-    line-height: 37px;
-
+    @include fz-lh(30, 37);
     margin-bottom: 66px;
   }
 }

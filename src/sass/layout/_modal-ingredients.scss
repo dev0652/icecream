@@ -16,8 +16,7 @@
 
   font-family: $secondary-font;
   font-weight: 400;
-  font-size: rem(20);
-  line-height: calc(28 / 20);
+  @include fz-lh(20, 28);
 
   color: $text-dark;
 
@@ -84,10 +83,7 @@
   padding-top: 52px;
   padding-bottom: 8px;
 
-  font-family: $primary-font;
-  font-weight: 400;
-  font-size: rem(10);
-  line-height: calc(12 / 10);
+  @include fz-lh(10, 21);
 
   border: 2px solid #9cbe8f;
   border-radius: 40px;
@@ -107,8 +103,7 @@
     padding-top: 61px;
     padding-bottom: 14px;
 
-    font-size: rem(12);
-    line-height: calc(15 / 12);
+    @include fz-lh(12, 15);
   }
 }
 
@@ -126,8 +121,7 @@
   padding-bottom: 8px;
 
   font-weight: 500;
-  font-size: rem(10);
-  line-height: calc(28 / 10);
+  @include fz-lh(10, 28);
 
   border-radius: 50px;
   background: #9cbe8f;
@@ -159,8 +153,7 @@
 
   font-family: $primary-font;
   font-weight: 500;
-  font-size: rem(20);
-  line-height: calc(28 / 20);
+  @include fz-lh(20, 28);
 
   color: $text-dark;
 }
@@ -179,11 +172,7 @@
 .modal-ingredients__component {
   display: flex;
 
-  font-family: $primary-font;
-  font-weight: 400;
-  font-size: rem(14);
-  line-height: 176%;
-  letter-spacing: 0.04em;
+  @include fz-lh(14, 25);
 
   color: rgba(19, 19, 19, 1);
 
@@ -192,7 +181,7 @@
   }
 }
 
-.modal-igredients__form {
+.modal-ingredients__form {
   @extend %flex-centered;
   flex-direction: column;
   gap: 16px;
@@ -204,15 +193,12 @@
   padding-left: 10.5px;
   padding-right: 10.5px;
 
-  font-family: $primary-font;
-  font-weight: 400;
-  font-size: rem(14);
-  line-height: 140%;
+  @include fz-lh(14, 20);
 
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid $bg-primary;
   border-radius: $border-radius-button;
-  outline: none;
+
   outline-offset: -1px;
   color: $text-dark;
 
@@ -252,7 +238,7 @@
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid $bg-primary;
   border-radius: $border-radius-button;
-  outline: none;
+
   outline-offset: -1px;
   color: $text-dark;
 
@@ -277,8 +263,7 @@
   min-height: 42px;
   padding: 12px 34px;
 
-  font-size: rem(14);
-  line-height: calc(17 / 14);
+  @include fz-lh(14, 17);
 
   border: none;
   background-color: $accent;

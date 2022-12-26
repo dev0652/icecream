@@ -19,36 +19,28 @@
   margin-bottom: 20px;
 
   font-family: $secondary-font;
-  font-weight: 400;
-  font-size: rem(15);
-  line-height: calc(24 / 15);
+  @include fz-lh(15, 24);
 
   color: $text-dark;
 
   @media screen and (min-width: $tablet) {
     max-width: 332px;
     margin-bottom: 24px;
-
-    font-size: rem(20);
-    line-height: calc(28 / 20);
+    @include fz-lh(20, 28);
   }
 }
 
-.modal--franchise-discription {
+.modal--franchise-description {
   max-width: 222px;
   margin-bottom: 24px;
   text-align: start;
-  font-family: $primary-font;
-  font-weight: 400;
-  font-size: rem(13);
-  line-height: 140%;
+
+  @include fz-lh(14, 20);
 
   @media screen and (min-width: $tablet) {
     max-width: 450px;
     margin-bottom: 32px;
-
-    font-size: rem(14);
-    line-height: calc(22 / 14);
+    @include fz-lh(16, 22);
   }
 }
 
@@ -69,14 +61,12 @@
   padding-right: 12px;
 
   font-family: $primary-font;
-  font-weight: 400;
-  font-size: rem(12);
-  line-height: calc(17 / 12);
+  @include fz-lh(12, 17);
 
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid $bg-primary;
   border-radius: $border-radius-button;
-  outline: none;
+
   outline-offset: -1px;
   color: $text-dark;
 
@@ -86,8 +76,7 @@
     padding-left: 16px;
     padding-right: 16px;
 
-    font-size: rem(14);
-    line-height: calc(20 / 14);
+    @include fz-lh(14, 20);
   }
 
   &:not(:placeholder-shown):invalid {
@@ -105,14 +94,12 @@
   resize: none;
 
   font-family: $primary-font;
-  font-weight: 400;
-  font-size: rem(12);
-  line-height: calc(17 / 12);
+  @include fz-lh(12, 17);
 
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid $bg-primary;
   border-radius: $border-radius-button;
-  outline: none;
+
   outline-offset: -1px;
   color: $text-dark;
 
@@ -122,8 +109,7 @@
     padding: 10px 16px;
     margin-bottom: 32px;
 
-    font-size: rem(14);
-    line-height: calc(20 / 14);
+    @include fz-lh(14, 20);
   }
 }
 
@@ -132,8 +118,7 @@
   min-height: 42px;
   padding: 12px 34px;
 
-  font-size: rem(12);
-  line-height: calc(15 / 12);
+  @include fz-lh(12, 15);
 
   border: none;
   background-color: $accent;
