@@ -65,3 +65,22 @@ body.modal-open {
     height: 24px;
   }
 }
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: blue-orange;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f8d24e;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #84a278;
+  border-radius: 20px;
+  border: 3px solid #f8d24e;
+}
