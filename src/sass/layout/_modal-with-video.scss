@@ -46,6 +46,7 @@
 .video__content {
   width: 224px;
   height: auto;
+  border: 0px;
 
   @media screen and (min-width: $tablet) {
     width: 448px;
