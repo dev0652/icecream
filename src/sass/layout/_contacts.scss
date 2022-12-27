@@ -67,8 +67,10 @@
   line-height: calc(29 / 16);
   color: $bg-tertiary;
 
+  &:focus,
   &:hover {
     text-decoration: underline;
+    color: $bg-tertiary;
   }
 
   &::after {
