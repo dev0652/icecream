@@ -18,6 +18,7 @@
 
 // Header
 @import './layout/header';
+@import './layout/mobile-menu';
 
 // Sections
 @import './layout/hero';
@@ -31,13 +32,10 @@
 // Footer
 @import './layout/footer';
 
-// Mobile menu
-@import './layout/mobile-menu';
-
 // Modal windows
-@import './modals/modal';
-@import './modals/modal-ingredients';
-@import './modals/modal-with-video';
-@import './modals/modal-buynow';
-@import './modals/modal-franchise';
-@import './modals/modal-locations';
+@import './layout/modals/modal';
+@import './layout/modals/modal-ingredients';
+@import './layout/modals/modal-with-video';
+@import './layout/modals/modal-buynow';
+@import './layout/modals/modal-franchise';
+@import './layout/modals/modal-locations';
