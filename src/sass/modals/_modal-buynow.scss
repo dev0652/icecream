@@ -1,7 +1,6 @@
 // Modal Buy now
 
 .modal-buynow {
-  max-height: 991px;
   max-width: 280px;
   padding: 28px 28px;
   z-index: $z-modal;
@@ -44,8 +43,8 @@
 
   // Custom outlines
   &:focus + .buycheck-label {
-    outline: 3px solid $bg-primary;
-    outline-offset: 0.5px;
+    outline: 2px solid $bg-primary;
+    // outline-offset: 0.5px;
 
     &--icecoffee {
       outline-color: $bg-secondary;
