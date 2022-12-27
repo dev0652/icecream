@@ -27,11 +27,6 @@ button {
     border-color: $contrast;
   }
 
-  &:focus {
-    color: $text-light;
-    fill: $text-light;
-  }
-
   &:disabled {
     border-color: $inactive;
   }

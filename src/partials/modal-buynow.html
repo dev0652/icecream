@@ -1,89 +1,64 @@
 <div class="modal modal-buynow" data-modal="modal-buynow">
-  <svg class="close-btn js-modal-close">
-    <use href="./images/symbol-defs.svg#close-btn"></use>
-  </svg>
-  <p class="modal-buynow__title">Buy now</p>
+	<svg class="close-btn js-modal-close">
+		<use href="./images/symbol-defs.svg#close-btn"></use>
+	</svg>
+	<p class="modal-buynow__title">Buy now</p>
 
-  <form class="modal-buynow__form" autocomplete="off">
-    <ul class="modal-buynow__products">
-      <li class="buynow-products__item">
-        <input
-          class="buycheck"
-          type="checkbox"
-          id="order-icecream"
-          name="product"
-          value="icecream"
-        />
-        <label
-          class="buycheck-label buycheck-label--icecream"
-          for="order-icecream"
-          >Ice Cream</label
-        >
-      </li>
-      <li class="buynow-products__item">
-        <input
-          class="buycheck"
-          type="checkbox"
-          id="order-icecoffee"
-          name="product"
-          value="icecoffee"
-        />
-        <label
-          class="buycheck-label buycheck-label--icecoffee"
-          for="order-icecoffee"
-          >Ice Coffee</label
-        >
-      </li>
-      <li class="buynow-products__item">
-        <input
-          class="buycheck"
-          type="checkbox"
-          id="order-milkshake"
-          name="product"
-          value="milkshake"
-        /><label
-          class="buycheck-label buycheck-label--milkshake"
-          for="order-milkshake"
-          >Milkshake</label
-        >
-      </li>
-    </ul>
-    <div class="modal-buynow__group" role="group">
-      <label for="name">
-        <input
-          class="modal-buynow__field"
-          type="text"
-          name="user_name"
-          pattern="[a-zA-Z\u0400-\u04ff\s]{3,30}"
-          title="Please type only letters, e.g. Boris Johnson"
-          required
-          id="name"
-          placeholder="Name"
-          autocomplete="off"
-        />
-      </label>
-      <label for="telephone">
-        <input
-          class="modal-buynow__field tel-input"
-          type="tel"
-          name="user_phone"
-          pattern="[+\0-9]{10,}"
-          title="Please use international format, e.g. +61XXXXXXXXXXXX, min 10 digits"
-          required
-          id="telephone"
-          placeholder="Phone"
-          autocomplete="off"
-        />
-      </label>
-      <label class="buynow-comments__label">
-        <textarea
-          class="modal_form__comments"
-          name="user_comments"
-          rows="3"
-          placeholder="Comments"
-        ></textarea>
-      </label>
-    </div>
-    <button class="button buynow-btn" type="submit">Submit</button>
-  </form>
+	<!-- Modal window form -->
+	<form class="modal-buynow__form" autocomplete="off">
+
+		<!-- Checkboxes (choose your product) -->
+		<ul class="modal-buynow__products">
+
+			<!-- Checkboxes list item 1 -->
+			<li class="buynow-products__item">
+
+				<!-- Checkbox -->
+				<input class="buycheck" type="checkbox" id="order-icecream" name="product" value="icecream" />
+				<label class="buycheck-label buycheck-label--icecream" for="order-icecream">Ice Cream</label>
+			</li>
+
+			<!-- Checkboxes list item 2 -->
+			<li class="buynow-products__item">
+
+				<!-- Checkbox -->
+				<input class="buycheck" type="checkbox" id="order-icecoffee" name="product" value="icecoffee" />
+				<label class="buycheck-label buycheck-label--icecoffee" for="order-icecoffee">Ice Coffee</label>
+			</li>
+
+			<!-- Checkboxes list item 3 -->
+			<li class="buynow-products__item">
+
+				<!-- Checkbox -->
+				<input class="buycheck" type="checkbox" id="order-milkshake" name="product" value="milkshake" /><label
+					class="buycheck-label buycheck-label--milkshake" for="order-milkshake">Milkshake</label>
+			</li>
+		</ul>
+
+		<!-- Modal form text fields -->
+		<div class="modal-buynow__group" role="group">
+
+			<!-- Name field -->
+			<label for="name">
+				<input class="modal-buynow__field" type="text" name="user_name" pattern="[a-zA-Z\u0400-\u04ff\s]{3,30}"
+					title="Please type only letters, e.g. Boris Johnson" required id="name" placeholder="Name"
+					autocomplete="off" />
+			</label>
+
+			<!-- Telephone field -->
+			<label for="telephone">
+				<input class="modal-buynow__field tel-input" type="tel" name="user_phone" pattern="[+\0-9]{10,}"
+					title="Please use international format, e.g. +61XXXXXXXXXXXX, min 10 digits" required id="telephone"
+					placeholder="Phone" autocomplete="off" />
+			</label>
+
+			<!-- Comment field -->
+			<label class="buynow-comments__label">
+				<textarea class="modal_form__comments" name="user_comments" rows="3" placeholder="Comments"></textarea>
+			</label>
+		</div>
+
+		<!-- Form submit button -->
+		<button class="button buynow-btn" type="submit">Submit</button>
+	</form>
 </div>

@@ -4,16 +4,13 @@
   font-family: $primary-font;
   font-size: $primary-font-size;
 
-  scroll-padding-top: 80px; /* height of sticky header */
-  // css-tricks.com/fixed-headers-on-page-links-and-overlapping-content-oh-my/
+  scroll-padding-top: 80px; // height of sticky header
+  // courtesy of https://css-tricks.com/fixed-headers-on-page-links-and-overlapping-content-oh-my/
 }
 
 body {
   letter-spacing: 0.04em;
   color: $text-dark;
-
-  // $folder, $filename, $extension: webp
-  // @include bg-image(bg, bg);
 
   // $gradient-color, $folder, $filename, $extension: webp
   @include bg-with-overlay(rgba(#eee, 0.4), bg, bg);
@@ -25,8 +22,6 @@ body {
 }
 
 .container {
-  // outline: auto;
-
   padding-left: $container-padding;
   padding-right: $container-padding;
 
@@ -40,7 +35,6 @@ body {
     width: $tablet;
   }
   @media screen and (min-width: $desktop) {
-    // width: $desktop + ($container-padding * 2);
     width: $desktop;
   }
 }
