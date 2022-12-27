@@ -230,6 +230,7 @@
 
   input[type='text'],
   input[type='tel'],
+  input[type='email'],
   textarea {
     &:focus {
       outline: $thickness solid rgba($color, 0.6);

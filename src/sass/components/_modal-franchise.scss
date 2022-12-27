@@ -1,7 +1,7 @@
-// Модалка franchise
+// Franchise modal window
 
 .modal--franchise {
-  max-height: 674px;
+  // max-height: 674px;
   min-width: 280px;
   padding: 26px;
 
@@ -12,7 +12,7 @@
   }
 }
 
-.modal--franchise-title {
+.modal-franchise__title {
   margin-left: auto;
   margin-right: auto;
   max-width: 221px;
@@ -30,7 +30,7 @@
   }
 }
 
-.modal--franchise-description {
+.modal-franchise__description {
   max-width: 222px;
   margin-bottom: 24px;
   text-align: start;
@@ -43,9 +43,13 @@
     @include fz-lh(16, 22);
   }
 }
+.modal-franchise__form {
+  @include form-outline($bg-primary);
+}
 
-.modal--franchise-form {
+.modal-franchise__field-group {
   @extend %flex-centered;
+
   flex-direction: column;
   gap: 12px;
 
@@ -54,7 +58,7 @@
   }
 }
 
-.modal--franchise-input {
+.modal-franchise__input {
   width: 224px;
   height: 32px;
   padding-left: 12px;
@@ -80,12 +84,12 @@
   }
 
   &:not(:placeholder-shown):invalid {
-    outline: 2px solid red;
+    outline: 3px solid red !important;
     background: rgba(100, 0, 0, 0.1);
   }
 }
 
-.modal--franchise-message {
+.modal-franchise__message {
   width: 224px;
   height: 64px;
   padding: 7px 12px;
@@ -113,7 +117,7 @@
   }
 }
 
-.modal--franchise-button {
+.modal-franchise__button {
   min-width: 114px;
   min-height: 42px;
   padding: 12px 34px;

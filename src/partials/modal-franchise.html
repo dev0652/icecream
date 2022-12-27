@@ -1,40 +1,49 @@
-<!-- Модалка franchise -->
-<div class="modal modal--franchise" data-modal="modal_franchise">
-	<!--   Svg иконка для закрытия окна  -->
-	<svg class="close-btn js-modal-close">
-		<use href="./images/symbol-defs.svg#close-btn"></use>
-	</svg>
-	<p class="modal--franchise-title">
+<!-- Franchise modal window -->
+<div class="modal modal--franchise" role="dialog" aria-labelledby="modal-title-franchise" data-modal="modal_franchise">
+
+	<!-- CLose button -->
+	<button class="close-btn js-modal-close" type="button">
+		<svg class="close-button__icon" width="24" height="24">
+			<use href="./images/symbol-defs.svg#close-btn"></use>
+		</svg>
+	</button>
+
+	<!-- Modal window title -->
+	<h3 class="modal-franchise__title" id="modal-title-franchise">
 		Thank you for your interest in owning an Ice Cream shop
-	</p>
-	<p class="modal--franchise-description">
+	</h3>
+
+	<p class="modal-franchise__description">
 		Due to the overwhelming volume of franchise requests we are not accepting
 		new franchisee applications at this time. Once the application process
 		resumes, we will contact you for further information. Please fill out the
 		contact information below and we will reach out for additional information.
 		We appreciate your patience.
 	</p>
-	<form class="" name="modal__form">
-		<div role="group" class="modal--franchise-form">
-			<!-- Ім'я -->
-			<input type="text" class="modal--franchise-input" name="name" pattern="[a-zA-Z\u0400-\u04ff\s]{3,30}"
+
+	<form class="modal-franchise__form" name="modal__form">
+
+		<div role="group" class="modal-franchise__field-group">
+			<!-- Name -->
+			<input type="text" class="modal-franchise__input" name="name" pattern="[a-zA-Z\u0400-\u04ff\s]{3,30}"
 				title="Please type only letters, e.g. Boris Johnson" required placeholder="Name" title="Name" />
 			</label>
 
-			<!-- Телефон -->
-			<input type="tel" class="modal--franchise-input" required name="tel" pattern="[+\0-9]{10,}"
+			<!-- Telephone -->
+			<input type="tel" class="modal-franchise__input" required name="tel" pattern="[+\0-9]{10,}"
 				title="Please use international format, e.g. +61XXXXXXXXXXXX, min 10 digits" placeholder="Phone" />
 			</label>
 
-			<!-- Пошта -->
-			<input type="email" class="modal--franchise-input" required name="mail" placeholder="Email" />
+			<!-- Email -->
+			<input type="email" class="modal-franchise__input" required name="mail" placeholder="Email" />
 			</label>
 
-			<!-- Комент -->
-			<textarea class="modal--franchise-message" name="comment" rows="3" placeholder="Comment"></textarea>
+			<!-- Comment -->
+			<textarea class="modal-franchise__message" name="comment" rows="3" placeholder="Comment"></textarea>
 			</label>
 		</div>
-		<!-- Кнопка -->
-		<button class="button modal--franchise-button" type="submit">Submit</button>
+
+		<!-- Form submit button -->
+		<button class="button modal-franchise__button" type="submit">Submit</button>
 	</form>
 </div>

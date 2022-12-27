@@ -43,7 +43,6 @@
   appearance: none;
 
   // Custom outlines
-
   &:focus + .buycheck-label {
     outline: 3px solid $bg-primary;
     outline-offset: 0.5px;
@@ -268,7 +267,7 @@
   }
 
   &:not(:placeholder-shown):invalid {
-    outline: 2px solid red;
+    outline: 3px solid red !important;
     background: rgba(100, 0, 0, 0.1);
   }
 }
