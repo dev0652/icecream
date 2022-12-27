@@ -43,8 +43,8 @@
 
   // Custom outlines
   &:focus + .buycheck-label {
-    outline: 3px solid $bg-primary;
-    outline-offset: 0.5px;
+    outline: 2px solid $bg-primary;
+    // outline-offset: 0.5px;
 
     &--icecoffee {
       outline-color: $bg-secondary;
