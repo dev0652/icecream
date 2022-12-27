@@ -1,6 +1,6 @@
 /* Buttons */
 
-button:not(.close-btn) {
+button:not(.close-btn, .menu-toggle) {
   &:hover {
     animation: 3s ease-out button-pulsing-shadow infinite 100ms;
   }
