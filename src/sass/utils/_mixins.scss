@@ -1,20 +1,3 @@
-// Media queries
-
-// @mixin media($device, $min-max: min) {
-// 	// Borrowed from https://engageinteractive.co.uk/blog/top-10-scss-mixins
-
-// 	@if map_has_key($breakpoints, $device) {
-// 		$device: map_get($breakpoints, $device);
-
-// 		@if $min-max == max {
-// 			$device: $device - 1px;
-// 		}
-// 		@media screen and (#{$min-max}-width: $device) {
-// 			@content;
-// 		}
-// 	}
-// }
-
 // Font-size in rem + line height
 
 @mixin fz-lh($fz, $lh: false) {
@@ -235,6 +218,22 @@
           $gradient-color
         ),
         url('../images/#{$folder}/#{$img-type}/desktop/#{$filename}@2x.#{$extension}');
+    }
+  }
+}
+
+// Form outline
+
+@mixin form-outline($color, $thickness: 3px, $offset: 0.5px) {
+  // Custom field outlines
+  $form-outline-color: blue;
+
+  input[type='text'],
+  input[type='tel'],
+  textarea {
+    &:focus {
+      outline: $thickness solid rgba($color, 0.6);
+      outline-offset: $offset;
     }
   }
 }

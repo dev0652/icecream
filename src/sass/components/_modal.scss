@@ -104,17 +104,3 @@
     animation: close-btn-halo 2000ms linear infinite 100ms;
   }
 }
-
-// Custom text field outline
-
-form {
-  input[type='text'],
-  input[type='tel'],
-  textarea {
-    &:focus {
-      // outline: 3px solid rgba(var(--current-form-color), 0.6);
-      // outline: 3px solid rgba(var($form-outline-color), 0.6);
-      outline-offset: 0.5px;
-    }
-  }
-}

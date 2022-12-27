@@ -1,4 +1,4 @@
-<!--Модалка с ингридиентами мороженного-->
+<!-- ingredients modal - Ice Cream -->
 <div class="modal modal-ingredients" data-modal="modal-ingredients1">
 
 	<!-- CLose button -->
@@ -9,7 +9,7 @@
 		</svg>
 	</button>
 
-
+	<!-- Modal window title -->
 	<h3 class="modal-ingredients__title">Chololate icecream</h3>
 
 	<div class="modal-ingredients__thumb">
@@ -42,7 +42,7 @@
 		</li>
 	</ul>
 
-	<p class="modal-ingredients__paragraph">Ingredients</p>
+	<p class="modal-ingredients__paragraph">modal-ingredients</p>
 
 	<ul class="modal-ingredients__components list">
 
@@ -71,19 +71,19 @@
 		</li>
 	</ul>
 
-	<form class="" name="modal_form">
+	<form class="modal-ingredients__form color-green" name="modal_form">
 
 		<!-- Text fields wrapper -->
-		<div class="modal-ingredients__form" role="group">
+		<div class="modal-ingredients__field-group" role="group">
 
-			<input class="modal-ingredients__form-field" type="text" name="user-name" pattern="[a-zA-Z\u0400-\u04ff\s]{3,30}"
+			<input class="modal-ingredients__field" type="text" name="user-name" pattern="[a-zA-Z\u0400-\u04ff\s]{3,30}"
 				title="Please type only letters, e.g. Boris Johnson" id="user-name1" placeholder="Name" required />
 
-			<input class="modal-ingredients__form-field" type="tel" name="user-tel" pattern="[+\0-9]{10,}"
+			<input class="modal-ingredients__field" type="tel" name="user-tel" pattern="[+\0-9]{10,}"
 				title="Please use international format, e.g. +61XXXXXXXXXXXX, min 10 digits" id="user-tel1" placeholder="Phone"
 				required />
 
-			<textarea class="modal-ingredients__form-message" name="user-message" id="user-message1" rows="3"
+			<textarea class="modal-ingredients__comment" name="user-message" id="user-message1" rows="3"
 				placeholder="Comment"></textarea>
 
 		</div>
@@ -92,13 +92,21 @@
 	</form>
 </div>
 
-<!-- MOdal window with ice coffee ingredients -->
+<!-- ingredients modal - Ice Coffee -->
 <div class="modal modal-ingredients" data-modal="modal-ingredients2">
-	<svg class="close-btn js-modal-close">
-		<use href="./images/symbol-defs.svg#close-btn"></use>
-	</svg>
+
+	<!-- CLose button -->
+	<button class="close-btn js-modal-close" type="button">
+		<svg class="close-button__icon" width="24" height="24">
+			<use href="./images/symbol-defs.svg#close-btn"></use>
+			<!-- <use href="./images/symbol-defs.svg#icon-menu-close"></use> -->
+		</svg>
+	</button>
+
+	<!-- Modal window title -->
 	<h3 class="modal-ingredients__title">Ice coffee</h3>
-	<div class="modal-ingredients__thumb modal-ingredients__thumb--yellow">
+
+	<div class="modal-ingredients__thumb color-yellow">
 
 		<img class="modal-ingredients__img" srcset="
         ./images/buynow/jpeg/mobile/icecoffee.jpg 132w,
@@ -110,31 +118,32 @@
 	</div>
 
 	<ul class="modal-ingredients__list list">
-		<li class="modal-ingredients__item modal-ingredients__item--yellow">
-			kcal<span class="modal-ingredients__span modal-ingredients__span--yellow">150</span>
+		<li class="modal-ingredients__item color-yellow">
+			kcal<span class="modal-ingredients__span color-yellow">150</span>
 		</li>
-		<li class="modal-ingredients__item modal-ingredients__item--yellow">
+		<li class="modal-ingredients__item color-yellow">
+
 			<div class="modal-ingredients__div">Protein</div>
-			<span class="modal-ingredients__span modal-ingredients__span--yellow">1g</span>
+			<span class="modal-ingredients__span color-yellow">1g</span>
 		</li>
-		<li class="modal-ingredients__item modal-ingredients__item--yellow">
-			Fats<span class="modal-ingredients__span modal-ingredients__span--yellow">2,5g</span>
+		<li class="modal-ingredients__item color-yellow">
+			Fats<span class="modal-ingredients__span color-yellow">2,5g</span>
 		</li>
-		<li class="modal-ingredients__item modal-ingredients__item--yellow">
+		<li class="modal-ingredients__item color-yellow">
 			Carbs
-			<span class="modal-ingredients__span modal-ingredients__span--yellow">60,2g</span>
+			<span class="modal-ingredients__span color-yellow">60,2g</span>
 		</li>
 	</ul>
-	<p class="modal-ingredients__paragraph">Ingredients</p>
+	<p class="modal-ingredients__paragraph">modal-ingredients</p>
 	<ul class="modal-ingredients__components list">
 		<li class="modal-ingredients__component">
 			Milk<span class="modal-ingredients__component--span">200ml</span>
 		</li>
 		<li class="modal-ingredients__component">
-			Сhocolate toping<span class="modal-ingredients__component--span">20g</span>
+			Chocolate toping<span class="modal-ingredients__component--span">20g</span>
 		</li>
 		<li class="modal-ingredients__component">
-			Whater<span class="modal-ingredients__component--span">200ml</span>
+			Water<span class="modal-ingredients__component--span">200ml</span>
 		</li>
 		<li class="modal-ingredients__component">
 			Ice<span class="modal-ingredients__component--span">30g</span>
@@ -146,28 +155,37 @@
 			Vanilla sugar<span class="modal-ingredients__component--span">1g</span>
 		</li>
 	</ul>
-	<form class="" name="modal_form">
-		<div class="modal-ingredients__form" role="group">
-			<input class="modal-ingredients__form-field modal-ingredients__form-field--yellow" type="text" name="user-name"
+
+	<form class="modal-ingredients__form color-yellow" name="modal_form">
+		<div class="modal-ingredients__field-group" role="group">
+			<input class="modal-ingredients__field color-yellow" type="text" name="user-name"
 				pattern="[a-zA-Z\u0400-\u04ff\s]{3,30}" title="Please type only letters, e.g. Boris Johnson" id="user-name2"
 				placeholder="Name" required />
-			<input class="modal-ingredients__form-field modal-ingredients__form-field--yellow" type="tel" name="user-tel"
-				pattern="[+\0-9]{10,}" title="Please use international format, e.g. +61XXXXXXXXXXXX, min 10 digits"
-				id="user-tel2" placeholder="Phone" required />
-			<textarea class="modal-ingredients__form-message modal-ingredients__form-message--yellow" name="user-message"
-				id="user-message2" rows="3" placeholder="Comment"></textarea>
+			<input class="modal-ingredients__field color-yellow" type="tel" name="user-tel" pattern="[+\0-9]{10,}"
+				title="Please use international format, e.g. +61XXXXXXXXXXXX, min 10 digits" id="user-tel2" placeholder="Phone"
+				required />
+			<textarea class="modal-ingredients__comment color-yellow" name="user-message" id="user-message2" rows="3"
+				placeholder="Comment"></textarea>
 		</div>
 		<button class="modal-ingredients__btn button" type="submit">Submit</button>
 	</form>
 </div>
 
-<!--Модалка с ингридиентами милкшейка-->
+<!-- ingredients modal - Milkshake -->
 <div class="modal modal-ingredients" data-modal="modal-ingredients3">
-	<svg class="close-btn js-modal-close">
-		<use href="./images/symbol-defs.svg#close-btn"></use>
-	</svg>
+
+	<!-- CLose button -->
+	<button class="close-btn js-modal-close" type="button">
+		<svg class="close-button__icon" width="24" height="24">
+			<use href="./images/symbol-defs.svg#close-btn"></use>
+			<!-- <use href="./images/symbol-defs.svg#icon-menu-close"></use> -->
+		</svg>
+	</button>
+
+	<!-- Modal window title -->
 	<h3 class="modal-ingredients__title">Milkshake</h3>
-	<div class="modal-ingredients__thumb modal-ingredients__thumb--brown">
+
+	<div class="modal-ingredients__thumb color-brown">
 
 		<img class="modal-ingredients__img" srcset="
         ./images/buynow/jpeg/mobile/milkshake.jpg 132w,
@@ -177,22 +195,22 @@
 
 	</div>
 	<ul class="modal-ingredients__list list">
-		<li class="modal-ingredients__item modal-ingredients__item--brown">
-			kcal<span class="modal-ingredients__span modal-ingredients__span--brown">200</span>
+		<li class="modal-ingredients__item color-brown">
+			kcal<span class="modal-ingredients__span color-brown">200</span>
 		</li>
-		<li class="modal-ingredients__item modal-ingredients__item--brown">
+		<li class="modal-ingredients__item color-brown">
 			<div class="modal-ingredients__div">Protein</div>
-			<span class="modal-ingredients__span modal-ingredients__span--brown">2g</span>
+			<span class="modal-ingredients__span color-brown">2g</span>
 		</li>
-		<li class="modal-ingredients__item modal-ingredients__item--brown">
-			Fats<span class="modal-ingredients__span modal-ingredients__span--brown">1,5g</span>
+		<li class="modal-ingredients__item color-brown">
+			Fats<span class="modal-ingredients__span color-brown">1,5g</span>
 		</li>
-		<li class="modal-ingredients__item modal-ingredients__item--brown">
+		<li class="modal-ingredients__item color-brown">
 			Carbs
-			<span class="modal-ingredients__span modal-ingredients__span--brown">20g</span>
+			<span class="modal-ingredients__span color-brown">20g</span>
 		</li>
 	</ul>
-	<p class="modal-ingredients__paragraph">Ingredients</p>
+	<p class="modal-ingredients__paragraph">modal-ingredients</p>
 	<ul class="modal-ingredients__components list">
 		<li class="modal-ingredients__component">
 			Milk<span class="modal-ingredients__component--span">400ml</span>
@@ -213,17 +231,18 @@
 			Vanilla sugar<span class="modal-ingredients__component--span">1g</span>
 		</li>
 	</ul>
-	<form class="" name="modal_form">
-		<div class="modal-ingredients__form" role="group">
-			<input class="modal-ingredients__form-field modal-ingredients__form-field--brown" type="text" name="user-name"
+	<form class="modal-ingredients__form color-brown" name="modal_form">
+		<div class="modal-ingredients__field-group" role="group">
+			<input class="modal-ingredients__field color-brown" type="text" name="user-name"
 				pattern="[a-zA-Z\u0400-\u04ff\s]{3,30}" title="Please type only letters, e.g. Boris Johnson" id="user-name3"
 				placeholder="Name" required />
-			<input class="modal-ingredients__form-field modal-ingredients__form-field--brown" type="tel" name="user-tel"
-				pattern="[+\0-9]{10,}" title="Please use international format, e.g. +61XXXXXXXXXXXX, min 10 digits"
-				id="user-tel3" placeholder="Phone" required />
-			<textarea class="modal-ingredients__form-message modal-ingredients__form-message--brown" name="user-message"
-				id="user-message3" rows="3" placeholder="Comment"></textarea>
+			<input class="modal-ingredients__field color-brown" type="tel" name="user-tel" pattern="[+\0-9]{10,}"
+				title="Please use international format, e.g. +61XXXXXXXXXXXX, min 10 digits" id="user-tel3" placeholder="Phone"
+				required />
+			<textarea class="modal-ingredients__comment color-brown" name="user-message" id="user-message3" rows="3"
+				placeholder="Comment"></textarea>
 		</div>
 		<button class="modal-ingredients__btn button" type="submit">Submit</button>
 	</form>
+
 </div>

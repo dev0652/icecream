@@ -13,12 +13,7 @@
   }
 }
 
-.modal-buynow__form {
-  --current-form-color: red;
-  $current-form-color: red;
-}
-
-// Modal title
+// Modal window title
 
 .modal-buynow__title {
   margin-bottom: 83px;
@@ -36,144 +31,18 @@
   }
 }
 
-// Modal form
+// Modal window form
 
-.modal-buynow__group {
-  @extend %flex-centered;
-  flex-direction: column;
-  gap: 12px;
-
-  margin-bottom: 26px;
-
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 32px;
-    gap: 16px;
-  }
+.modal-buynow__form {
+  @include form-outline($bg-primary);
 }
 
-.modal-buynow__field {
-  width: 224px;
-  height: 32px;
-  padding: 0 12px;
-
-  font-family: $primary-font;
-  font-weight: 400;
-  font-size: rem(12);
-  line-height: 1.41;
-
-  background: $bg-formfield;
-  border: 1px solid $bg-primary;
-  border-radius: $border-radius-button;
-
-  transition: outline 100ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  @media screen and (min-width: $tablet) {
-    width: 368px;
-    height: 42px;
-    padding: 0 16px;
-
-    font-size: rem(14);
-    line-height: 1.42;
-  }
-
-  &:not(:placeholder-shown):invalid {
-    outline: 2px solid red;
-    background: rgba(100, 0, 0, 0.1);
-  }
-}
-
-.buynow-comments__label {
-  width: 224px;
-  height: 65px;
-
-  @media screen and (min-width: $tablet) {
-    width: 368px;
-    height: 84px;
-  }
-}
-
-.modal_form__comments {
-  width: 224px;
-
-  padding: 8px 12px;
-  resize: none;
-
-  font-family: $primary-font;
-  font-weight: 400;
-  font-size: rem(12);
-  line-height: 1.41;
-
-  background: $bg-formfield;
-  border: 1px solid $bg-primary;
-  border-radius: $border-radius-button;
-
-  @media screen and (min-width: $tablet) {
-    width: 368px;
-
-    padding: 11px 16px;
-
-    font-size: rem(14);
-    line-height: 1.42;
-  }
-}
-
-.buynow-btn {
-  min-width: 114px;
-  min-height: 42px;
-  padding: 12px 34px;
-
-  font-size: rem(14);
-  line-height: 1.21;
-
-  border: none;
-  background-color: $accent;
-
-  &:hover,
-  &:focus {
-    background-color: $contrast;
-  }
-
-  &:focus {
-    color: #ffffff;
-  }
-
-  &:disabled {
-    background-color: $inactive;
-  }
-
-  @media screen and (min-width: $tablet) {
-    min-width: 121px;
-  }
-}
-
-// Modal products
-
-.modal-buynow__products {
-  @extend %flex-centered;
-  flex-direction: column;
-  gap: 82px;
-  margin-bottom: 31px;
-
-  @media screen and (min-width: $tablet) {
-    flex-direction: row;
-    gap: 32px;
-    margin-bottom: 40px;
-  }
-}
-
-.buynow-products__item {
-  display: flex;
-  flex-direction: column;
-
-  flex-basis: 132px;
-}
-
-// Input type checkbox
+// Checkboxes
 
 .buycheck {
   appearance: none;
 
-  // Custom outline on focus
+  // Custom outlines
 
   &:focus + .buycheck-label {
     outline: 3px solid $bg-primary;
@@ -358,4 +227,134 @@
       }
     }
   }
+}
+
+.modal-buynow__group {
+  @extend %flex-centered;
+  flex-direction: column;
+  gap: 12px;
+
+  margin-bottom: 26px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 32px;
+    gap: 16px;
+  }
+}
+
+.modal-buynow__field {
+  width: 224px;
+  height: 32px;
+  padding: 0 12px;
+
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: rem(12);
+  line-height: 1.41;
+
+  background: $bg-formfield;
+  border: 1px solid $bg-primary;
+  border-radius: $border-radius-button;
+
+  transition: outline 100ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: $tablet) {
+    width: 368px;
+    height: 42px;
+    padding: 0 16px;
+
+    font-size: rem(14);
+    line-height: 1.42;
+  }
+
+  &:not(:placeholder-shown):invalid {
+    outline: 2px solid red;
+    background: rgba(100, 0, 0, 0.1);
+  }
+}
+
+.buynow-comments__label {
+  width: 224px;
+  height: 65px;
+
+  @media screen and (min-width: $tablet) {
+    width: 368px;
+    height: 84px;
+  }
+}
+
+.modal_form__comments {
+  width: 224px;
+
+  padding: 8px 12px;
+  resize: none;
+
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: rem(12);
+  line-height: 1.41;
+
+  background: $bg-formfield;
+  border: 1px solid $bg-primary;
+  border-radius: $border-radius-button;
+
+  @media screen and (min-width: $tablet) {
+    width: 368px;
+
+    padding: 11px 16px;
+
+    font-size: rem(14);
+    line-height: 1.42;
+  }
+}
+
+.buynow-btn {
+  min-width: 114px;
+  min-height: 42px;
+  padding: 12px 34px;
+
+  font-size: rem(14);
+  line-height: 1.21;
+
+  border: none;
+  background-color: $accent;
+
+  &:hover,
+  &:focus {
+    background-color: $contrast;
+  }
+
+  &:focus {
+    color: #ffffff;
+  }
+
+  &:disabled {
+    background-color: $inactive;
+  }
+
+  @media screen and (min-width: $tablet) {
+    min-width: 121px;
+  }
+}
+
+// Modal products
+
+.modal-buynow__products {
+  @extend %flex-centered;
+  flex-direction: column;
+  gap: 82px;
+  margin-bottom: 31px;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+}
+
+.buynow-products__item {
+  display: flex;
+  flex-direction: column;
+
+  flex-basis: 132px;
 }
