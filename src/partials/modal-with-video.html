@@ -1,6 +1,7 @@
 <!-- Read More modal window -->
 
-<div class="modal modal-video" id="modal-video" data-modal="modal-video">
+<div class="modal modal-video" id="modal-video" role="dialog" aria-labelledby="modal-title-video"
+	data-modal="modal-video">
 
 	<!-- CLose button -->
 	<button class="close-btn js-modal-close" type="button">
@@ -11,12 +12,14 @@
 	</button>
 
 	<div class="modal-video__body">
-		<p class="video__title">How it’s made?</p>
+
+		<!-- Modal window title -->
+		<h3 class="video__title" id="modal-title-video">How it’s made?</h3>
 
 		<!-- Video frame -->
 		<iframe class="video__content" src="https://www.youtube.com/embed/8WEMZ86Eho8" title="YouTube video player"
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-			loading=lazy></iframe>
+			loading="lazy"></iframe>
 
 		<!-- Video description -->
 		<p class="video__text">
@@ -24,6 +27,5 @@
 			tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
 			adipiscing elit, sed do eiusmod tempor incididunt ut labore et
 		</p>
-
 	</div>
 </div>
