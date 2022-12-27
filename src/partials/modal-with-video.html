@@ -1,18 +1,29 @@
-<!-- Модалка read more -->
+<!-- Read More modal window -->
 
 <div class="modal modal-video" id="modal-video" data-modal="modal-video">
-	<svg class="close-btn js-modal-close">
-		<use href="./images/symbol-defs.svg#close-btn"></use>
-	</svg>
+
+	<!-- CLose button -->
+	<button class="close-btn js-modal-close" type="button">
+		<svg class="close-button__icon" width="24" height="24">
+			<use href="./images/symbol-defs.svg#close-btn"></use>
+			<!-- <use href="./images/symbol-defs.svg#icon-menu-close"></use> -->
+		</svg>
+	</button>
+
 	<div class="modal-video__body">
 		<p class="video__title">How it’s made?</p>
+
+		<!-- Video frame -->
 		<iframe class="video__content" src="https://www.youtube.com/embed/8WEMZ86Eho8" title="YouTube video player"
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
 			loading=lazy></iframe>
+
+		<!-- Video description -->
 		<p class="video__text">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 			tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
 			adipiscing elit, sed do eiusmod tempor incididunt ut labore et
 		</p>
+
 	</div>
 </div>

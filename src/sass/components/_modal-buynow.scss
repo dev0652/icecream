@@ -13,6 +13,11 @@
   }
 }
 
+.modal-buynow__form {
+  --current-form-color: red;
+  $current-form-color: red;
+}
+
 // Modal title
 
 .modal-buynow__title {
@@ -109,16 +114,6 @@
 
     font-size: rem(14);
     line-height: 1.42;
-  }
-}
-
-// Custom outline
-
-.modal-buynow__field,
-.modal_form__comments {
-  &:focus {
-    outline: 3px solid rgba($bg-primary, 0.6);
-    outline-offset: 0.5px;
   }
 }
 
@@ -279,7 +274,7 @@
     &:focus {
       &:after,
       &:before {
-        scale: 1.1;
+        scale: 1.05;
         box-shadow: 0px 5px 19px #96af8c;
       }
     }
@@ -318,7 +313,7 @@
     &:focus {
       &:after,
       &:before {
-        scale: 1.1;
+        scale: 1.05;
         box-shadow: 0px 5px 19px $bg-secondary;
       }
     }
@@ -358,7 +353,7 @@
     &:focus {
       &:after,
       &:before {
-        scale: 1.1;
+        scale: 1.05;
         box-shadow: 0px 5px 19px $bg-tertiary;
       }
     }

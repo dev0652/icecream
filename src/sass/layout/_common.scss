@@ -16,7 +16,7 @@ body {
   @include bg-with-overlay(rgba(#eee, 0.4), bg, bg);
   background-attachment: fixed;
 
-  &.scroll-locked {
+  &.modal-open {
     overflow: hidden;
   }
 }

@@ -374,11 +374,11 @@
 
 @keyframes feedback-scale {
   0% {
-    box-shadow: 0px 0px 0px 0px #eee;
+    box-shadow: 0px 0px 0px 0px #ea830e;
   }
 
   35% {
-    box-shadow: 0px 0px 10px 5px #eee;
+    box-shadow: 0px 0px 10px 5px #ea830e;
   }
 
   70% {
@@ -435,5 +435,54 @@
   to {
     opacity: 0;
     transform: scale(0);
+  }
+}
+
+// CLose button
+
+@keyframes close-btn-halo {
+  $shadow-base-color: $accent;
+
+  0% {
+    box-shadow: 0px 0px 0px 0px rgba($shadow-base-color, 0.5);
+    // scale: 1;
+  }
+
+  35% {
+    box-shadow: 0px 0px 10px 5px rgba($shadow-base-color, 0.8);
+  }
+
+  // 50% {
+  //   scale: 1.2;
+  // }
+
+  70% {
+    box-shadow: 0px 0px 10px 5px rgba($shadow-base-color, 0.8);
+  }
+
+  100% {
+    box-shadow: 0px 0px 0px 0px rgba($shadow-base-color, 0.5);
+    // scale: 1;
+  }
+}
+
+// Buttons
+
+@keyframes button-pulsing-shadow {
+  $shadow-color: $bg-secondary;
+
+  0% {
+    box-shadow: none;
+    // scale: 1;
+  }
+
+  50% {
+    box-shadow: 0px 0px 10px 5px $shadow-color;
+    // scale: 1.2;
+  }
+
+  100% {
+    box-shadow: none;
+    // scale: 1;
   }
 }

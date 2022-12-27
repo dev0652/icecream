@@ -1,10 +1,8 @@
 .modal-ingredients {
-  max-height: 968px;
   max-width: 280px;
   padding: 26px 18px;
 
   @media screen and (min-width: $tablet) {
-    max-height: 996px;
     min-width: 568px;
     padding: 32px 40px;
   }
@@ -24,6 +22,10 @@
     margin-bottom: 24px;
   }
 }
+.modal-ingredients__image {
+  border-radius: 50%;
+  overflow: hidden;
+}
 
 .modal-ingredients__thumb {
   height: 139px;
@@ -33,6 +35,8 @@
   margin-bottom: 22px;
 
   border-radius: 50%;
+  overflow: hidden;
+
   background-color: rgba(156, 190, 143, 0.7);
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 
@@ -126,16 +130,18 @@
   border-radius: 50px;
   background: #9cbe8f;
   border: 2px solid #9cbe8f;
-  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+  box-shadow: 0px 6px 20px rgba($contrast, 0.25);
 
   &--yellow {
     border: 2px solid rgba(248, 210, 78);
     background-color: rgba(248, 210, 78);
+    box-shadow: 0px 6px 20px $bg-secondary;
   }
 
   &--brown {
     border: 2px solid rgba(213, 117, 63);
     background-color: rgba(213, 117, 63);
+    box-shadow: 0px 6px 20px $bg-tertiary;
   }
 
   @media screen and (min-width: $tablet) {

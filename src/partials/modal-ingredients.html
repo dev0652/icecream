@@ -1,63 +1,93 @@
 <!--Модалка с ингридиентами мороженного-->
 <div class="modal modal-ingredients" data-modal="modal-ingredients1">
-	<svg class="close-btn js-modal-close">
-		<use href="./images/symbol-defs.svg#close-btn"></use>
-	</svg>
+
+	<!-- CLose button -->
+	<button class="close-btn js-modal-close" type="button">
+		<svg class="close-button__icon" width="24" height="24">
+			<use href="./images/symbol-defs.svg#close-btn"></use>
+			<!-- <use href="./images/symbol-defs.svg#icon-menu-close"></use> -->
+		</svg>
+	</button>
+
+
 	<h3 class="modal-ingredients__title">Chololate icecream</h3>
+
 	<div class="modal-ingredients__thumb">
+
 		<img class="modal-ingredients__img" srcset="
         ./images/modal/choco-ice-cream.jpg 132w,
         ./images/modal/choco-ice-cream@2x.jpg 264w
       " sizes="(min-width:1200px) 132px, (min-width:768px) 132px, (min-width:480px) 132px, 100vw"
 			src="./images/modal/choco-ice-cream.jpg" alt="Ice-cream" width="132" height="132" />
 	</div>
+
 	<ul class="modal-ingredients__list list">
+
 		<li class="modal-ingredients__item">
 			kcal<span class="modal-ingredients__span">320</span>
 		</li>
+
 		<li class="modal-ingredients__item">
 			<div class="modal-ingredients__div">Protein</div>
 			<span class="modal-ingredients__span">4g</span>
 		</li>
+
 		<li class="modal-ingredients__item">
 			Fats<span class="modal-ingredients__span">8,2g</span>
 		</li>
+
 		<li class="modal-ingredients__item">
 			Carbs
 			<span class="modal-ingredients__span">40,4g</span>
 		</li>
 	</ul>
+
 	<p class="modal-ingredients__paragraph">Ingredients</p>
+
 	<ul class="modal-ingredients__components list">
+
 		<li class="modal-ingredients__component">
 			Milk<span class="modal-ingredients__component--span">100ml</span>
 		</li>
+
 		<li class="modal-ingredients__component">
 			Belgian chocolate<span class="modal-ingredients__component--span">20g</span>
 		</li>
+
 		<li class="modal-ingredients__component">
 			Cream<span class="modal-ingredients__component--span">150ml</span>
 		</li>
+
 		<li class="modal-ingredients__component">
 			Cocoa powder<span class="modal-ingredients__component--span">30g</span>
 		</li>
+
 		<li class="modal-ingredients__component">
 			Sugar<span class="modal-ingredients__component--span">40g</span>
 		</li>
+
 		<li class="modal-ingredients__component">
 			Vanilla sugar<span class="modal-ingredients__component--span">10g</span>
 		</li>
 	</ul>
+
 	<form class="" name="modal_form">
+
+		<!-- Text fields wrapper -->
 		<div class="modal-ingredients__form" role="group">
+
 			<input class="modal-ingredients__form-field" type="text" name="user-name" pattern="[a-zA-Z\u0400-\u04ff\s]{3,30}"
 				title="Please type only letters, e.g. Boris Johnson" id="user-name1" placeholder="Name" required />
+
 			<input class="modal-ingredients__form-field" type="tel" name="user-tel" pattern="[+\0-9]{10,}"
 				title="Please use international format, e.g. +61XXXXXXXXXXXX, min 10 digits" id="user-tel1" placeholder="Phone"
 				required />
+
 			<textarea class="modal-ingredients__form-message" name="user-message" id="user-message1" rows="3"
 				placeholder="Comment"></textarea>
+
 		</div>
+
 		<button class="modal-ingredients__btn button" type="submit">Submit</button>
 	</form>
 </div>
@@ -69,7 +99,6 @@
 	</svg>
 	<h3 class="modal-ingredients__title">Ice coffee</h3>
 	<div class="modal-ingredients__thumb modal-ingredients__thumb--yellow">
-
 
 		<img class="modal-ingredients__img" srcset="
         ./images/buynow/jpeg/mobile/icecoffee.jpg 132w,
