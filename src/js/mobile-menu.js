@@ -15,8 +15,8 @@
 		bodyScrollLock[scrollLockMethod](document.body);
 	};
 
-	openMenuBtn.addEventListener('click', toggleMenu);
-	closeMenuBtn.addEventListener('click', toggleMenu);
+	openMenuBtn.addEventListener('click', toggleMenu, { passive: true });
+	closeMenuBtn.addEventListener('click', toggleMenu, { passive: true });
 
 	// Close the mobile menu on wider screens if the device orientation changes
 
@@ -25,7 +25,7 @@
 		mobileMenu.classList.remove('is-open');
 		openMenuBtn.setAttribute('aria-expanded', false);
 		bodyScrollLock.enableBodyScroll(document.body);
-	});
+	}, { passive: true });
 
 	// Close menu when a button or link is clicked
 	document.querySelectorAll('[js-close-on-click]').forEach(item => {
@@ -34,6 +34,6 @@
 			mobileMenuBackdrop.classList.remove('is-open');
 			openMenuBtn.setAttribute('aria-expanded', false);
 			bodyScrollLock.enableBodyScroll(document.body);
-		})
+		}, { passive: true })
 	})
 })();

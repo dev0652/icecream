@@ -28,6 +28,6 @@ document.addEventListener('keydown', function (e) {
 			e.preventDefault();
 		}
 	}
-});
+}, { passive: true });
 
 firstFocusableElement.focus();

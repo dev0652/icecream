@@ -1,123 +1,105 @@
 // vars
 'use strict'
-var	testim = document.getElementById("feedback"),
-		testimDots = Array.prototype.slice.call(document.getElementById("feedback-dots").children),
-    testimContent = Array.prototype.slice.call(document.getElementById("feedback-content").children),
-    testimLeftArrow = document.getElementById("left-arrow"),
-    testimRightArrow = document.getElementById("right-arrow"),
-    arrowInactive = document.querySelector(".feedback-wrapper"),
-    testimSpeed = 4500,
-    currentSlide = 0,
-    currentActive = 0,
-    testimTimer,
-		touchStartPos,
-		touchEndPos,
-		touchPosDiff,
-		ignoreTouch = 30;
+var testim = document.getElementById("feedback"),
+	testimDots = Array.prototype.slice.call(document.getElementById("feedback-dots").children),
+	testimContent = Array.prototype.slice.call(document.getElementById("feedback-content").children),
+	testimLeftArrow = document.getElementById("left-arrow"),
+	testimRightArrow = document.getElementById("right-arrow"),
+	arrowInactive = document.querySelector(".feedback-wrapper"),
+	testimSpeed = 4500,
+	currentSlide = 0,
+	currentActive = 0,
+	testimTimer,
+	touchStartPos,
+	touchEndPos,
+	touchPosDiff,
+	ignoreTouch = 30;
 ;
 
 
-window.onload = function() {
+window.onload = function () {
 
-    // Testim Script
-    function playSlide(slide) {
-        for (var k = 0; k < testimDots.length; k++) {
-            testimContent[k].classList.remove("active");
-            testimContent[k].classList.remove("inactive");
-            testimDots[k].classList.remove("active");
-        }
+	// Testim Script
+	function playSlide(slide) {
+		for (var k = 0; k < testimDots.length; k++) {
+			testimContent[k].classList.remove("active");
+			testimContent[k].classList.remove("inactive");
+			testimDots[k].classList.remove("active");
+		}
 
-        if (slide < 0) {
-            slide = currentSlide = testimContent.length-1;
-        }
+		if (slide < 0) {
+			slide = currentSlide = testimContent.length - 1;
+		}
 
-        if (slide > testimContent.length - 1) {
-            slide = currentSlide = 0;
-        }
+		if (slide > testimContent.length - 1) {
+			slide = currentSlide = 0;
+		}
 
-        if (currentActive != currentSlide) {
-            testimContent[currentActive].classList.add("inactive");            
-        }
-        testimContent[slide].classList.add("active");
-        testimDots[slide].classList.add("active");
+		if (currentActive != currentSlide) {
+			testimContent[currentActive].classList.add("inactive");
+		}
+		testimContent[slide].classList.add("active");
+		testimDots[slide].classList.add("active");
 
-        currentActive = currentSlide;
-    
-        clearTimeout(testimTimer);
-        testimTimer = setTimeout(function() {
-            playSlide(currentSlide += 1);
-        }, testimSpeed)
-    }
+		currentActive = currentSlide;
 
-    testimLeftArrow.addEventListener("click", function() {
-        playSlide(currentSlide -= 1);
-    })
+		clearTimeout(testimTimer);
+		testimTimer = setTimeout(function () {
+			playSlide(currentSlide += 1);
+		}, testimSpeed)
+	}
 
-    testimRightArrow.addEventListener("click", function() {
-        playSlide(currentSlide += 1);
-    })    
+	testimLeftArrow.addEventListener("click", function () {
+		playSlide(currentSlide -= 1);
+	}, { passive: true })
 
-    for (var l = 0; l < testimDots.length; l++) {
-        testimDots[l].addEventListener("click", function() {
-            playSlide(currentSlide = testimDots.indexOf(this));
-        })
-    }
+	testimRightArrow.addEventListener("click", function () {
+		playSlide(currentSlide += 1);
+	}, { passive: true })
 
-    playSlide(currentSlide);
+	for (var l = 0; l < testimDots.length; l++) {
+		testimDots[l].addEventListener("click", function () {
+			playSlide(currentSlide = testimDots.indexOf(this));
+		}, { passive: true })
+	}
 
-    // keyboard shortcuts
-    document.addEventListener("keyup", function(e) {
-        switch (e.keyCode) {
-            case 37:
-                testimLeftArrow.click();
-                break;
-                
-            case 39:
-                testimRightArrow.click();
-                break;
+	playSlide(currentSlide);
 
-            case 39:
-                testimRightArrow.click();
-                break;
+	// keyboard shortcuts
+	document.addEventListener("keyup", function (e) {
+		switch (e.keyCode) {
+			case 37:
+				testimLeftArrow.click();
+				break;
 
-            default:
-                break;
-        }
-    })
-		
-		testim.addEventListener("touchstart", function(e) {
-				touchStartPos = e.changedTouches[0].clientX;
-		})
-	
-		testim.addEventListener("touchend", function(e) {
-				touchEndPos = e.changedTouches[0].clientX;
-			
-				touchPosDiff = touchStartPos - touchEndPos;
-			
-				
+			case 39:
+				testimRightArrow.click();
+				break;
 
+			case 39:
+				testimRightArrow.click();
+				break;
 
-			
-				if (touchPosDiff > 0 + ignoreTouch) {
-						testimLeftArrow.click();
-				} else if (touchPosDiff < 0 - ignoreTouch) {
-						testimRightArrow.click();
-				} else {
-					return;
-				}
-			
-		})
+			default:
+				break;
+		}
+	}, { passive: true })
 
-        // arrowInactive.onmouseover = arrowInactive.onmouseout = handler;
+	testim.addEventListener("touchstart", function (e) {
+		touchStartPos = e.changedTouches[0].clientX;
+	}, { passive: true })
 
-        // function handler(event) {
+	testim.addEventListener("touchend", function (e) {
+		touchEndPos = e.changedTouches[0].clientX;
+		touchPosDiff = touchStartPos - touchEndPos;
 
-        //     if (event.type == 'mouseover') {
-        //         arrowInactive.classList.add('active')
-        //     }
-        //     if (event.type == 'mouseout') {
-        //         arrowInactive.classList.remove('active')
-        //     }
-        // }
+		if (touchPosDiff > 0 + ignoreTouch) {
+			testimLeftArrow.click();
+		} else if (touchPosDiff < 0 - ignoreTouch) {
+			testimRightArrow.click();
+		} else {
+			return;
+		}
 
+	}, { passive: true })
 }
