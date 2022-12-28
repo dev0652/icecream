@@ -108,16 +108,16 @@ window.onload = function() {
 			
 		})
 
-        arrowInactive.onmouseover = arrowInactive.onmouseout = handler;
+        // arrowInactive.onmouseover = arrowInactive.onmouseout = handler;
 
-        function handler(event) {
+        // function handler(event) {
 
-            if (event.type == 'mouseover') {
-                arrowInactive.classList.add('active')
-            }
-            if (event.type == 'mouseout') {
-                arrowInactive.classList.remove('active')
-            }
-        }
+        //     if (event.type == 'mouseover') {
+        //         arrowInactive.classList.add('active')
+        //     }
+        //     if (event.type == 'mouseout') {
+        //         arrowInactive.classList.remove('active')
+        //     }
+        // }
 
 }

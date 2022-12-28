@@ -16,17 +16,21 @@
 .feedback-wrapper {
   position: relative;
   width: 100%;
-  max-width: 1013px;
+  max-width: 280px;
   margin: auto;
   overflow: hidden;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 1013px;
+  }
 }
 
-.feedback-wrapper.active {
+.feedback-wrapper:hover {
   overflow: visible;
 }
 
 .arrow {
-  display: block;
+  display: none;
   position: absolute;
   color: #333;
   cursor: pointer;
@@ -47,19 +51,11 @@
 }
 
 .arrow.left {
-  left: 40px;
-
-  @media screen and (min-width: $tablet) {
-    left: -20px;
-  }
+  left: -20px;
 }
 
 .arrow.right {
-  right: 40px;
-
-  @media screen and (min-width: $tablet) {
-    right: -20px;
-  }
+  right: -20px;
 }
 
 .review__text {
