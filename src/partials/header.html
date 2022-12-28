@@ -41,7 +41,7 @@
 
 			<!-- Mobile menu open button (burger) -->
 			<button class="burger-button menu-button menu-toggle js-open-menu" aria-expanded="false"
-				aria-controls="mobile-menu">
+				aria-label="Button to open mobile menu" aria-controls="mobile-menu">
 
 				<svg width="32" height="32">
 					<use href="./images/symbol-defs.svg#icon-menu-open"></use>
@@ -74,7 +74,8 @@
 	</a>
 
 	<!-- Mobile menu close button -->
-	<button class="menu-toggle  menu-button mobile-menu__close-button js-close-menu">
+	<button class="menu-toggle  menu-button mobile-menu__close-button js-close-menu" aria-expanded="true"
+		aria-label="Button to close mobile menu" aria-controls="mobile-menu">
 
 		<svg width="20" height="20">
 			<use href="./images/symbol-defs.svg#icon-menu-close"></use>
