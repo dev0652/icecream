@@ -102,7 +102,12 @@
 
 .mobile-menu__link {
   @extend %link;
-  font-weight: 700;
+
+  &:hover,
+  &:focus {
+    color: $text-dark;
+  }
+
   @include fz-lh(32, 39);
 
   @media screen and (min-width: $tablet) {
@@ -110,9 +115,9 @@
   }
 }
 
-.mobile-menu__item--active a {
-  color: $text-dark;
-}
+// .mobile-menu__item--active a {
+//   color: $text-dark;
+// }
 
 // Mobile menu button
 

@@ -30,8 +30,8 @@
 	// Close menu when a button or link is clicked
 	document.querySelectorAll('[js-close-on-click]').forEach(item => {
 		item.addEventListener('click', event => {
+
 			mobileMenu.classList.remove('is-open');
-			mobileMenuBackdrop.classList.remove('is-open');
 			openMenuBtn.setAttribute('aria-expanded', false);
 			bodyScrollLock.enableBodyScroll(document.body);
 		}, { passive: true })
