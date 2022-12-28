@@ -131,6 +131,7 @@
     letter-spacing: 0.02em;
   }
   &--white {
+    @extend %link;
     color: $text-light;
   }
 }

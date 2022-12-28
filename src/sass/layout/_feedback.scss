@@ -25,7 +25,6 @@
   overflow: visible;
 }
 
-
 .arrow {
   display: block;
   position: absolute;
@@ -34,7 +33,7 @@
   font-size: 2em;
   top: 53%;
   transform: translateY(-50%);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   padding: 5px;
   z-index: 22222222;
 }
@@ -46,7 +45,6 @@
 .arrow:hover {
   color: green;
 }
-  
 
 .arrow.left {
   left: 40px;
@@ -60,10 +58,9 @@
   right: 40px;
 
   @media screen and (min-width: $tablet) {
-right: -20px;
+    right: -20px;
   }
 }
-
 
 .review__text {
   display: flex;
