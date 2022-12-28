@@ -48,15 +48,21 @@ section.products {
   // As a flex element
   flex-basis: 280px;
   max-width: 280px;
-  flex-shrink: 1;
 
   @include transition-multiple(transform, box-shadow);
   transition-duration: 500ms;
 
-  &:hover {
-    transform: scale(1.05);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
-    flex-grow: 1;
+  &:hover,
+  &:focus {
+    transform: scale(1.01);
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.25);
+  }
+
+  &:hover:before,
+  &:focus:before,
+  &:hover:after,
+  &:focus:after {
+    transform: scale(1.1) translateY(-100%);
   }
 
   padding: 123px 40px 16px;
@@ -91,6 +97,8 @@ section.products {
 
     position: absolute;
     transform: translateY(-110%);
+    @include transition-multiple(transform, box-shadow);
+    transition-duration: 500ms;
 
     border-radius: 50%;
     overflow: hidden;
@@ -110,6 +118,8 @@ section.products {
 
     position: absolute;
     transform: translateY(-110%);
+    @include transition-multiple(transform, box-shadow);
+    transition-duration: 500ms;
 
     margin-top: -16px;
 
@@ -216,4 +226,14 @@ section.products {
 .product-card__link {
   margin-top: auto;
   align-self: center;
+
+  // Make the entire card clickable to a link it contains - solution courtesy of Vadim Makeyev
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
 }

@@ -29,7 +29,6 @@
   overflow: visible;
 }
 
-
 .arrow {
   display: none;
   position: absolute;
@@ -38,7 +37,7 @@
   font-size: 2em;
   top: 53%;
   transform: translateY(-50%);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   padding: 5px;
   z-index: 22222222;
 }
@@ -50,7 +49,6 @@
 .arrow:hover {
   color: green;
 }
-  
 
 .arrow.left {
   left: -20px;
@@ -59,7 +57,6 @@
 .arrow.right {
   right: -20px;
 }
-
 
 .review__text {
   display: flex;
@@ -107,7 +104,8 @@
   position: relative;
 
   &.active,
-  &:hover {
+  &:hover,
+  &:focus {
     background: $bg-primary;
   }
 

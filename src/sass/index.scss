@@ -9,15 +9,18 @@
 @import './utils/mixins';
 @import './utils/placeholders';
 @import './utils/animations';
-@import './utils/animate';
+@import './utils/animate'; // let this one remain a separate file
 
-// Common styles
+// Common styles & building blocks
 @import './layout/common';
 @import './components/buttons';
 @import './components/headings';
 
-// Sections
+// Header
 @import './layout/header';
+@import './layout/mobile-menu';
+
+// Sections
 @import './layout/hero';
 @import './layout/products';
 @import './layout/about';
@@ -25,15 +28,14 @@
 @import './layout/gallery';
 @import './layout/feedback';
 @import './layout/contacts';
+
+// Footer
 @import './layout/footer';
 
-// Mobile menu
-@import './components/mobile-menu';
-
 // Modal windows
-@import './components/modal';
-@import './components/modal-ingredients';
-@import './components/modal-with-video';
-@import './components/modal-buynow';
-@import './components/modal-franchise';
-@import './components/modal-locations';
+@import './layout/modals/modal';
+@import './layout/modals/modal-ingredients';
+@import './layout/modals/modal-with-video';
+@import './layout/modals/modal-buynow';
+@import './layout/modals/modal-franchise';
+@import './layout/modals/modal-locations';

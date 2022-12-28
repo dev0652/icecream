@@ -32,7 +32,7 @@ $bg-primary-darker: #84a278;
 $bg-primary-lighter: #aec6a5;
 $bg-secondary: #efd478;
 $bg-tertiary: #d6936d;
-$bg-formfield: rgba(248, 210, 78, 0.1);
+$bg-formfield: rgba($bg-secondary, 0.1);
 
 // Borders
 $border-radius-button: 10px;

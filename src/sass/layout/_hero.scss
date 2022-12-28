@@ -134,7 +134,8 @@
   transition-duration: $transition-duration;
   transition-timing-function: $transition-timing-function;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-color: $contrast;
   }
 
@@ -159,7 +160,8 @@
   text-decoration-line: underline;
   text-underline-offset: 2px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $contrast;
   }
 

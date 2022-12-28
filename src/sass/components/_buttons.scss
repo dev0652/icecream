@@ -1,8 +1,9 @@
 /* Buttons */
 
-button {
-  &:hover {
-    animation: 700ms ease-out forwards shake;
+button:not(.close-btn, .menu-toggle) {
+  &:hover,
+  &:focus {
+    animation: 3s ease-out button-pulsing-shadow infinite 100ms;
   }
 }
 
@@ -15,7 +16,7 @@ button {
 
   color: $text-dark;
   background-color: transparent;
-  @include transition-multiple(color, background-color);
+  @include transition-multiple(color, background-color, scale);
   // transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) 250ms;
 
   border: 1px solid $accent;

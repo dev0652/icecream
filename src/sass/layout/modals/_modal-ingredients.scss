@@ -1,10 +1,8 @@
 .modal-ingredients {
-  max-height: 968px;
   max-width: 280px;
   padding: 26px 18px;
 
   @media screen and (min-width: $tablet) {
-    max-height: 996px;
     min-width: 568px;
     padding: 32px 40px;
   }
@@ -24,6 +22,10 @@
     margin-bottom: 24px;
   }
 }
+.modal-ingredients__image {
+  border-radius: 50%;
+  overflow: hidden;
+}
 
 .modal-ingredients__thumb {
   height: 139px;
@@ -33,16 +35,18 @@
   margin-bottom: 22px;
 
   border-radius: 50%;
+  overflow: hidden;
+
   background-color: rgba(156, 190, 143, 0.7);
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 
-  &--yellow {
-    background-color: rgba(248, 210, 78, 0.7);
+  &.color-yellow {
+    background-color: rgba($accent, 0.7);
     box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
   }
 
-  &--brown {
-    background-color: rgba(213, 117, 63, 0.7);
+  &.color-brown {
+    background-color: rgba(#d5753f, 0.7);
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
   }
 
@@ -89,12 +93,12 @@
   border-radius: 40px;
   color: $text-dark;
 
-  &--yellow {
-    border: 2px solid rgba(248, 210, 78, 0.7);
+  &.color-yellow {
+    border: 2px solid rgba($accent, 0.7);
   }
 
-  &--brown {
-    border: 2px solid rgba(213, 117, 63, 0.7);
+  &.color-brown {
+    border: 2px solid rgba(#d5753f, 0.7);
   }
 
   @media screen and (min-width: $tablet) {
@@ -126,16 +130,18 @@
   border-radius: 50px;
   background: #9cbe8f;
   border: 2px solid #9cbe8f;
-  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+  box-shadow: 0px 6px 20px rgba($contrast, 0.25);
 
-  &--yellow {
-    border: 2px solid rgba(248, 210, 78);
-    background-color: rgba(248, 210, 78);
+  &.color-yellow {
+    border: 2px solid $accent;
+    background-color: $accent;
+    box-shadow: 0px 6px 20px $bg-secondary;
   }
 
-  &--brown {
-    border: 2px solid rgba(213, 117, 63);
-    background-color: rgba(213, 117, 63);
+  &.color-brown {
+    border: 2px solid #d5753f;
+    background-color: #d5753f;
+    box-shadow: 0px 6px 20px $bg-tertiary;
   }
 
   @media screen and (min-width: $tablet) {
@@ -182,32 +188,47 @@
 }
 
 .modal-ingredients__form {
+  &.color-green {
+    @include form-outline($bg-primary);
+  }
+
+  &.color-yellow {
+    @include form-outline($bg-secondary);
+  }
+
+  &.color-brown {
+    @include form-outline($bg-tertiary);
+  }
+}
+
+.modal-ingredients__field-group {
   @extend %flex-centered;
   flex-direction: column;
   gap: 16px;
 }
 
-.modal-ingredients__form-field {
+.modal-ingredients__field {
   width: 240px;
   height: 42px;
   padding-left: 10.5px;
   padding-right: 10.5px;
 
+  font-family: $primary-font;
   @include fz-lh(14, 20);
 
-  background: rgba(248, 210, 78, 0.1);
+  background: rgba($accent, 0.1);
   border: 1px solid $bg-primary;
   border-radius: $border-radius-button;
 
   outline-offset: -1px;
   color: $text-dark;
 
-  &--yellow {
-    border: 1px solid rgba(248, 210, 78);
+  &.color-yellow {
+    border: 1px solid $accent;
   }
 
-  &--brown {
-    border: 1px solid rgba(213, 117, 63);
+  &.color-brown {
+    border: 1px solid #d5753f;
   }
 
   @media screen and (min-width: $tablet) {
@@ -217,43 +238,21 @@
   }
 
   &:not(:placeholder-shown):invalid {
-    outline: 2px solid red;
+    outline: 3px solid red !important;
     background: rgba(100, 0, 0, 0.1);
   }
 }
 
-.modal-ingredients__form-message {
-  width: 240px;
+.modal-ingredients__comment {
+  @extend .modal-ingredients__field;
+
   height: 84px;
-  padding: 11px 10.5px;
-  margin-bottom: 24px;
+  padding-top: 11px;
 
   resize: none;
-
-  font-family: $primary-font;
-  font-weight: 400;
-  font-size: rem(14);
-  line-height: 140%;
-
-  background: rgba(248, 210, 78, 0.1);
-  border: 1px solid $bg-primary;
-  border-radius: $border-radius-button;
-
-  outline-offset: -1px;
-  color: $text-dark;
-
-  &--yellow {
-    border: 1px solid rgba(248, 210, 78);
-  }
-
-  &--brown {
-    border: 1px solid rgba(213, 117, 63);
-  }
+  margin-bottom: 24px;
 
   @media screen and (min-width: $tablet) {
-    width: 368px;
-    padding-left: 16px;
-    padding-right: 16px;
     margin-bottom: 32px;
   }
 }
