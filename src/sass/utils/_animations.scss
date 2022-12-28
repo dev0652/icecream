@@ -469,7 +469,7 @@
 // Buttons
 
 @keyframes button-pulsing-shadow {
-  $shadow-color: $bg-secondary;
+  $shadow-color: $bg-primary-lighter;
 
   0% {
     box-shadow: none;
