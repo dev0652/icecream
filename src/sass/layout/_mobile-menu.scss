@@ -97,6 +97,7 @@
   align-items: center;
   gap: 32px;
 
+  text-align: center;
   color: $text-light;
 }
 
@@ -115,17 +116,10 @@
   }
 }
 
-// .mobile-menu__item--active a {
-//   color: $text-dark;
-// }
-
 // Mobile menu button
 
 .header__btn--mobile {
   padding: calc(12px - 1px) 36px;
-  // align-self: center;
-
-  // margin-top: auto;
 
   @media screen and (min-width: $tablet) {
     display: none;
