@@ -18,11 +18,52 @@
   width: 100%;
   max-width: 1013px;
   margin: auto;
+  overflow: hidden;
 }
 
-.arrow {
-  display: none;
+.feedback-wrapper.active {
+  overflow: visible;
 }
+
+
+.arrow {
+  display: block;
+  position: absolute;
+  color: #333;
+  cursor: pointer;
+  font-size: 2em;
+  top: 53%;
+  transform: translateY(-50%);
+  transition: all .3s ease-in-out;
+  padding: 5px;
+  z-index: 22222222;
+}
+
+.arrow:before {
+  cursor: pointer;
+}
+
+.arrow:hover {
+  color: green;
+}
+  
+
+.arrow.left {
+  left: 40px;
+
+  @media screen and (min-width: $tablet) {
+    left: -20px;
+  }
+}
+
+.arrow.right {
+  right: 40px;
+
+  @media screen and (min-width: $tablet) {
+right: -20px;
+  }
+}
+
 
 .review__text {
   display: flex;

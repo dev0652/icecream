@@ -5,6 +5,7 @@ var	testim = document.getElementById("feedback"),
     testimContent = Array.prototype.slice.call(document.getElementById("feedback-content").children),
     testimLeftArrow = document.getElementById("left-arrow"),
     testimRightArrow = document.getElementById("right-arrow"),
+    arrowInactive = document.querySelector(".feedback-wrapper"),
     testimSpeed = 4500,
     currentSlide = 0,
     currentActive = 0,
@@ -14,6 +15,7 @@ var	testim = document.getElementById("feedback"),
 		touchPosDiff,
 		ignoreTouch = 30;
 ;
+
 
 window.onload = function() {
 
@@ -92,9 +94,8 @@ window.onload = function() {
 			
 				touchPosDiff = touchStartPos - touchEndPos;
 			
-				// console.log(touchPosDiff);
-				// console.log(touchStartPos);	
-				// console.log(touchEndPos);	
+				
+
 
 			
 				if (touchPosDiff > 0 + ignoreTouch) {
@@ -106,4 +107,17 @@ window.onload = function() {
 				}
 			
 		})
+
+        arrowInactive.onmouseover = arrowInactive.onmouseout = handler;
+
+        function handler(event) {
+
+            if (event.type == 'mouseover') {
+                arrowInactive.classList.add('active')
+            }
+            if (event.type == 'mouseout') {
+                arrowInactive.classList.remove('active')
+            }
+        }
+
 }
