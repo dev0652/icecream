@@ -70,7 +70,8 @@
   position: relative;
 
   &.active,
-  &:hover {
+  &:hover,
+  &:focus {
     background: $bg-primary;
   }
 
