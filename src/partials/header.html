@@ -2,7 +2,7 @@
 	<div class="container header__container">
 
 		<!-- Logo -->
-		<a class="logo header__logo" href="./index.html" aria-label="Icecream logo">
+		<a class="logo-link" href="./index.html" aria-label="icecream logo">
 
 			<svg class="logo__img" width="60" height="65">
 				<use href="./images/symbol-defs.svg#icon-logo"></use>
@@ -40,7 +40,8 @@
 		<div class="header__group">
 
 			<!-- Mobile menu open button (burger) -->
-			<button class="burger-button menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+			<button class="burger-button menu-button menu-toggle js-open-menu" aria-expanded="false"
+				aria-controls="mobile-menu">
 
 				<svg width="32" height="32">
 					<use href="./images/symbol-defs.svg#icon-menu-open"></use>
@@ -66,50 +67,57 @@
 <div class="menu-container js-menu-container" id="mobile-menu">
 
 	<!-- Mobile menu logo -->
-	<a class="header__logo logo" href="" aria-label="Icecream logo">
-		<svg class="logo__img" width="60" height="65">
+	<a class="logo-link logo-link--mobile" href="./index.html" aria-label="icecream logo">
+		<svg class="logo__img" width="40" height="40">
 			<use href="./images/symbol-defs.svg#icon-logo"></use>
 		</svg>
 	</a>
 
 	<!-- Mobile menu close button -->
-	<button class="menu-toggle js-close-menu">
+	<button class="menu-toggle  menu-button mobile-menu__close-button js-close-menu">
 
-		<svg width="32" height="32" viewBox="0 0 20 20">
+		<svg width="20" height="20">
 			<use href="./images/symbol-defs.svg#icon-menu-close"></use>
 		</svg>
 	</button>
 
-	<!-- Mobile menu nav -->
-	<ul class="mobile-menu">
+	<!-- Mobile menu wrapper -->
+	<div class="mobile-menu__wrapper">
 
-		<li class="mobile-menu-item active">
-			<a class="mobile-menu-link link" href="">Home</a>
-		</li>
+		<!-- Mobile menu nav -->
+		<ul class="mobile-menu">
 
-		<li class="mobile-menu-item">
-			<a class="mobile-menu-link link" href="">How it's made? </a>
-		</li>
+			<li class="mobile-menu__item">
+				<a class="mobile-menu__link" href="#hero">Home</a>
+			</li>
 
-		<li class="mobile-menu-item">
-			<a class="mobile-menu-link link" href="">Our products </a>
-		</li>
+			<li class="mobile-menu__item mobile-menu__item--active">
+				<a class="mobile-menu__link" href="#about">How it's made? </a>
+			</li>
 
-		<li class="mobile-menu-item">
-			<a class="mobile-menu-link link" href="">Contact </a>
-		</li>
+			<li class="mobile-menu__item">
+				<a class="mobile-menu__link" href="#products">Our products </a>
+			</li>
 
-	</ul>
+			<li class="mobile-menu__item">
+				<a class="mobile-menu__link" href="#contacts">Contact </a>
+			</li>
 
-	<!-- Mobile menu button (Buy Now) -->
-	<button class="header__btn header__btn--mobile js-open-modal" data-modal="modal-buynow" type="button" data-modal-open>
-		Buy now
+		</ul>
 
-		<svg class="chevron" width="12" height="12">
-			<use href="./images/symbol-defs.svg#icon-arrow-btn"></use>
-		</svg>
+		<!-- Mobile menu button (Buy Now) -->
+		<button class="header__btn header__btn--mobile js-open-modal" data-modal="modal-buynow" type="button"
+			data-modal-open>
+			Buy now
 
-	</button>
+			<svg class="chevron" width="12" height="12">
+				<use href="./images/symbol-defs.svg#icon-arrow-btn"></use>
+			</svg>
+
+		</button>
+
+	</div>
+
 </div>
 
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

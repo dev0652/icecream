@@ -16,8 +16,6 @@
   visibility: hidden;
 
   @include transition(opacity);
-
-  cursor: not-allowed;
 }
 
 .modal {
