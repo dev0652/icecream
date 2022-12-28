@@ -51,7 +51,7 @@ section.products {
   flex-basis: 280px;
   max-width: 280px;
 
-  @include transition-multiple(transform, box-shadow);
+  @include transition(all);
   transition-duration: 500ms;
 
   &:hover,
@@ -65,6 +65,8 @@ section.products {
   &:hover:after,
   &:focus:after {
     transform: scale(1.1) translateY(-100%);
+    // transform: perspective(400px) rotateX(0deg) rotateY(0deg) scale(1);
+    //
   }
 
   padding: 123px 40px 16px;

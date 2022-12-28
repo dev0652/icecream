@@ -13,7 +13,6 @@
   align-items: center;
   justify-content: center;
 
-  outline: auto;
   width: 100%;
 
   font-size: rem(12);
@@ -93,7 +92,6 @@
 }
 
 .contacts__item {
-  // outline: auto;
   position: relative;
 
   &:not(:last-child)::after {
