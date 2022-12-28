@@ -18,10 +18,22 @@
 	openMenuBtn.addEventListener('click', toggleMenu);
 	closeMenuBtn.addEventListener('click', toggleMenu);
 
+	// Close the mobile menu on wider screens if the device orientation changes
+
 	window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
 		if (!e.matches) return;
 		mobileMenu.classList.remove('is-open');
 		openMenuBtn.setAttribute('aria-expanded', false);
 		bodyScrollLock.enableBodyScroll(document.body);
 	});
+
+	// Close menu when a button or link is clicked
+	document.querySelectorAll('[js-close-on-click]').forEach(item => {
+		item.addEventListener('click', event => {
+			mobileMenu.classList.remove('is-open');
+			mobileMenuBackdrop.classList.remove('is-shown');
+			openMenuBtn.setAttribute('aria-expanded', false);
+			bodyScrollLock.enableBodyScroll(document.body);
+		})
+	})
 })();
