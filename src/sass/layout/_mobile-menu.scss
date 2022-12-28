@@ -1,0 +1,128 @@
+// Mobile menu
+
+.logo-link--mobile {
+  position: absolute;
+  top: 12px;
+  left: 32px;
+}
+
+// Button
+
+.menu-button {
+  position: relative;
+  @extend %flex-centered;
+
+  height: 32px;
+  width: 32px;
+
+  margin-right: 0px;
+
+  border: none;
+  background-color: transparent;
+  fill: #ffffff;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 32px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    transform: transition;
+  }
+}
+
+.mobile-menu__close-button {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+}
+
+.mobile-menu__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.menu {
+  display: flex;
+
+  @media (max-width: calc($tablet - 1px)) {
+    display: none;
+  }
+}
+
+.menu .link {
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu .link:hover,
+.menu .link:focus {
+  text-decoration: underline;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  padding-top: 100px;
+  padding-bottom: 64px;
+
+  width: 100vw;
+  height: 100vh;
+  background-color: $bg-primary-darker;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  color: $text-light;
+}
+
+.mobile-menu__link {
+  @extend %link;
+  font-weight: 700;
+  @include fz-lh(32, 39);
+
+  @media screen and (min-width: $tablet) {
+    font-size: rem(48);
+  }
+}
+
+.mobile-menu__item--active a {
+  color: $text-dark;
+}
+
+// Mobile menu button
+
+.header__btn--mobile {
+  padding: calc(12px - 1px) 36px;
+  // align-self: center;
+
+  // margin-top: auto;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
