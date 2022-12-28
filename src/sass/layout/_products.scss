@@ -45,7 +45,9 @@ section.products {
   flex-direction: column;
   align-items: center;
 
-  // As a flex element
+  // As a flex
+  flex-shrink: 1;
+
   flex-basis: 280px;
   max-width: 280px;
 

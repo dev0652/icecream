@@ -11,6 +11,11 @@
   flex-direction: column;
   gap: 16px;
   align-items: center;
+  justify-content: center;
+
+  outline: auto;
+  width: 100%;
+
   font-size: rem(12);
   margin-top: calc(($section-padding + 353px) * -1);
 
@@ -28,15 +33,21 @@
 }
 .contacts__card {
   padding: 40px 32px 24px 32px;
+
+  flex-shrink: 1;
+
   max-width: 280px;
+  flex-basis: 280px;
 
   @media screen and (min-width: $tablet) {
     max-width: 224px;
+    flex-basis: 224px;
     padding: 40px 24px;
   }
 
   @media screen and (min-width: $desktop) {
     max-width: 368px;
+    flex-basis: 368px;
     padding: 40px 40px;
   }
 
@@ -44,12 +55,31 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: $border-radius-card;
 
-  @include transition-multiple(transform, box-shadow);
+  @include transition(all);
+  transition-duration: 300ms;
+
+  // &:hover,
+  // &:focus {
+  //   // transform: scale(1.01);
+  //   box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.25);
+  // }
 
   &:hover,
   &:focus {
-    transform: scale(1.01);
     box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.25);
+
+    @media screen and (min-width: $tablet) {
+      transform: scale(1.1);
+      flex-grow: 1;
+
+      max-width: 250px;
+      flex-basis: 250px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      max-width: 390px;
+      flex-basis: 390px;
+    }
   }
 }
 
