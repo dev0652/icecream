@@ -13,7 +13,7 @@ body {
   color: $text-dark;
 
   // $gradient-color, $folder, $filename, $extension: webp
-  @include bg-with-overlay(rgba(#eee, 0.4), bg, bg);
+  @include bg-with-overlay(rgba(#eee, 0.5), bg, bg);
   background-attachment: fixed;
 
   &.modal-open {
