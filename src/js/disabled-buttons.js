@@ -14,5 +14,5 @@ function buttonState() {
 }
 
 formButton.addEventListener("click", () => {
-	console.log("You entered:", document.querySelector(".form-input").value);
+	console.log("You entered:", document.querySelector("[required]").value);
 });
