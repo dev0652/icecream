@@ -1,13 +1,6 @@
 <!-- Our-location modal window -->
-<div class="modal modal--our-location" role="dialog" aria-labelledby="modal-title-location"
+<div class="modal modal--our-location" id="modal-location" role="dialog" aria-labelledby="modal-title-location"
 	data-modal="modal_our-location">
-
-	<!-- CLose button -->
-	<button class="close-btn js-modal-close" type="button">
-		<svg class="close-button__icon" width="24" height="24">
-			<use href="./images/symbol-defs.svg#close-btn"></use>
-		</svg>
-	</button>
 
 	<h3 class="modal-location__title" id="modal-title-location">Our Locations</h3>
 
@@ -21,4 +14,11 @@
 		<!-- Modal window button -->
 		<button class="button modal-location__button">Open map</button>
 	</form>
+
+	<!-- CLose button -->
+	<button class="close-btn js-modal-close" type="button" aria-label="Close modal window" aria-controls="modal-location">
+		<svg class="close-button__icon" width="24" height="24">
+			<use href="./images/symbol-defs.svg#close-btn"></use>
+		</svg>
+	</button>
 </div>

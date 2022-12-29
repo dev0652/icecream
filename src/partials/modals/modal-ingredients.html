@@ -1,18 +1,11 @@
 <!-- ingredients modal - Ice Cream -->
-<div class="modal modal-ingredients" role="dialog" aria-labelledby="modal-title-icecream"
+<div class="modal modal-ingredients" id="modal-ingredients1" role="dialog" aria-labelledby="modal-title-icecream"
 	data-modal="modal-ingredients1">
-
-	<!-- CLose button -->
-	<button class="close-btn js-modal-close" type="button">
-		<svg class="close-button__icon" width="24" height="24">
-			<use href="./images/symbol-defs.svg#close-btn"></use>
-			<!-- <use href="./images/symbol-defs.svg#icon-menu-close"></use> -->
-		</svg>
-	</button>
 
 	<!-- Modal window title -->
 	<h3 class="modal-ingredients__title" id="modal-title-icecream">Chololate icecream</h3>
 
+	<!-- Modal ingredients thumb-->
 	<div class="modal-ingredients__thumb">
 
 		<img class="modal-ingredients__img" srcset="
@@ -22,6 +15,7 @@
 			src="./images/modal/choco-ice-cream.jpg" alt="Ice-cream" width="132" height="132" />
 	</div>
 
+	<!-- Modal ingredients list -->
 	<ul class="modal-ingredients__list list">
 
 		<li class="modal-ingredients__item">
@@ -72,6 +66,7 @@
 		</li>
 	</ul>
 
+	<!-- Modal ingredients form -->
 	<form class="modal-ingredients__form color-green" name="modal_form">
 
 		<!-- Text fields wrapper -->
@@ -91,22 +86,25 @@
 
 		<button class="modal-ingredients__btn button" type="submit">Submit</button>
 	</form>
-</div>
-
-<!-- ingredients modal - Ice Coffee -->
-<div class="modal modal-ingredients" role="dialog" aria-labelledby="modal-title-coffee" data-modal="modal-ingredients2">
 
 	<!-- CLose button -->
-	<button class="close-btn js-modal-close" type="button">
+	<button class="close-btn js-modal-close" type="button" aria-label="Close modal window"
+		aria-controls="modal-ingredients1">
 		<svg class="close-button__icon" width="24" height="24">
 			<use href="./images/symbol-defs.svg#close-btn"></use>
 			<!-- <use href="./images/symbol-defs.svg#icon-menu-close"></use> -->
 		</svg>
 	</button>
+</div>
+
+<!-- ingredients modal - Ice Coffee -->
+<div class="modal modal-ingredients" id="modal-ingredients2" role="dialog" aria-labelledby="modal-title-coffee"
+	data-modal="modal-ingredients2">
 
 	<!-- Modal window title -->
 	<h3 class="modal-ingredients__title" id="modal-title-coffee">Ice coffee</h3>
 
+	<!-- Modal ingredients thumb-->
 	<div class="modal-ingredients__thumb color-yellow">
 
 		<img class="modal-ingredients__img" srcset="
@@ -118,6 +116,7 @@
 
 	</div>
 
+	<!-- Modal ingredients list -->
 	<ul class="modal-ingredients__list list">
 		<li class="modal-ingredients__item color-yellow">
 			kcal<span class="modal-ingredients__span color-yellow">150</span>
@@ -157,6 +156,7 @@
 		</li>
 	</ul>
 
+	<!-- Modal ingredients form -->
 	<form class="modal-ingredients__form color-yellow" name="modal_form">
 		<div class="modal-ingredients__field-group" role="group">
 			<input class="modal-ingredients__field color-yellow" type="text" name="user-name"
@@ -170,23 +170,25 @@
 		</div>
 		<button class="modal-ingredients__btn button" type="submit">Submit</button>
 	</form>
-</div>
-
-<!-- ingredients modal - Milkshake -->
-<div class="modal modal-ingredients" role="dialog" aria-labelledby="modal-title-milkshake"
-	data-modal="modal-ingredients3">
 
 	<!-- CLose button -->
-	<button class="close-btn js-modal-close" type="button">
+	<button class="close-btn js-modal-close" type="button" aria-label="Close modal window"
+		aria-controls="modal-ingredients2">
 		<svg class="close-button__icon" width="24" height="24">
 			<use href="./images/symbol-defs.svg#close-btn"></use>
 			<!-- <use href="./images/symbol-defs.svg#icon-menu-close"></use> -->
 		</svg>
 	</button>
+</div>
+
+<!-- ingredients modal - Milkshake -->
+<div class="modal modal-ingredients" id="modal-ingredients3" role="dialog" aria-labelledby="modal-title-milkshake"
+	data-modal="modal-ingredients3">
 
 	<!-- Modal window title -->
 	<h3 class="modal-ingredients__title" id="modal-title-milkshake">Milkshake</h3>
 
+	<!-- Modal ingredients thumb-->
 	<div class="modal-ingredients__thumb color-brown">
 
 		<img class="modal-ingredients__img" srcset="
@@ -196,6 +198,7 @@
 			src="./images/buynow/jpeg/mobile/milkshake.jpg" alt="Ice-cream" width="132" height="132" />
 
 	</div>
+	<!-- Modal ingredients list -->
 	<ul class="modal-ingredients__list list">
 		<li class="modal-ingredients__item color-brown">
 			kcal<span class="modal-ingredients__span color-brown">200</span>
@@ -233,6 +236,8 @@
 			Vanilla sugar<span class="modal-ingredients__component--span">1g</span>
 		</li>
 	</ul>
+
+	<!-- Modal ingredients form -->
 	<form class="modal-ingredients__form color-brown" name="modal_form">
 		<div class="modal-ingredients__field-group" role="group">
 			<input class="modal-ingredients__field color-brown" type="text" name="user-name"
@@ -247,4 +252,12 @@
 		<button class="modal-ingredients__btn button" type="submit">Submit</button>
 	</form>
 
+	<!-- CLose button -->
+	<button class="close-btn js-modal-close" type="button" aria-label="Close modal window"
+		aria-controls="modal-ingredients3">
+		<svg class="close-button__icon" width="24" height="24">
+			<use href="./images/symbol-defs.svg#close-btn"></use>
+			<!-- <use href="./images/symbol-defs.svg#icon-menu-close"></use> -->
+		</svg>
+	</button>
 </div>
