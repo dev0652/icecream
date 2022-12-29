@@ -73,17 +73,19 @@
 		<div class="modal-ingredients__field-group" role="group">
 
 			<input class="modal-ingredients__field" type="text" name="user-name" pattern="[a-zA-Z\u0400-\u04ff\s]{3,30}"
-				title="Please type only letters, e.g. Boris Johnson" id="user-name1" placeholder="Name" required />
+				title="Please type only letters, e.g. Boris Johnson" required id="user-name1" placeholder="Name"
+				autocomplete="off" />
 
 			<input class="modal-ingredients__field" type="tel" name="user-tel" pattern="[+\0-9]{10,}"
-				title="Please use international format, e.g. +61XXXXXXXXXXXX, min 10 digits" id="user-tel1" placeholder="Phone"
-				required />
+				title="Please use international format, e.g. +61XXXXXXXXXXXX, min 10 digits" required id="user-tel1"
+				placeholder="Phone" autocomplete="off" />
 
 			<textarea class="modal-ingredients__comment" name="user-message" id="user-message1" rows="3"
 				placeholder="Comment"></textarea>
 
 		</div>
 
+		<!-- Form submit button -->
 		<button class="modal-ingredients__btn button" type="submit">Submit</button>
 	</form>
 
@@ -168,6 +170,8 @@
 			<textarea class="modal-ingredients__comment color-yellow" name="user-message" id="user-message2" rows="3"
 				placeholder="Comment"></textarea>
 		</div>
+
+		<!-- Form submit button -->
 		<button class="modal-ingredients__btn button" type="submit">Submit</button>
 	</form>
 
@@ -240,15 +244,20 @@
 	<!-- Modal ingredients form -->
 	<form class="modal-ingredients__form color-brown" name="modal_form">
 		<div class="modal-ingredients__field-group" role="group">
+
 			<input class="modal-ingredients__field color-brown" type="text" name="user-name"
 				pattern="[a-zA-Z\u0400-\u04ff\s]{3,30}" title="Please type only letters, e.g. Boris Johnson" id="user-name3"
 				placeholder="Name" required />
+
 			<input class="modal-ingredients__field color-brown" type="tel" name="user-tel" pattern="[+\0-9]{10,}"
 				title="Please use international format, e.g. +61XXXXXXXXXXXX, min 10 digits" id="user-tel3" placeholder="Phone"
 				required />
+
 			<textarea class="modal-ingredients__comment color-brown" name="user-message" id="user-message3" rows="3"
 				placeholder="Comment"></textarea>
 		</div>
+
+		<!-- Form submit button -->
 		<button class="modal-ingredients__btn button" type="submit">Submit</button>
 	</form>
 
