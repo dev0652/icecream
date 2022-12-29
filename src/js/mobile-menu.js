@@ -28,7 +28,7 @@
 	}, { passive: true });
 
 	// Close menu when a button or link is clicked
-	document.querySelectorAll('[js-close-on-click]').forEach(item => {
+	document.querySelectorAll('[js-close]').forEach(item => {
 		item.addEventListener('click', event => {
 
 			mobileMenu.classList.remove('is-open');
