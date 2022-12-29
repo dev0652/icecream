@@ -1,28 +1,21 @@
-// function enableSubmit() {
-// 	let inputs = document.getElementsByClassName('required'); // Enter your class name for a required field, this should also be reflected within your form fields.
-// 	let btn = document.querySelector('button[type="submit"]');
-// 	let isValid = true;
-// 	for (var i = 0; i < inputs.length; i++) {
-// 		let changedInput = inputs[i];
-// 		if (changedInput.value.trim() === "" || changedInput.value === null) {
-// 			isValid = false;
-// 			break;
-// 		}
-// 	}
-// 	btn.disabled = !isValid;
-// }
+const formInput = document.querySelector('[required]');
+const formButton = document.querySelector('button[type="submit"]');
 
+// the default state is 'disabled'
+formButton.disabled = true;
 
-function enableSubmit() {
-	let inputs = document.querySelectorAll('[required]');
-	let btn = document.querySelector('button[type="submit"]');
-	let isValid = true;
-	for (var i = 0; i < inputs.length; i++) {
-		let changedInput = inputs[i];
-		if (changedInput.value.trim() === "" || changedInput.value === null) {
-			isValid = false;
-			break;
-		}
+// alternative is to use "change" - explained below
+formInput.addEventListener("keyup", buttonState);
+
+function buttonState() {
+	if (document.querySelector('[required]').value === "") {
+		formButton.disabled = true; // return disabled as true whenever the input field is empty
+	} else {
+		formButton.disabled = false; // enable the button once the input field has content
 	}
-	btn.disabled = !isValid;
 }
+
+// just verifying that the button has been clicked
+formButton.addEventListener("click", () => {
+	console.log("You entered:", document.querySelector(".form-input").value);
+});
