@@ -13,6 +13,10 @@
   }
 }
 
+.feedback-cover:hover .feedback-wrapper {
+  overflow: visible;
+}
+
 .feedback-wrapper {
   position: relative;
   width: 100%;
@@ -25,7 +29,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    padding-bottom: 5px;
+    padding-bottom: 10px;
   }
 }
 
@@ -34,11 +38,12 @@
 }
 
 .arrow {
-  display: none;
+  // display: none;
   position: absolute;
   color: #333;
   cursor: pointer;
-  font-size: 2em;
+  font-size: 3em;
+  font-weight: 500;
   top: 53%;
   transform: translateY(-50%);
   transition: all 0.3s ease-in-out;
@@ -55,11 +60,11 @@
 }
 
 .arrow.left {
-  left: -20px;
+  left: -30px;
 }
 
 .arrow.right {
-  right: -20px;
+  right: -30px;
 }
 
 .review__text {
