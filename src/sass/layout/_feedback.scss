@@ -23,6 +23,10 @@
   @media screen and (min-width: $tablet) {
     max-width: 1013px;
   }
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 5px;
+  }
 }
 
 .feedback-wrapper:hover {
