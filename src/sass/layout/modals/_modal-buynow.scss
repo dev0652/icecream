@@ -250,7 +250,7 @@
   font-size: rem(12);
   line-height: 1.41;
 
-  background: $bg-formfield;
+  background: rgba($bg-secondary, 0.1);
   border: 1px solid $bg-primary;
   border-radius: $border-radius-button;
 
@@ -292,7 +292,7 @@
   font-size: rem(12);
   line-height: 1.41;
 
-  background: $bg-formfield;
+  background: rgba($bg-secondary, 0.1);
   border: 1px solid $bg-primary;
   border-radius: $border-radius-button;
 
