@@ -23,8 +23,6 @@
 	<!-- Styles -->
 	<link rel="stylesheet" href="./sass/index.scss" />
 
-	<!-- Javascript -->
-	<script type="module" src="./index.js"></script>
 </head>
 
 <body>
@@ -33,6 +31,7 @@
 
 	<!-- Main -->
 	<main>
+
 		<!-- Hero -->
 		<include src="./partials/hero.html"></include>
 
@@ -54,7 +53,9 @@
 
 		<!-- Contacts -->
 		<include src="./partials/contacts.html"></include>
+
 	</main>
+	<!-- End of main -->
 
 	<!-- Footer -->
 	<include src="./partials/footer.html"></include>
@@ -67,6 +68,19 @@
 	<include src="./partials/modals/modal-locations.html"></include>
 	<include src="./partials/modals/modal-franchise.html"></include>
 
+	<!-- Scroll Back To Top button -->
+	<button type="button" class="back-to-top" id="back-to-top" title="Scroll back to top">Up</button>
+
+	<!-- <button class="back-to-top" type="button" id="back-to-top" title="Scroll back to top" aria-label="Scroll page back to top" onclick="topFunction()">
+			
+				<svg class="back-to-top__icon" width="24" height="24">
+					<use href="./images/symbol-defs.svg#icon-scroll-up"></use>
+				</svg>
+			
+			</button> -->
+
+	<!-- Javascript -->
+	<script type="module" src="./index.js"></script>
 </body>
 
 </html>
