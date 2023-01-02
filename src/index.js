@@ -2,7 +2,6 @@
 import './js/dynamic-padding';
 import './js/scroll-trigger';
 
-import './js/window';
 import './js/animated-counters';
 import './js/scroll-to-top';
 

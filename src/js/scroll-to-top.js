@@ -1,13 +1,20 @@
 // https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 
-let toTopButton = document.querySelector(".back-to-top");
 
 // When the user scrolls down 20px from the top of the document, show the button
 
 // !!! moved this to window.js
 // window.onscroll = function () { scrollFunction() };
 
+
+window.addEventListener('scroll', scrollFunction);
+// window.addEventListener('scroll', startCounterAnimation);
+
+
 function scrollFunction() {
+	let toTopButton = document.querySelector(".back-to-top");
+
+
 	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 		toTopButton.style.display = "block";
 	} else {

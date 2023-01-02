@@ -1,10 +1,8 @@
 
 
-window.onscroll = function () {
-	// scrollFunction();
-	startCounterAnimation();
-	scrollFunction();
-};
+// window.onscroll = function () { startCounterAnimation() };
+window.addEventListener('scroll', startCounterAnimation);
+
 
 // https://stackoverflow.com/questions/61177447/how-to-delay-a-javascript-function-until-it-is-in-the-middle-of-web-page
 
@@ -12,7 +10,7 @@ const objects = document.querySelectorAll(".animated-counter");
 let calledStatus = 0;
 
 function startCounterAnimation() {
-	element = document.querySelector('.benefits');
+	element = document.querySelector('.gallery');
 	clientRect = element.getBoundingClientRect();
 
 	if (clientRect.top < window.innerHeight && clientRect.top > (clientRect.height * -1) && calledStatus == 0) {
