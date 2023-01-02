@@ -3,9 +3,8 @@
 // window.onscroll = function () { scrollFunction() };
 window.addEventListener('scroll', scrollFunction);
 
-
 function scrollFunction() {
-	let toTopButton = document.querySelector(".back-to-top");
+	let toTopButton = document.getElementById("back-to-top");
 
 
 	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -14,6 +13,9 @@ function scrollFunction() {
 		toTopButton.style.display = "none";
 	}
 }
+
+document.getElementById("back-to-top").addEventListener('click', topFunction);
+
 
 function topFunction() {
 	document.body.scrollTop = 0; // For Safari
