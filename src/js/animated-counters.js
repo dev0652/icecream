@@ -22,8 +22,8 @@ const objects = document.querySelectorAll(".animated-counter");
 let calledStatus = 0;
 
 window.onscroll = function () {
-	element = document.querySelector('.benefits');
-	clientRect = element.getBoundingClientRect();
+	// element = document.querySelector('.benefits');
+	clientRect = document.querySelector('.benefits').getBoundingClientRect();
 
 	if (clientRect.top < window.innerHeight && clientRect.top > (clientRect.height * -1) && calledStatus == 0) {
 		objects.forEach(obj => animateValue(obj, 0, obj.dataset.value, 1500))
