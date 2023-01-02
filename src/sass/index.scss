@@ -16,21 +16,19 @@
 @import './components/buttons';
 @import './components/headings';
 
-// Header
-@import './layout/header';
-@import './layout/mobile-menu';
-
 // Sections
-@import './layout/hero';
-@import './layout/products';
-@import './layout/about';
-@import './layout/benefits';
-@import './layout/gallery';
-@import './layout/feedback';
-@import './layout/contacts';
+@import './layout/sections/header';
+@import './layout/sections/mobile-menu';
 
-// Footer
-@import './layout/footer';
+@import './layout/sections/hero';
+@import './layout/sections/products';
+@import './layout/sections/about';
+@import './layout/sections/benefits';
+@import './layout/sections/gallery';
+@import './layout/sections/feedback';
+@import './layout/sections/contacts';
+
+@import './layout/sections/footer';
 
 // Modal windows
 @import './layout/modals/modal';
