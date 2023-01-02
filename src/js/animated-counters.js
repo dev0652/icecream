@@ -10,8 +10,8 @@ const objects = document.querySelectorAll(".animated-counter");
 let calledStatus = 0;
 
 function startCounterAnimation() {
-	element = document.querySelector('.gallery');
-	clientRect = element.getBoundingClientRect();
+	let element = document.querySelector('.gallery');
+	let clientRect = element.getBoundingClientRect();
 
 	if (clientRect.top < window.innerHeight && clientRect.top > (clientRect.height * -1) && calledStatus == 0) {
 
