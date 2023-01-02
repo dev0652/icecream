@@ -30,6 +30,7 @@ button:not(.close-btn, .menu-toggle, .back-to-top) {
 
   &:disabled {
     border-color: $inactive;
+    cursor: not-allowed;
   }
 }
 

@@ -3,7 +3,6 @@
 // window.onscroll = function () { startCounterAnimation() };
 window.addEventListener('scroll', startCounterAnimation);
 
-
 // https://stackoverflow.com/questions/61177447/how-to-delay-a-javascript-function-until-it-is-in-the-middle-of-web-page
 
 const objects = document.querySelectorAll(".animated-counter");
@@ -19,6 +18,9 @@ function startCounterAnimation() {
 		calledStatus = 1;
 	}
 }
+
+// const animatedCounters = document.querySelectorAll(".animated-counter");
+// animatedCounters.forEach(obj => animateValue(obj, 0, obj.dataset.value, 2000));
 
 // https://css-tricks.com/animating-number-counters/
 function animateValue(obj, start, end, duration) {

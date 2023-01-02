@@ -1,6 +1,6 @@
 // About
 
-const observerproduct = new IntersectionObserver(entries => {
+let observerCow = new IntersectionObserver(entries => {
 	entries.forEach(entry => {
 		const image__wrapper = entry.target.querySelector('.about__image-wrapper');
 		const about__image = entry.target.querySelector('.about__image');
@@ -8,33 +8,39 @@ const observerproduct = new IntersectionObserver(entries => {
 		if (entry.isIntersecting) {
 			image__wrapper.classList.add('bounce-in-top');
 			about__image.classList.add('bounce-in-top');
+
 			return; // if we added the class, exit the function
 		}
 
-		// We're not intersecting, so remove the class!
+		// Remove the class if you want the animation to repeat next time object comes into view
 		// image__wrapper.classList.remove('bounce-in-top');
 		// about__image.classList.remove('bounce-in-top');
 	});
 });
 
-observerproduct.observe(document.querySelector('.about__description'));
+observerCow.observe(document.querySelector('.about__description'));
 
-// /benefits
-// const observer = new IntersectionObserver(entries => {
-//   entries.forEach(entry => {
-//     const benefits__icon = entry.target.querySelectorAll('.benefits__icon');
-//     // const benefits__icon = entry.target.querySelector('.benefits__icon');
 
-//     if (entry.isIntersecting) {
-//       benefits__icon.forEach(x => x.classList.add('text-focus-in'));
-//       // benefits__icon.classList.add('text-focus-in');
-//       return; // if we added the class, exit the function
-//     }
+// Benefits
 
-//     // We're not intersecting, so remove the class!
-//     // benefits__icon.forEach(x => x.classList.remove('text-focus-in'));
-//     // benefits__icon.classList.remove('text-focus-in');
-//   });
+// let observerStats = new IntersectionObserver(entries => {
+// 	entries.forEach(entry => {
+
+// 		const counter = entry.target.querySelectorAll('.counter');
+
+// 		if (entry.isIntersecting) {
+// 			counter.forEach(x => x.classList.add('animated-counter'));
+
+// 			return; // if we added the class, exit the function
+// 		}
+
+// 		// Remove the class if you want the animation to repeat next time object comes into view
+// 		// animatedCounter.classList.remove('animated-counter');
+// 	});
 // });
 
-// observer.observe(document.querySelector('.benefits__list'));
+// // observerStats.observe(document.querySelector('.benefits'));
+// observerStats.observe(document.body);
+
+
+
