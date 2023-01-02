@@ -1,3 +1,27 @@
+
+
+window.onscroll = function () {
+	// scrollFunction();
+	startCounterAnimation();
+	scrollFunction();
+};
+
+// https://stackoverflow.com/questions/61177447/how-to-delay-a-javascript-function-until-it-is-in-the-middle-of-web-page
+
+const objects = document.querySelectorAll(".animated-counter");
+let calledStatus = 0;
+
+function startCounterAnimation() {
+	element = document.querySelector('.benefits');
+	clientRect = element.getBoundingClientRect();
+
+	if (clientRect.top < window.innerHeight && clientRect.top > (clientRect.height * -1) && calledStatus == 0) {
+
+		objects.forEach(obj => animateValue(obj, 0, obj.dataset.value, 1500))
+		calledStatus = 1;
+	}
+}
+
 // https://css-tricks.com/animating-number-counters/
 function animateValue(obj, start, end, duration) {
 	let startTimestamp = null;
@@ -10,22 +34,4 @@ function animateValue(obj, start, end, duration) {
 		}
 	};
 	window.requestAnimationFrame(step);
-}
-
-const objects = document.querySelectorAll(".animated-counter");
-
-// objects.forEach(obj => animateValue(obj, 0, obj.dataset.value, 1500));
-
-
-// https://stackoverflow.com/questions/61177447/how-to-delay-a-javascript-function-until-it-is-in-the-middle-of-web-page
-
-let calledStatus = 0;
-
-window.onscroll = function () {
-	const clientRect = document.querySelector('.benefits').getBoundingClientRect();
-
-	if (clientRect.top < window.innerHeight && clientRect.top > (clientRect.height * -1) && calledStatus == 0) {
-		objects.forEach(obj => animateValue(obj, 0, obj.dataset.value, 1500))
-		calledStatus = 1;
-	}
 }

@@ -1,14 +1,13 @@
 /* My CSS Normalize */
 
 :root {
-  // -ms-text-size-adjust: 100%;
-  // -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
 
-  -moz-tab-size: 4;
-  tab-size: 4;
+  -moz-tab-size: 2;
+  tab-size: 2;
 
   text-rendering: optimizeLegibility;
 }

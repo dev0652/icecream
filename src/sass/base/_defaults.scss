@@ -21,6 +21,8 @@ button,
   // cursor: pointer;
   font-family: inherit;
   text-align: center;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 address {

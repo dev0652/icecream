@@ -10,6 +10,8 @@
   height: 100%;
 
   background: rgba(#000, 0.5);
+
+  -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
 
   opacity: 0;
