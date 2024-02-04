@@ -4,6 +4,14 @@
   font-family: $primary-font;
   font-size: $primary-font-size;
 
+  /* Hide scrollbar  */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+  }
+
   scroll-padding-top: 80px; // height of sticky header
   // courtesy of https://css-tricks.com/fixed-headers-on-page-links-and-overlapping-content-oh-my/
 }
